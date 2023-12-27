@@ -2,7 +2,7 @@
 <ui class="vlinearlayout" width="fill_parent" height="fill_parent" visible="0">
 	<ui class="navigatebar" id="imap_navigatebar" width="fill_parent" height="0" text="Other Email Types">
 		<ui class="navigateitem"  width="40" height="40"  height="fill_parent" text="Close" action="close"/>
-	</ui>
+	</ui>  
 	<ui class="scrollview" width="fill_parent" height="0" weight="1">
 		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
 
@@ -14,17 +14,17 @@
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="21cn_lab" width="40" height="40" src="service_21cn" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="21cn" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>	
-				</ui>
+				</ui>  
 
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="sohu_lab" width="40" height="40" src="service_souhu" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="Sohu" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>	
-				</ui>
+				</ui>  
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="sina_lab" width="40" height="40" src="service_sina" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="Sina" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>
-				</ui>
-			</ui>
+				</ui>  
+			</ui>  
 			<imageview class="imageview" width="fill_parent" height="1" src="line_0" isview="0" margin="20,20,20,0" layout_gravity="center|vcenter"/>
 
 			<ui class="linearlayout" width="fill_parent" height="118" layout_gravity="center|vcenter" gravity="center|top">
@@ -32,18 +32,18 @@
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="sinavip_lab" width="40" height="40" src="service_sina_vip" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="Sina VIP" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,10,0,0"/>	
-				</ui>
+				</ui>  
 			
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="189_lab" width="40" height="40" src="service_189" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="189" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,10,0,0"/>	
-				</ui>
+				</ui>  
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="2980_lab" width="40" height="40" src="service_2980" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="2980" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,10,0,0"/>
 
-				</ui>
-			</ui>
+				</ui>  
+			</ui>  
 			<imageview class="imageview" width="fill_parent" height="1" src="line_0" isview="0" margin="20,20,20,0" layout_gravity="center|vcenter"/>
 
 			<ui class="linearlayout" width="fill_parent" height="118" layout_gravity="center|vcenter" gravity="center|top">
@@ -51,19 +51,19 @@
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="aliyun_lab" width="40" height="40" src="service_aliyun" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="Aliyun" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>
-				</ui>
+				</ui>  
 
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="cstnet_lab" width="40" height="40" src="service_cas" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="Cstnet" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>	
-				</ui>
+				</ui>  
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="qq_lab" width="40" height="40" src="service_qq" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="QQ" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>
 
-				</ui>
+				</ui>  
 
-			</ui>
+			</ui>  
 			<imageview class="imageview" width="fill_parent" height="1" src="line_0" isview="0" margin="20,20,20,0" layout_gravity="center|vcenter"/>
 
 
@@ -72,33 +72,33 @@
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="163freeenterprise_lab" width="40" height="40" src="service_163_1" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="163freeenterprise" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>
-				</ui>
+				</ui>  
 
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0">
 					<imageview class="imageview" id="163_lab" width="40" height="40" src="service_163_1" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="163" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>	
-				</ui>
+				</ui>  
 
 				<ui class="framelayout" weight="1" width="0" height="fill_parent" margin="20,0,20,0" visible="2">
 					<imageview class="imageview" id="" width="40" height="40" src="" layout_gravity="center|vcenter" font="13n" margin="0,0,0,0" background="na" isview="1"/>
 					<textview class="textview" width="wrap_content" height="18" text="" color="black" font="12n" background="na" layout_gravity="center|bottom" gravity="center|vcenter" isview="0" margin="0,20,0,0"/>	
-				</ui>
-			</ui>
+				</ui>  
+			</ui>  
 			<imageview class="imageview" width="fill_parent" height="1" src="line_0" isview="0" margin="20,20,20,0" layout_gravity="center|vcenter"/>
 
 
 			<ui class="framelayout" width="fill_parent" height="56" margin="0,20,0,0">
 				<button class="button" id="btn_back" height="56" width="fill_parent" text="Back" color="white" font="16n" layout_gravity="center|vcenter" margin="40,10,40,10" background="com_btn" visible="1"/>
-			</ui>
+			</ui>  
 
 
 
 		<!-- 	<ui class="linearlayout" width="fill_parent" height="56" visible="0">
 				<button class="button" width="0" weight="1" background="na" height="fill_parent" text="163" color="black" font="" gravity="left|vcenter" id="163_lab"/>
-			</ui>
+			</ui>  
 			<ui class="linearlayout" width="fill_parent" height="56" visible="0">
 				<button class="button" width="0" weight="1" background="na" height="fill_parent" text="163freeenterprise" color="black" font="" gravity="left|vcenter" id="163freeenterprise_lab"/>
-			</ui> -->
-		</ui>
-	</ui>
-</ui>
+			</ui>   -->
+		</ui>  
+	</ui>  
+</ui>  

@@ -2,7 +2,7 @@
 <root id="main" width="1" height="1" rotate="none"  style="navigate">
 	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="56" text="Accounts added">
 		<ui class="navigateitem"  width="60"  height="fill_parent" text="Close" action="close"/>
-	</ui>
+	</ui>  
 	<ui class="framelayout" width="fill_parent" height="fill_parent" bgcolor="white" margin="0,20,0,0" showrect="0">
 
 		<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
@@ -10,12 +10,12 @@
 				<ui class="framelayout" width="fill_parent" height="60" id="btn_add" background="empty" bgcolor="white" margin="0,20,0,0" gravity="center|vcenter">
 					<imageview class="imageview" width="20" height="20" src="icon_add" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
 					<textview class="textview" text="Add Account" font="16n" color="black" width="wrap_content" height="wrap_content" layout_gravity="left|vcenter" margin="60,0,0,0"/>
-				</ui>
+				</ui>  
 			</simplelistbox>
 			<ui class="framelayout" width="fill_parent" height="60" layout_gravity="center|vcenter" margin="0,10,0,10" shadowColor="blue8" shadowOffset="0,3" shadowRadius="0" shadowOpacity="0.5" showrect="0">
 				<button class="button" id="btn_next" cornerRadius="20.0" btcolor="blue_btn"  bgcolor="blue_btn" width="270" height="40" text="Next Step" color="white" font="16B" layout_gravity="center|vcenter" />
-			</ui>
-		</ui>
+			</ui>  
+		</ui>  
 
-	</ui>
+	</ui>  
 </root>
