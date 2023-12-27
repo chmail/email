@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="level_up_form" width="350" height="88" resize="0" left="right" top="bottom" max_limit="320,200"> background="root_0"
+<ui class="framelayout" id="root_panel" width="fill_parent" height="fill_parent" padding="0,0,0,0"  background="login_bg">
+	<ui class="vlinearlayout" id="content_panel" width="fill_parent" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0">
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" padding="0,0,0,0" margin="0,0,0,0" mouse_action="1">
+			<imageview class="imageview" width="32" height="32" src="membership_badge" margin="20,26,20,0" layout_gravity="left|top" isview="0"/>
+			<ui class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,20,10,0" layout_gravity="left|vcenter"  isview="0">
+				<textview class="textview" id="title" text="Level up!" width="fill_parent" height="wrap_content" singleline="1" ellipsis_end="1" color="gray1" font="16n" padding="0,0,0,0" margin="0,0,10,0" layout_gravity="left|top" isview="0"/>
+				<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="right|vcenter" margin="0,5,0,0">
+					<textview class="textview" text="Lv." width="wrap_content" height="wrap_content" color="gray2" font="14n" />
+					<textview class="textview" id="text_old_lv" text="1" width="wrap_content" height="wrap_content" color="gray2" font="14n" />
+					<imageview class="imageview" width="16" height="14" src="icon_right_arrow" margin="6,3,6,0"  isview="0"/>
+					<textview class="textview" text="Lv." width="wrap_content" height="wrap_content" color="gray2" font="14n" />
+					<textview class="textview" id="text_new_lv" text="2" width="wrap_content" height="wrap_content" color="gray2" font="14n" />			
+				</ui>
+			</ui>
+		</ui>
+	</ui>
+	<sysbutton class="sysbutton" id="sys_close" width="24" height="24" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="2,2,2,2" margin="0,0,0,0"/>
+</ui>
+</root>

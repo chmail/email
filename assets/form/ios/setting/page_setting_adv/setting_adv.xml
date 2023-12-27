@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="About">
+	</ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60"  background="na">
+		<!-- -->
+				<!-- -->
+		<ui class="framelayout" width="fill_parent" height="60" id=" " background="bg_leftbar_cell">
+			<imageview class="imageview" width="26" height="26" src="checkbox" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Use email name"  width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+		</ui>
+
+				<!-- -->
+		<ui class="framelayout" width="fill_parent" height="60" id=" " background="bg_leftbar_cell">
+			<imageview class="imageview" width="26" height="26" src="checkbox" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Use contact name"  width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+		</ui>
+
+				<!-- -->
+		<ui class="framelayout" width="fill_parent" height="60" id=" " background="bg_leftbar_cell">
+			<imageview class="imageview" width="26" height="26" src="checkbox" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Reply using contact name"  width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+		</ui>
+
+		
+		<!-- <ui class="vlinearlayout" width="fill_parent" height="wrap_content">
+			<radiobox class="radiobox" id="showing_email_name" width="150" height="28" box="14,14" margin="10,0,0,0" padding="0,0,0,0" text="Use email name" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" checked="1"/>
+			<radiobox class="radiobox" id="showing_contacts_name" width="150" height="28" box="14,14" margin="10,0,0,0" padding="0,0,0,0" text="Use contact name" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na"/>
+			<checkbox class="checkbox" id="use_contacts_name" width="fill_parent" height="28" box="14,14" icon="checkbox" text="Reply using contact name" color="black_disabled" font="12n" layout_gravity="left|vcenter" margin="30,0,0,0"/>
+		</ui> -->
+
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

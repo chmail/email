@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" width="screen" height="screen" bgcolor="gray10">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" text="About" bgcolor="white">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="tab_back" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
+            </ui>
+            <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="About"/>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+
+	<!--Option-->
+	<!-- <simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" bgcolor="gray9" separator="line"> -->
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="user_profile" margin="0,0,0,0">
+		<ui class="scrollview" width="fill_parent" height="fill_parent">
+			<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" >
+
+					<!-- <ui class="framelayout" width="fill_parent" height="30" bgcolor="gray9">
+						<textview class="textview" text="About" width="fill_parent" height="fill_parent" font="14n" color="gray5" margin="20,0,0,0" layout_gravity="left|vcenter" isview="0"/>
+					</ui> -->
+					<!-- <imageview class="imageview" src="app_icon_60" width="60" height="60" layout_gravity="right|vcenter" gravity="center|vcenter" margin="0,0,10,0" isview="0" /> -->
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,26,0,0">
+					<imageview class="imageview" width="68" height="68" src="app_icon_68" layout_gravity="center|top" isview="0"/>
+					<textview class="textview" id="yomail" width="wrap_content" height="wrap_content" text="YoMail"  margin="0,3,0,0" singleline="1" color="black" font="20n" margin="0,0,0,0" layout_gravity="center|top" isview="0"/>
+					<textview class="textview" id="version" width="wrap_content" height="wrap_content" text="1.6.9" singleline="1" color="black" font="16n" layout_gravity="center|top" isview="0" margin="0,5,0,0" />
+				</ui>
+				
+
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content"  margin="0,15,0,0" bgcolor="white">
+					<!-- link_value -->
+					<ui class="framelayout" width="fill_parent" height="44" id="link_value" background="na">
+						<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+						<textview class="textview" text="Website" font="16n" color="black" width="wrap_content" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter"/>
+					</ui>
+					<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0"/>
+
+					<!-- update_log -->
+					<ui class="framelayout" width="fill_parent" height="44" id="update_log" background="na">
+						<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+						<textview class="textview" text="update log" font="16n" color="black" width="wrap_content" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter"/>
+					</ui>
+					<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0"/>
+
+					<!-- rate -->
+					<ui class="framelayout" width="fill_parent" height="44" id="rate" background="na">
+						<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+						<textview class="textview" text="Rate" font="16n" color="black" width="wrap_content" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter"/>
+					</ui>
+
+					<!-- help -->
+					<ui class="framelayout" width="fill_parent" height="44" id="help" background="na">
+						<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+						<textview class="textview" text="help introduce" font="16n" color="black" width="wrap_content" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter"/>
+					</ui>
+
+				</ui>
+
+
+				<!-- <ui class="vlinearlayout" width="fill_parent" height="0" weight="1" isview="0" bgcolor="blue1"/> -->
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,180,0,0" layout_gravity="center|vcenter">
+
+					<textview class="textview" id="Copyright " width="wrap_content" height="wrap_content" text="COPYRIGHT(C) 2015-2018" singleline="1" color="black" font="12n" margin="0,20,0,0" layout_gravity="center|vcenter"/>
+
+					<textview class="textview" id="All_Rights_Reserved" width="wrap_content" height="wrap_content" text="All Rights Reserved" singleline="1" color="black" font="12n" margin="0,3,0,0" layout_gravity="center|vcenter"/>
+				</ui> 
+			
+			</ui>
+		</ui>
+	</ui>
+	<!-- </simplelistbox> -->
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

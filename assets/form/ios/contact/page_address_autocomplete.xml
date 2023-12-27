@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="ac" width="screen" height="300" max_limit="-1,460" bgcolor="white" windowbg="bg_white">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" bgcolor="white" isview="0">
+	<imageview class="imageview" width="fill_parent" height="1" src="line_1" isview="0" />
+	<tableview class="tableview" id="address_list" width="300" height="fill_parent" max_limit="-1,460" itembg="hlinearlayout" windowbg="bg_white" bgcolor="white" separator="line"/>
+</ui>
+</root>

@@ -1,0 +1,9 @@
+<ui class="vlinearlayout" width="fill_parent" height="wrap_content"  margin="10,5,10,5">
+	<imageview class="imageview" width="fill_parent" height="1" src="line_2_2" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0" isview="0"/>	
+
+	<ui class="linearlayout" width="fill_parent" height="wrap_content" >
+		<imageview class="imageview" id="to_avatar" width="20" height="20" src="email_frame" layout_gravity="left|vcenter" cornerRadius="10" />
+				
+		<textview class="textview" id="to_email" width="wrap_content"  height="wrap_content" layout_gravity="left|vcenter" gravity="left|vcenter" margin="10,0,5,0" text="" singleline="1" color="black" font="14n" ellipsis_end="1" isview="0"/>
+	</ui>	
+</ui>

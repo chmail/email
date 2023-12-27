@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <CheckBox n1:layout_gravity="center" n1:id="@id/check_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/YoCheckBox" />
+    <FrameLayout n1:id="@id/view_hoder_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

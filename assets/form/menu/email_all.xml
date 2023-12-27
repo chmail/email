@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="22" title="Make as Star" image="email_menu_star" key="" selector="onWorkMenuPopup:"/>
+    <item tag="23" title="Remove Star" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="25" title="Delete Permanent" key="" selector="onWorkMenuPopup:"/>
+    <item tag="26" title="Archive" key="" selector="onWorkMenuPopup:"/>
+    <item tag="27" title="This is Junk" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="28" title="This is not Junk" image="" key="" selector="onWorkMenuPopup:"/>
+        <!-- not gmail -->
+    <item tag="29" title="Move To..." />
+</menu>

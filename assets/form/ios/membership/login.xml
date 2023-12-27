@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" width="1" height="1" keyboard="1" style="navigate" rotate="none">
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="membership_login">
+		<ui id="btn_close" class="navigateitem" width="60" height="fill_parent" text="Close" action="close" />
+	</ui>
+	<ui class="framelayout" width="fill_parent" height="fill_parent" bgcolor="white"> 
+		<ui class="framelayout" id="loginPanel" width="fill_parent" height="fill_parent" >
+			<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="left|top" >
+				<imageview class="imageview" src="login_left_bg"  width="163" height="117" src=""  layout_gravity="left|top"  margin="0,56,0,0"/>
+			</ui>
+			<ui class="vlinearlayout" id="logining_panel" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="0,-80,0,0">
+				<ui class="vlinearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,0,0,0">
+					<imageview class="imageview" width="68" height="68" layout_gravity="center|vcenter" src="app_icon_68" isview="0" margin="0,0,0,12" />
+					<textview class="textview" id="caption_text" width="0" height="0" text="YoMail Login" font="20n" color="black" margin="0,0,0,0" padding="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0" showrect="0" visible="0"/>
+					<textview class="textview" id="add_your_account" width="wrap_content" height="wrap_content" text="membership_login" font="20n" color="black" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"/>
+					<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="20,35,20,0">
+						<ui class="framelayout" width="270" height="40" layout_gravity="center|vcenter">
+							<textview class="textview" id="text_account" width="60" height="wrap_content" text="email_account" font="13n" color="black" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" visible="0" />
+							<ui class="framelayout" width="fill_parent" height="1" layout_gravity="center|bottom" isview="0" bgcolor="gray7" />
+							<edit class="edit" id="account_id2" border="none" width="fill_parent" height="fill_parent" hint="email account" hintcolor="gray5" hintfont="13n" color="black" font="13n" limit="50" readonly="0" layout_gravity="center|vcenter" keyboard="email" keepvisible="1"/>
+						</ui>
+						<ui class="framelayout" width="270" height="40" layout_gravity="center|vcenter" margin="0,10,0,0">
+							<textview class="textview" id="text_password" width="60" height="wrap_content" text="account_password" font="13n" color="black" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" visible="0" />
+							<ui class="framelayout" width="fill_parent" height="1" layout_gravity="center|bottom" isview="0" bgcolor="gray7" />
+							<edit class="edit" id="password_id2" border="none" width="fill_parent" height="fill_parent" hint="password" hintcolor="gray5" hintfont="13n" color="black" font="13n" mode="password" limit="32" layout_gravity="center|vcenter" keepvisible="1"/>
+						</ui>
+					</ui>
+					<ui class="framelayout" width="fill_parent" height="60" layout_gravity="center|vcenter" margin="0,10,0,0" shadowColor="blue8" shadowOffset="0,3" shadowRadius="0" shadowOpacity="0.5" showrect="0">
+						<button class="button" id="btn_login" cornerRadius="20.0" btcolor="blue_btn" bgcolor="blue_btn"  width="270" height="40" text="membership_login" color="white" font="16B" layout_gravity="center|vcenter" />
+					</ui>
+					<button class="button" id="btn_forgot_password"  width="wrap_content" height="wrap_content" text="Forgot password?" color="blue1_status" font="12n_underline" layout_gravity="right|vcenter" gravity="center|vcenter" background="na" margin="0,10,40,0" />
+					<button class="button" id="btn_login" width="320" height="36" text="Sign in" color="white" font="14n" layout_gravity="center|vcenter" background="btn_login" margin="0,15,0,0" padding="0,0,0,0"/>
+				</ui>
+
+			</ui>
+			<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="right|bottom" >
+				<imageview class="imageview" src="login_bottom_bg"  width="163" height="117" src=""  layout_gravity="right|bottom" margin="0,0,0,0"/>
+			</ui>
+		</ui>
+		<ui class="keyboard" width="0" height="0" />
+	</ui>
+</root>

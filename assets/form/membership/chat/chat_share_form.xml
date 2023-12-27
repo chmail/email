@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root width="340" height="370" left="center" top="center" mode="caption"  resize="0" padding="1,1,1,1">
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0" background="root_white">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="30" >
+			<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+			<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+				<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Share" font="14n" color="black" gravity="center|vcenter" padding="0,0,0,0" isview="0"/>
+			</ui>
+			<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+			<!-- <button class="button" id="back" width="wrap_content" height="25" background="tool_btn" text="Back" font="12n" color="blue1" layout_gravity="left|top" padding="8,5,8,5" margin="3,2,3,2" visible="0"/>
+			-->
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_2" padding="0,0,0,0" margin="0,0,0,0" isview="0" />
+		<ui class="chromeview" id="web" width="fill_parent" height="fill_parent" margin="0,0,0,0" visible="1" url="about:blank"/>
+	</ui>
+</root>

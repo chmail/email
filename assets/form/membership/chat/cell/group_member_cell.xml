@@ -1,0 +1,16 @@
+<!-- chatwindows smiple listview -->
+<ui class="linearlayout" id="member_cell" width="fill_parent" height="34" padding="0,0,0,0" background="hlinearlayout"> isview="0"
+	<ui class="framelayout" width="32" height="fill_parent" layout_gravity="center|vcenter" isview="0">
+		<imageview class="imageview" id="avatar" width="24" height="24" src="avatar_default" layout_gravity="center|vcenter" mask="mask_circle_24" cursor="hand"/>
+			<!-- <checkbox class="checkbox" id="online" width="16" height="16" box="16,16" icon="online" layout_gravity="right|bottom" margin="0,0,0,0" isview="0" /> -->
+	</ui>
+	<ui class="linearlayout" width="0" weight="1" height="fill_parent" isview="0" >
+		<textview class="textview" id="title" width="fill_parent" height="fill_parent" text="name" padding="0,0,0,0" margin="5,0,0,0" isview="0"  layout_gravity="center|vcenter" gravity="left|vcenter" color="gray" font="13n" ellipsis_end="1"/>
+		<textview class="textview" id="num" width="fill_parent" height="fill_parent" text="" padding="0,0,0,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="left|vcenter" color="gray5" font="12n" visible="0"/>test@email.info
+	</ui>
+	<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="right|vcenter" margin="0,0,10,0">
+		<imageview class="imageview" id="edit_nickname" width="0" height="0" src="menu_tary_compose" tooltip="Edit"  layout_gravity="center|vcenter" visible="0"/>
+		<imageview class="imageview" id="avatar_admin" width="13" height="20" src="icon_discussion_manager" layout_gravity="center|vcenter" isview="0"/>
+		<textview class="textview" id="me_state" width="fill_parent" height="20" text="member_me" color="white" font="12n" background="root_a_180"  layout_gravity="center|vcenter" gravity="center|vcenter"  padding="4,0,4,0" margin="5,0,0,0" isview="0" />
+	</ui>
+</ui>

@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: YoMail.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- assets/res/hibernate.json
+- assets/res/resversion.json
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '26'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0
+versionInfo:
+  versionCode: '30'
+  versionName: 1.6.9

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<item tag="1" title="Cut" image="email_menu_cut" key="" selector="onWorkMenuPopup:"/>
+    <item tag="2" title="Copy" image="email_menu_copy" key="" selector="onWorkMenuPopup:"/>
+    <item tag="3" title="Paste" image="email_menu_stick" key="" selector="onWorkMenuPopup:"/>
+    <item tag="4" title="Select All" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="5" title="Delete All" image="email_menu_delete" key="" selector="onWorkMenuPopup:"/>
+</menu>

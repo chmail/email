@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray10">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" bgcolor="white" text="Edit">
+    	<ui class="framelayout" height="fill_parent" width="fill_parent" >
+    		<ui class="linearlayout" height="fill_parent" width="fill_parent">
+    			<ui class="navigateitem" id="tb_close" image="icon_navigatebar_arrow_left"  width="40" height="40" text="" layout_gravity="left|vcenter" type="left"  action="close"/>
+    			<ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+    			<button background="na" class="button" color="blue1" font="17n" gravity="center|vcenter" height="40" id="btn_ok" layout_gravity="right|vcenter" text="Ok" width="60" />
+        	</ui>
+        	<ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="Edit"/>
+            </ui>
+        	<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="44" bgcolor="gray10" separator="" margin="0,0,0,0">
+
+ 		<ui class="framelayout" width="fill_parent" height="20" isview="0" background="empty" bgcolor="gray10" margin="0,0,0,0"/>
+
+		<ui class="linearlayout" width="fill_parent" height="44" bgcolor="white">
+			<textview class="textview" text="Enable Signature" font="16n" color="black" width="0" weight="1" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,0,0"/>
+			<!-- <checkbox class="checkbox" id="" width="wrap_content" height="wrap_content" margin="0,0,30,0" layout_gravity="center|vcenter" checked="1"/> -->
+			<commoncheckbox class="commoncheckbox" id="using_signature" width="38" height="23" layout_gravity="right|vcenter" margin="20,0,20,0" icon="switch" background="na"/>
+		</ui>
+
+		<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+
+		<ui class="framelayout" id="signatureWrapper" width="fill_parent" height="180" bgcolor="white"> limit="50" padding="20,0,0,0" 
+			<richedit class="richedit" id="signature" width="fill_parent" height="fill_parent" hint="Send form YoMail" hintcolor="gray5" hintfont="12n" color="black" font="12n" background="na" readonly="0" layout_gravity="center|vcenter" keyboard="email" margin="20,0,20,0"/>	
+		</ui>
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

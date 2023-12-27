@@ -1,0 +1,8 @@
+<ui id="group_section_cell" class="framelayout" width="fill_parent" height="24" padding="0,0,0,0" margin="0,0,0,0" drag="move" background="root_0noline">
+	<ui class="framelayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0">
+		<checkbox class="checkbox" id="arrow" width="fill_parent" height="fill_parent" icon="folder_icon2" box="20,20" padding="0,0,0,0" margin="5,0,0,0" layout_gravity="left|center" checked="1" background="" visible="0"/>day_cell_bg
+		<ui class="linearlayout" width="fill_parent" height="20" layout_gravity="center|vcenter" margin="5,0,0,0" padding="15,0,0,0" isview="0">
+			<textview class="textview" id="title" width="wrap_content" height="wrap_content" text="..." color="gray1" font="12n" layout_gravity="left|vcenter" margin="6,0,0,0"/> showrect="1"
+		</ui>
+	</ui>	
+</ui>

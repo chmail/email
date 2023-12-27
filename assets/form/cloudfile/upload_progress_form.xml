@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="upload_progress" width="400" height="110" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+	<ui class="vlinearlayout" width="400" height="fill_parent" margin="0,0,0,0" >
+		<ui class="vlinearlayout" width="330" height="wrap_content" margin="0,20,0,0"  background="" layout_gravity="center">
+			root_1
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" isview="0">
+				<textview class="textview"  width="wrap_content" height="wrap_content" text="Now uploading " font="12n" color="gray1" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" singleline="1"/>
+				<textview class="textview"  id="file_name" width="fill_parent" height="wrap_content" text="fileName" font="12n" color="gray1" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" ellipsis_end="1" singleline="1"/>
+			</ui>
+			<progressbar class="progressbar" id="progress_bar"  width="fill_parent" height="7" empty="" full="progress_bar_concent" pos="0" range="0,100" background="progress_bar_bg" margin="0,3,0,3" padding="0,0,0,0" layout_gravity="left|vcenter" visible="1" isview="0" />
+			<textview class="textview" id="progress_text" width="fill_parent" height="wrap_content" text="1/5 ,30%" font="12n" color="gray1" margin="0,5,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" singleline="0"/>
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="right|vcenter" margin="0,0,0,0" padding="0,8,0,0" background="">
+			<ui class="view"  width="0" height="0" weight="1"/>
+			<button class="button" id="cancel" width="wrap_content" height="25" text="Cancel" color="blue1" font="" background="na" margin="0,0,14,0" />
+		</ui>
+	</ui>
+</root>

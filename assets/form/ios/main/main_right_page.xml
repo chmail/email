@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ui bgcolor="white" class="pagecontainer" id="main_tab_host" height="fill_parent" width="fill_parent">
+<!--page 1-->
+    <ui bgcolor="" class="vlinearlayout" height="fill_parent" id="normal_container"
+        width="fill_parent">
+        <ui class="viewcontrollerhost" height="0" id="email_view_host" weight="1"
+            width="fill_parent">
+            <!-- here -->
+        </ui>
+        <ui class="tabbar" height="56" id="email_tabbar" width="fill_parent" ><!--Android must be 56 -->
+            <tabbaritem class="tabbaritem" height="wrap_content" icon="icon_tabbar_mail" id="email_page" text="email_tab"
+                weight="1" width="0" gravity="center|vcenter" layout_gravity="center|vcenter"/>
+            <tabbaritem class="tabbaritem" height="wrap_content" icon="icon_tabbar_conversation" id="email_conversation_page"
+                text="conversation_tab_android" weight="1" width="0" gravity="center|vcenter" layout_gravity="center|vcenter"/>
+            <tabbaritem class="tabbaritem" height="wrap_content" icon="icon_tabbar_contacts" id="contact" text="contact_tab"
+                weight="1" width="0" gravity="center|vcenter" layout_gravity="center|vcenter"/>
+            <tabbaritem class="tabbaritem" height="wrap_content" icon="icon_tabbar_attachments" id="attachment" text="attachment_tab_android"
+                weight="1" width="0" gravity="center|vcenter" layout_gravity="center|vcenter"/>
+        </ui>
+    </ui>
+    <!-- page 2-->
+    <ui bgcolor="white" class="framelayout" height="fill_parent" id="all_container"
+        width="fill_parent" visible="0">
+        <ui class="viewcontrollerhost" height="fill_parent" id="email_view_host_all" width="fill_parent">
+            <!-- here -->
+        </ui>
+    </ui>
+    <!-- page 3-->
+    <include src="../../membership/ios/im_main_page.xml"/>
+</ui>

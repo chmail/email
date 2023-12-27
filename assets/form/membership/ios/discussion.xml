@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" id="discussion_panel">
+	 <ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" bgcolor="white">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="tab_back" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
+
+                <ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+                <ui class="navigateitem" id="tab_menu" image="icon_navbar_more2" layout_gravity="right|vcenter" type="right" width="40" height="40"/>
+            </ui>
+            <ui class="navigateheader" width="160" height="40" id="title_header" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title" color="black" font="17n"/>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+	<ui class="vlinearlayout" width="fill_parent" height="0" weight="1" padding="0,0,0,0" margin="0,0,0,0">
+		<ui class="framelayout" id="toolbar" width="fill_parent" height="80" margin="0,0,0,0" mouse_action="1" visible="0">
+
+			<ui class="framelayout" id="title_popdisplay" width="90" height="30" layout_gravity="right|top" mouse_action="1" visible="0">(popdisplay)
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="fill_parent" layout_gravity="left|vcenter"  mouse_action="1">
+				<ui class="linearlayout" width="wrap_content" height="40" layout_gravity="left|bottom"   margin="0,0,10,0" isview="0">mouse_action="1"
+					<ui class="framelayout" width="44" height="44" background="" layout_gravity="left|vcenter" padding="0,0,0,0" margin="20,0,0,0" isview="0" visible="0">
+						<imageview class="imageview" id="user_avatar" width="32" height="32" src="avatar_default" mask="roundrect_mask" layout_gravity="center|vcenter"/>
+					</ui>
+					
+				</ui>
+				<ui class="scrollview" width="0" weight="1" height="wrap_content" max_limit="-1,56"  mouse_action="1" margin="0,0,6,3" layout_gravity="right|bottom" >
+					<ui class="wrappedlinearlayout" id="tag_list" width="wrap_content"  height="wrap_content" fixed_limit="-1,28" min_limit="-1,28" drag="move" layout_gravity="right|bottom"></ui>
+				</ui>
+				<ui class="linearlayout" width="wrap_content" height="30"  layout_gravity="right|bottom" margin="0,0,0,3" mouse_action="1"  >
+					<edit class="edit" id="tag_name_add" width="100" weight="1" height="22" text="" color="gray" font="12n" padding="3,2,0,2" margin="0,0,6,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="0" background="" visible="0" />				
+					<button class="button" id="btn_add_tag" width="28" height="28" icon="email_menu_label" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,2,2,2" margin="0,0,0,0" tooltip="Add Tag"  visible="1" />				
+				</ui>
+				<ui class="linearlayout" width="wrap_content" height="30"  layout_gravity="right|bottom" margin="0,0,0,3" mouse_action="1"  >
+					<!-- <button class="button" id="btn_xxx" width="32" height="28" icon="icon_toolbar_not_disturb" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="0,0,10,0"  tooltip="Do't disturb" />visible="1" -->
+					<button class="button" id="btn_show_email" width="32" height="28" icon="icon_email_tips_turnon" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="4,2,4,2" margin="0,0,10,0" tooltip="Unfold"  visible="1" />
+					<checkbox class="checkbox" id="btn_save_discussion" width="32" box="28,28" height="28" icon="icon_toolbar_sticktop" background="button_top" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,10,0" tooltip="Save as permanent" visible="0"/>
+					<checkbox class="checkbox" id="cbx_sticky" width="32" height="28" box="28,28" icon="icon_toolbar_sticktop" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="0,0,10,0" visible="0" />
+					<button class="button" id="btn_memberList" width="32" height="28" icon="icon_toolbar_more" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="0,0,0,0"  tooltip="Setting" />icon_toolbar_buddylist
+					<button class="button" id="btn_invite" width="32" height="28" icon="icon_toolbar_buddyadd" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="6,0,0,0" tooltip="Invite more" visible="0"/>icon_toolbar_more
+					<!-- <button class="button" id="btn_condition" width="32" height="28" icon="icon_toolbar_set" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="6,0,0,0"  tooltip="JoinCondition Setting" visible="0"/> -->
+					<button class="button" id="btn_group_menu" width="32" height="28" icon="icon_toolbar_more" background="com_btn_white_box_r2_line_hover" layout_gravity="center|vcenter" padding="2,0,2,0" margin="6,0,0,0" tooltip="Menu" visible="0"/>
+				</ui>
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_2" padding="0,0,0,0" isview="0"/>
+		<ui class="framelayout" width="fill_parent" height="0" weight="1" padding="0,0,0,0" margin="0,0,0,0" leftmin="500" rightmin="240" rightmax="350"  mode="2">
+		<!-- left -->
+		  	<ui class="vlinearlayout" id="form_panel" width="fill_parent" height="fill_parent">
+		  		<!-- email tips -->
+				<!-- <ui class="framelayout" id="email_info_panel" width="fill_parent" height="113" background="bg_email_tips" margin="5,6,9,0" padding="10,10,10,4" showrect="1">
+					<ui class="linearlayout" width="fill_parent" height="fill_parent" layout_gravity="left|vcenter" isview="0">
+						<imageview class="imageview" id="user_avatar" width="32" height="32" src="icon_mail_avatar" margin="0,0,0,20"  layout_gravity="center|vcenter"/>mask="roundrect_mask" 
+						<ui class="vlinearlayout" width="fill_parent" height="80" layout_gravity="left|top">
+							<textview class="textview" id="email_subject" width="fill_parent" height="20" text="" padding="0,0,0,0" margin="10,0,10,0" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="13B" ellipsis_end="1" singleline="1" />
+							<textview class="textview" id="email_content" width="fill_parent" height="wrap_content" text="" padding="0,0,0,0" margin="10,5,10,0" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+						</ui>
+					</ui>
+		  			<textview class="textview" id="btn_email_detail" width="wrap_content" height="wrap_content" text="Detail" color="blue1_status" font="12n_underline" layout_gravity="right|bottom" margin="0,0,10,10"/>
+		  			<textview class="textview" id="btn_email_fold" width="wrap_content" height="wrap_content" text="Fold" color="blue1_status" font="12n_underline" layout_gravity="right|bottom" margin="0,0,50,10"/>
+		  		</ui> -->
+				<!--history-->
+				<ui class="vlinearlayout" id="form_panel" width="fill_parent" height="0" weight="1" padding="0,0,0,0">
+					<include src="chat_history_panel.xml" />
+				</ui>
+				<!--chat_list-->
+				<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" margin="0,0,0,0"/>
+				<ui class="pagecontainer" id="chat_bottom_page" width="fill_parent" height="wrap_content">
+					<include src="chat_action_panel.xml" />				
+					<ui id="archive_result" class="framelayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" padding="0,0,0,0" bgcolor="gray12" visible="0">
+						<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="10,10,10,10" >
+							<ui class="linearlayout" width="wrap_content" height="wrap_content" margin="0,10,0,0" layout_gravity="center|vcenter">	
+								<textview class="textview" id="archive_message" width="wrap_content" height="wrap_content" text="* yu *" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="black" font="15n" ellipsis_end="1"/>	
+							</ui>	
+							<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,10,0,10">			
+								<button class="button" id="recover_archive" width="wrap_content" height="31" icon="" text="Recover Discussion" layout_gravity="center|vcenter" color="white"  padding="10,2,10,2" margin="0,0,0,0" background="com_btn"/>				
+								<textview class="textview" id="" width="wrap_content" height="31" text="continue discussion, or" padding="5,0,5,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray" font="12n" ellipsis_end="1"  visible="0"/>				
+								<button class="button" id="view_summary" width="wrap_content" height="31" text="View summary" icon="" layout_gravity="center|vcenter" color="white"  padding="10,2,10,2" margin="30,0,0,0"   background="com_btn"/>				
+								<button class="button" id="make_summary" width="wrap_content" height="31" text="Make summary" icon="" layout_gravity="center|vcenter" color="white"  padding="10,2,10,2" margin="30,0,0,0"  visible="0" background="com_btn"/>			
+							</ui>	
+						</ui>
+					</ui>
+				</ui>
+		  	</ui>
+
+			<!-- right -->
+			<ui class="framelayout" id="form_panel" width="240" height="fill_parent" visible="0">
+			<ui class="pagecontainer" id="right_page" width="240" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" visible="0">
+				<!-- email tips -->
+				<!-- <ui class="framelayout"  width="230" height="fill_parent"  background="root_white" padding="0,0,0,0" margin="0,0,0,0">background="bg_email_tips"  -->
+				<ui class="vlinearlayout" id="email_info_panel" width="fill_parent" height="fill_parent" layout_gravity="left|top" visible="0">
+					<ui class="linearlayout" width="fill_parent" height="80" layout_gravity="left|vcenter" isview="0">
+						<imageview class="imageview" id="" width="32" height="32" src="icon_mail_avatar" margin="0,0,0,0"  layout_gravity="center|vcenter"/>mask="roundrect_mask" 
+						<textview class="textview" id="email_subject" width="fill_parent" height="fill_parent"  padding="0,0,0,0" margin="10,0,10,0" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="13B" ellipsis_end="1" singleline="1" />
+					</ui>
+					<textview class="textview" id="group_email_create_tip" width="fill_parent" height="wrap_content"  margin="10,5,10,5" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray3" font="14n" ellipsis_end="1" singleline="0" />
+					<textview class="textview" id="btn_email_detail" width="wrap_content" height="wrap_content" text="Detail" color="blue1_status" font="12n_underline" layout_gravity="right|vcenter" margin="0,0,10,5"/>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" layout_gravity="center|vcenter" margin="10,0,10,0" isview="0"/>
+					
+					<textview class="textview" id="email_content" width="fill_parent" height="wrap_content" text="" padding="0,0,0,0" margin="10,10,10,10" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+				</ui>
+				
+				<ui class="vlinearlayout" id="note_panel" width="fill_parent" height="fill_parent" layout_gravity="left|top" visible="0">
+					<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="left|vcenter" isview="0">
+						<textview class="textview" id="" width="fill_parent" height="fill_parent" text="Group desc" padding="0,0,0,0" margin="10,0,10,0" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="13B" ellipsis_end="1" singleline="1" />
+					</ui>
+					<textview class="textview" id="group_create_tip" width="fill_parent" height="wrap_content"  margin="10,5,10,5" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray3" font="14n" ellipsis_end="1" singleline="0" />
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+					<textview class="textview" id="group_note" width="fill_parent" height="0" weight="1"  margin="10,10,10,10" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="14n" ellipsis_end="1" singleline="0" />
+				</ui>
+					
+					<!-- <textview class="textview" id="btn_email_fold" width="wrap_content" height="wrap_content" text="Fold" color="blue1_status" font="12n_underline" layout_gravity="right|bottom" margin="0,0,50,10"/> -->
+				<!-- </ui> -->
+				<!-- member_panel -->
+				<ui class="pagecontainer" id="setting_panel" width="fill_parent" height="fill_parent" visible="1">
+					<ui class="vlinearlayout" id="member_panel"  width="fill_parent" background="root_white" height="fill_parent" visible="1">
+						<ui class="framelayout"  width="fill_parent" height="40" cursor="hand">
+							<textview class="textview" id="" width="wrap_content" height="20" text="Setting" color="gray" font="14B" margin="20,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>
+							<button class="button" id="close_in_member" width="30" height="30" icon="sys_close" background="button_top_close" layout_gravity="right|vcenter" padding="5,5,5,5" />					
+						</ui>
+						<textview class="textview" id="group_archive_interval_hour" width="fill_parent" height="26"  margin="10,5,10,5" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray3" font="14n" ellipsis_end="1" singleline="0" />
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+						<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="10,10,10,10" >
+							<ui class="linearlayout"  width="0" weight="1" height="22" layout_gravity="center|vcenter" >
+								<ui class="linearlayout" id="member_add" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" background="tool_btn_hover">
+									<imageview class="imageview" width="16" height="16" src="popup_email_add_black" gravity="center|vcenter" layout_gravity="left|vcenter" margin="8,0,0,0" isview="0"/>				
+									<textview class="textview" id="" width="fill_parent" height="wrap_content" text="Add member" font="13n" color="gray" gravity="left|vcenter" layout_gravity="left|vcenter" padding="0,0,0,0" margin="10,0,10,0" isview="0"/>				
+								</ui>
+							</ui>
+							<ui class="framelayout" id="member_remove" width="0" weight="1" height="22" layout_gravity="center|vcenter" margin="10,0,0,0" background="tool_btn_hover">
+								<imageview class="imageview" width="16" height="16" src="popup_email_less_black" gravity="center|vcenter" layout_gravity="left|vcenter" margin="8,0,0,0" isview="0"/>				
+								<textview class="textview" id="" width="fill_parent" height="wrap_content" text="Remove member" font="13n" color="gray" gravity="left|vcenter" layout_gravity="left|vcenter" padding="28,0,0,0" margin="0,0,10,0" isview="0"/>				
+							</ui>
+							<!-- <button class="button" id="member_remove" width="fill_parent" height="wrap_content" text="Remove member" font="12n" color="gray" layout_gravity="center|vcenter" gravity="left|vcenter" background="na" padding="0,0,0,0" margin="49,5,0,5" cursor="hand" visible="0"/>				
+							-->
+						</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>											
+						<ui class="linearlayout" id="btn_share" width="fill_parent" height="40" layout_gravity="center|vcenter" cursor="hand">
+							<imageview class="imageview" width="20" height="20" src="email_menu_share" layout_gravity="left|vcenter" margin="15,0,0,0" isview="0"/>											
+							<textview class="textview" id="" width="wrap_content" height="20" text="Share" color="gray" font="12n" padding="10,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>											
+						</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>											
+						<ui class="framelayout" id="btn_other_setting" width="fill_parent" height="40" layout_gravity="center|vcenter" cursor="hand">
+							<imageview class="imageview" width="28" height="28" src="icon_toolbar_set" layout_gravity="left|vcenter" margin="15,0,0,0" isview="0"/>											
+							<textview class="textview" id="" width="wrap_content" height="20" text="Other Settings" color="gray" font="12n" margin="45,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>											
+						</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>				
+						<textview class="textview" id="member_num" width="fill_parent" height="20" text="" color="gray2" font="13n" layout_gravity="left|vcenter" gravity="left|vcenter" margin="10,10,0,10" isview="0"/>				
+						<tableview class="tableview" id="member_list" width="fill_parent" height="0" weight="1"  gravity="left|vcenter" background="listview"/>						
+						<!-- <ui class="framelayout" id="btn_more_member" width="fill_parent" height="40" layout_gravity="center|vcenter" cursor="hand">				
+							<textview class="textview" width="wrap_content" height="20" text="More members" color="gray" font="12n" padding="10,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>						
+						</ui>
+						<ui class="framelayout" id="btn_fold_member" width="fill_parent" height="40" layout_gravity="center|vcenter" cursor="hand">				
+							<textview class="textview" width="wrap_content" height="20" text="Fold members" color="gray" font="12n" padding="10,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>						
+						</ui> -->	
+						<button class="button" id="btn_help" width="wrap_content" height="20" text="group_setting_help" color="blue1_status" font="12n_underline" layout_gravity="center|vcenter" gravity="center|vcenter" background="na" cursor="hand" margin="0,0,0,5" />		
+					</ui>
+					<ui class="vlinearlayout" id="summary_panel" width="fill_parent" height="fill_parent" layout_gravity="left|top" visible="1">
+						<ui class="framelayout"  width="fill_parent" height="40" cursor="hand">
+							<button class="button" id="btn_back" width="30" height="30" icon="arrow_20px_left" background="na" text="" color="black" font="18n" layout_gravity="left|vcenter" padding="5,5,5,5" />text="&lt;"
+							<textview class="textview" id="" width="wrap_content" height="20" text="Group summary" color="gray" font="12n" margin="20,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>										
+							<button class="button" id="close_in_summary" width="30" height="30" icon="sys_close" background="button_top_close" layout_gravity="right|vcenter" padding="5,5,5,5" />		
+						</ui>
+						<textview class="textview" id="group_summary" width="fill_parent" height="fill_parent" text="" padding="0,0,0,0" margin="10,10,10,10" isview="0" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray" font="14n" ellipsis_end="1" singleline="0" />
+					</ui>
+				<ui class="vlinearlayout" id="other_setting_panel"  width="fill_parent" background="root_white" height="fill_parent" visible="0">
+					<ui class="framelayout"  width="fill_parent" height="40" cursor="hand">
+						<button class="button" id="btn_back" width="30" height="30" icon="arrow_20px_left" background="na" text="" color="gray3" font="18B" layout_gravity="left|vcenter" padding="5,5,5,5" /> text="&lt;" 
+						<textview class="textview" id="" width="wrap_content" height="20" text="Other Settings" color="gray" font="12n" margin="20,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>										
+						<button class="button" id="close_in_other" width="30" height="30" icon="sys_close" background="button_top_close" layout_gravity="right|vcenter" padding="5,5,5,5" />										
+					</ui>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+					<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" mouse_action="1">
+						<textview class="textview" id="" width="wrap_content" height="20" text="Mute new messages" color="gray" font="12n" margin="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>				
+						<ui class="view" isview="0"  weight="1" width="0" height="fill_parent" />				
+						<checkbox class="checkbox" id="cbx_mute" width="30" height="16" icon="checkbox_2" box="28,16"  layout_gravity="center|vcenter" margin="0,0,20,0"/>				
+					</ui>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+					<ui class="vlinearlayout" id="btn_archive"	width="fill_parent" height="41" cursor="hand" >
+						<ui class="linearlayout" width="fill_parent" height="40"   isview="0">
+						<textview class="textview" id="" width="wrap_content" height="20" text="Archive Group" color="gray" font="12n" margin="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+						<ui class="view" isview="0"  weight="1" width="0" height="fill_parent" />
+						<button class="button" id="btn_back" width="30" height="30" icon="arrow_20px_right" background="button_top2" text="" color="black" font="18n" layout_gravity="left|vcenter" padding="5,5,5,5" />text="&lt;"
+					</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>					
+					</ui>
+					<ui class="vlinearlayout" id="view_summary_text"	width="fill_parent" height="41" cursor="hand" >
+						<ui class="linearlayout" width="fill_parent" height="40"   isview="0">
+						<textview class="textview" id="" width="wrap_content" height="20" text="View summary" color="gray" font="12n" margin="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>		
+					</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>					
+					</ui>
+					<ui class="vlinearlayout" id="change_admin"	width="fill_parent" height="41" cursor="hand" >
+						<ui class="linearlayout" width="fill_parent" height="40"   isview="0">
+							<textview class="textview" id="" width="wrap_content" height="20" text="Change Group Admin" color="gray" font="12n" margin="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>					
+						</ui>
+						<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>					
+					</ui>							
+					<ui class="linearlayout" id="group_nickname_panel" width="fill_parent" height="26" margin="10,3,10,0">
+						<textview class="textview" id="" width="100" height="fill_parent" text="NickName in Group" color="gray" font="12n" padding="10,0,10,0" gravity="left|vcenter" isview="0"/>								
+						<ui class="linearlayout" id="inner_edit_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" visible="0" >
+							<edit class="edit" id="inner_info_edit" width="0" weight="1" height="20" text="" color="gray" font="12n" padding="5,0,0,0" argin="0,0,8,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="0" background=""/>										
+							<button class="button" id="inner_btn_save" cursor="hand" width="30" height="24" box="26,26" text="Save" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" background="com_btn"  />
+							<button class="button" id="inner_btn_cancel" cursor="hand" width="wrap_content" height="24" box="26,26" text="Cancel" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="com_btn"  />
+								
+						</ui>
+						<ui class="linearlayout" id="inner_display_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" >
+							<edit class="edit" id="inner_info_display" width="0" weight="1" height="20" color="gray" font="12n"  margin="0,0,8,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" ellipsis_end="1" background="na"/>										
+							<button class="button" id="inner_btn_edit" cursor="hand" width="26" height="26" box="26,26" text="Edit" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" background="na"  />										
+						</ui>
+					</ui>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+					<ui class="linearlayout" id="group_name_panel" width="fill_parent" height="40" margin="10,3,10,0">
+						<textview class="textview"  width="100" height="fill_parent" text="Group Name" color="gray" font="12n" padding="10,0,10,0" gravity="left|vcenter" isview="0"/>										
+						<ui class="linearlayout" id="inner_edit_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" visible="0" >
+							<edit class="edit" id="inner_info_edit" width="0" weight="1" height="20" text="" color="gray" font="12n" padding="5,0,0,0" argin="0,0,8,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="0" background=""/>										
+							<button class="button" id="inner_btn_save" cursor="hand" width="30" height="24" box="26,26" text="Save" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" background="com_btn"  />
+							<button class="button" id="inner_btn_cancel" cursor="hand" width="wrap_content" height="24" box="26,26" text="Cancel" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="com_btn"  />
+								
+						</ui>
+						<ui class="linearlayout" id="inner_display_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" >
+							<edit class="edit" id="inner_info_display" width="0" weight="1" height="20" color="gray" font="12n"  margin="0,0,8,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" ellipsis_end="1" background="na"/>										
+							<button class="button" id="inner_btn_edit" cursor="hand" width="26" height="26" box="26,26" text="Edit" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" background="na"  />										
+						</ui>
+					</ui>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>
+					<ui class="view" isview="0" width="fill_parent" height="0" weight="1" />
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>				
+					<button class="button" id="btn_leave_group" width="fill_parent" height="36" text="Leave Group" font="13n" color="red" layout_gravity="center|vcenter" gravity="center|vcenter" background="na" cursor="hand"/>		
+				</ui>
+				<ui class="vlinearlayout" id="change_admin_panel"  width="fill_parent" background="root_white" height="fill_parent" visible="0">
+					<ui class="framelayout"  width="fill_parent" height="40" cursor="hand">
+						<button class="button" id="btn_back" width="30" height="30" icon="" background="button_top" text="&lt;" color="black" font="18n" layout_gravity="left|vcenter" padding="5,5,5,5" />				
+						<textview class="textview" id="" width="wrap_content" height="20" text="Change Group Admin" color="gray" font="12n" margin="20,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>				
+						<button class="button" id="btn_close" width="30" height="30" icon="sys_close" background="button_top_close" layout_gravity="right|vcenter" padding="5,5,5,5" />				
+					</ui>
+					<textview class="textview" id="" width="wrap_content" height="wrap_content" text="group_admin_message_1" color="gray2" singleline="0" font="12n" margin="5,0,5,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0"/>
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>				
+					<tableview class="tableview" itembg="hlinearlayout" id="admin_member_list" width="fill_parent" height="0" weight="1" background="listview" padding="0,0,5,0" margin="0,0,0,0"/>				
+					<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0"/>				
+					<button class="button" id="btn_ok_change_admin" width="fill_parent" height="36" text="btn_change_admin" font="13n" color="gray1_disabled" layout_gravity="center|vcenter" gravity="center|vcenter" background="na" cursor="hand"/>				
+				</ui>
+				</ui>
+				</ui>
+				</ui>
+		</ui>
+	</ui>
+</ui>

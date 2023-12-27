@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:id="@id/shifting_bottom_navigation_container" n1:background="?selectableItemBackgroundBorderless" n1:paddingLeft="@dimen/shifting_width_custom_padding" n1:paddingTop="@dimen/shifting_height_top_padding_inactive" n1:paddingRight="@dimen/shifting_width_custom_padding" n1:paddingBottom="@dimen/shifting_height_bottom_padding_active" n1:layout_width="fill_parent" n1:layout_height="@dimen/shifting_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_gravity="center|top" n1:id="@id/shifting_bottom_navigation_icon_container" n1:layout_width="@dimen/shifting_icon_badge_grid_width" n1:layout_height="@dimen/shifting_icon_badge_grid_height">
+        <ImageView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/shifting_bottom_navigation_icon" n1:layout_width="@dimen/shifting_icon_grid" n1:layout_height="@dimen/shifting_icon_grid" n1:scaleType="fitXY" n1:contentDescription="@string/icon" />
+        <com.ashokvarma.bottomnavigation.BadgeTextView n1:gravity="center" n1:layout_gravity="end|center|top" n1:id="@id/shifting_bottom_navigation_badge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/BadgeText" />
+    </FrameLayout>
+    <TextView n1:textSize="@dimen/shifting_label" n1:gravity="center" n1:layout_gravity="bottom|center" n1:id="@id/shifting_bottom_navigation_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lines="1" n1:includeFontPadding="false" n1:scaleX="0.0" n1:scaleY="0.0" />
+</FrameLayout>

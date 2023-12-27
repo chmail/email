@@ -1,0 +1,18 @@
+<ui id="address_item" class="linearlayout" width="fill_parent" height="60" background="hlinearlayout" bgcolor="white" >
+	<ui class="framelayout" width="fill_parent" height="fill_parent" >
+		
+		<ui class="linearlayout" width="fill_parent" height="60" background="hlinearlayout" margin="60,0,0,0">
+			<!-- <ui class="framelayout" width="60" height="fill_parent" background="hlinearlayout">
+				<commoncheckbox class="commoncheckbox" id="selected" width="20" height="20" box="20,20" icon="commoncheckbox" background="na" layout_gravity="center|vcenter" gravity="center|vcenter"/>
+			</ui> -->
+			<!-- <button class="button" id="" width="20" height="20" icon="" layout_gravity="center|vcenter" background="" margin="10,0,10,0" isview="0"/> -->
+			<imageview class="imageview" id="avatar" width="40" height="40" src="icon_mail_avatar" layout_gravity="center|vcenter" isview="0" margin="0,0,10,0" cornerRadius="20"/>
+			<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" isview="0">
+				<textview class="textview" id="email_lab" width="wrap_content" height="wrap_content" text="email...." gravity="center|vcenter" layout_gravity="left|vcenter" color="black" font="14n" isview="0" />
+				<textview class="textview" id="email_address" width="wrap_content" height="wrap_content" text="email@test.com" gravity="vcenter" layout_gravity="left|vcenter" color="gray5" font="14n" isview="0" />
+			</ui>
+			<!-- <imageview class="imageview" width="fill_parent" height="1" src="day_cell_bg" layout_gravity="center|vcenter" isview="0" margin="0,0,0,0"/> -->
+		</ui>
+		<commoncheckbox class="commoncheckbox" id="selected" width="fill_parent" height="fill_parent" box="20,20" icon="commoncheckbox" background="na" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,0,0"/>
+	</ui>
+</ui>

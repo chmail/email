@@ -1,0 +1,11 @@
+<ui class="linearlayout" id="attachment_download_item" width="fill_parent" height="60" focus="blocks"  bgcolor="white">
+	<ui class="linearlayout" width="fill_parent" height="60" focus="blocks">
+		<imageview class="imageview" id="file_icon" width="32" height="32" layout_gravity="center|vcenter" src="email_frame" margin="10,0,10,0" isview="0" />
+		<ui class="vlinearlayout" width="0" weight="2" height="wrap_content" layout_gravity="left|vcenter" >
+			<textview class="textview" ellipsize="middle" id="file_name" width="fill_parent" max_limit="0,40" height="wrap_content" text="file_name" color="black" font="16n" singleline="1" layout_gravity="left|bottom" gravity="left|bottom" isview="0" showrect="0"/>
+			<textview class="textview" id="file_size" width="wrap_content" height="wrap_content" text="22k" color="gray5" font="13n" layout_gravity="left|top" gravity="left|top" isview="0"/>
+			<textview class="textview" id="file_type" width="wrap_content" height="wrap_content" text="22k" color="gray5" font="13n" layout_gravity="left|top" gravity="left|top" isview="0" visible="0"/>
+		</ui>
+		<textview class="textview" id="email_time" width="wrap_content" height="18" text="2015.5.5" color="gray5" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0" margin="10,0,10,0"/>
+	</ui>
+</ui>

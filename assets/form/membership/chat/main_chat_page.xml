@@ -1,0 +1,43 @@
+<ui class="framelayout" id="" width="fill_parent" height="fill_parent" margin="0,0,0,0" visible="2">
+
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" >
+		<ui id="" class="framelayout" width="fill_parent" height="fill_parent" leftmin="200" leftmax="500" rightmin="380" >
+			<!-- middle listview -->
+			
+		
+
+			<ui class="pagecontainer" id="main_chat_right_tab" width="fill_parent"  height="fill_parent" padding="0,0,0,0" background="root_white" margin="0,1,1,1" > 
+				<include src="create_topic.xml"/>
+				<ui class="pagecontainer" id="main_chat_content_tab" width="fill_parent"  height="fill_parent" padding="0,0,0,0" >
+					<include src="chat.xml"/>
+					<include src="discussion.xml"/>
+					
+					<include src="validate_info_page.xml"/>
+					<include src="main_notification_page.xml"/>
+					<include src="arhive_group_page.xml"/>
+					<ui class="framelayout" id="default_content_panel" width="fill_parent"  height="fill_parent" visible="0">
+						<ui class="vlinearlayout"  width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" >
+							<imageview class="imageview" width="413" height="299" src="bg_chat" layout_gravity="center|vcenter" isview="0"/>				
+							<ui class="vlinearlayout" id="login_btn_panel" width="wrap_content" height="55" layout_gravity="center|vcenter" margin="0,20,0,0" >
+								<textview class="textview" width="wrap_content" height="20" text="YoMail Group unavailable" font="13n" layout_gravity="center|vcenter" />
+								<button class="button" id="btn_login_yomail" width="145" height="30" icon="" text="Sign in" color="gray1" font="12n"  background="com_btn_white_box_r2"  margin="0,5,0,0" layout_gravity="center|vcenter"/>				
+							</ui>
+						</ui>
+					</ui>
+					<include src="main_buddy_area.xml" />
+				</ui>
+			</ui>
+			<!-- right information card -->
+			<!-- <ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="addrbook_right"  margin="0,80,0,0">
+				<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,0,0" isview="0"/>
+			</ui> -->
+		</ui>
+	</ui>
+
+	<ui class="vlinearlayout" width="300" height="81" visible="0">
+		<ui class="linearlayout" width="wrap_content" height="50" isview="0"> showrect="1" 
+			<imageview class="imageview" width="32" height="32" src="icon_tab_chat" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+			<textview class="textview" id="caption_title" width="wrap_content" height="fill_parent" text="Recent chat" gravity="left|vcenter" margin="8,0,0,0" isview="0" color="gray7" font="20n" />Chat
+		</ui>
+	</ui>
+</ui>

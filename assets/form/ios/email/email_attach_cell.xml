@@ -1,0 +1,15 @@
+ <ui class="framelayout" width="110" height="110"  >
+ 	<ui class="framelayout" width="110" height="110" padding="5,5,5,5">
+		<ui class="vlinearlayout" width="100" height="100" bgcolor="white" layout_gravity="center|vcenter">
+			<ui class="framelayout" width="56" height="56" layout_gravity="center|vcenter" >
+				<imageview class="imageview" id="system_icon" width="40" height="40" src="attach_cell_icon" layout_gravity="center|vcenter" isview="0"/>
+				<imageview class="imageview" id="isCloudFile" width="24" height="24" src="clould_file_edit_attachment_tips" layout_gravity="right|bottom" isview="0" visible="0"/>
+			</ui>
+			<ui class="vlinearlayout" width="90" height="44" isview="0" >
+				<textview class="textview" id="filename" width="wrap_content" height="20" text="file" color="black" font="12n" layout_gravity="center|vcenter"  gravity="center|vcenter" singleline="1" />
+				<textview class="textview" id="filesize" width="wrap_content" height="20" text="20MB" color="gray5" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter"/>
+			</ui>
+		</ui>
+		<button id="close" class="imagebutton" width="20" height="20" layout_gravity="right|top" icon="com_btn_close_p1" margin="0,0,0,0" background="com_btn_close_bg_r2" visible="0"/>
+	</ui>
+</ui>

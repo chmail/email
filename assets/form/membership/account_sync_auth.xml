@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="account_sync_auth" width="680" height="400" left="center" top="center" mode="caption" resize="0">
+	<ui class="framelayout" width="fill_parent"  height="fill_parent" background="login_bg">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<!-- system button -->
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/>
+		sys_close_white
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" mouse_action="1" margin="20,10,10,0">
+			<ui class="linearlayout" width="wrap_content" height="20" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+				<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+				<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Account Authentication" font="14n" color="gray1" gravity="center|vcenter" padding="0,0,0,0"/>
+			</ui>
+			<ui class="vlinearlayout" id="not_vip_tip_panel" width="fill_parent" height="wrap_content" isview="0" margin="40,10,40,20" visible="1" >
+				<textview class="textview"  width="wrap_content" height="wrap_content" text="Dear not vip" color="black" font="14n"  layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,5" singleline="0"/>			
+				<textview class="textview"  width="fill_parent" height="wrap_content" text="auth_tip_text" color="black" font="14n"  layout_gravity="center|vcenter" gravity="left|vcenter"  singleline="0"/>			
+			</ui>
+			<ui class="vlinearlayout" id="vip_tip_panel" width="fill_parent" height="wrap_content" isview="0" margin="40,10,40,20" visible="0" >
+				<textview class="textview"  width="wrap_content" height="wrap_content" text="Dear vip" color="black" font="14n"  layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,5" singleline="0"/>			
+				<textview class="textview"  width="fill_parent" height="wrap_content" text="auth_tip_text" color="black" font="14n"  layout_gravity="center|vcenter" gravity="left|vcenter"  singleline="0"/>			
+			</ui>
+			<ui class="vlinearlayout" width="330" height="130" layout_gravity="center|vcenter" margin="0,0,0,0" background="root_0">
+				<ui class="linearlayout" width="fill_parent" height="24" layout_gravity="center|vcenter" margin="0,14,0,0">
+					<textview class="textview" width="70" height="wrap_content" text="EMail" font="14n" color="gray1" padding="0,0,10,0" layout_gravity="left|vcenter" gravity="right|vcenter" isview="0"/>
+					<textview class="textview" id="account_name" width="wrap_content" height="wrap_content" font="14n" color="gray1" padding="0,0,10,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+				</ui>
+				<ui class="linearlayout" width="fill_parent" height="24" layout_gravity="center|vcenter" margin="0,14,0,0">
+					<textview class="textview" id="" width="70" height="wrap_content" text="account_password" font="14n" color="gray1" padding="0,0,10,0" layout_gravity="left|vcenter" gravity="right|vcenter" isview="0" margin="0,0,0,2"/>
+					<ui class="framelayout" width="240" height="24" layout_gravity="center|vcenter" margin="0,0,0,0" background="editview_box">
+						<edit class="edit" id="password_id" width="fill_parent" height="18" hint="password" hintcolor="gray6" hintfont="14n" color="black" font="12n" mode="password" limit="32" padding="5,0,5,0" background="na" layout_gravity="center|vcenter" />
+					</ui>
+				</ui>
+				<ui class="linearlayout" width="wrap_content" height="24" layout_gravity="left|vcenter" margin="70,5,0,0" visible="0" id="error_msg">
+					<imageview class="imageview" width="20" height="20" src="calendar_refused" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+					<textview class="textview"  width="wrap_content" height="fill_parent" text="auth_failed_msg" font="12n" color="gray1" gravity="center|vcenter" padding="0,0,0,0"/>
+				</ui>
+				<checkbox class="checkbox" id="auto_sync" width="fill_parent" height="fill_parent" box="14,14" icon="checkbox" text="auth_auto_sync" color="black" font="12n" margin="48,0,0,0"  layout_gravity="left|vcenter" gravity="left|vcenter"/>
+			</ui>
+			<ui class="vlinearlayout" width="fill_parent" height="60" margin="0,12,0,0" >
+				<textview class="textview"  width="240" height="20" id="btn_give_up" text="auth_give_up" color="blue1_status" font="14n_underline"  layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,5"/>
+				<textview class="textview"  width="240" height="30" id="btn_sync" text="sync account data"  background="com_btn" color="white" font="14n"  layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			</ui>
+		</ui>
+		<textview class="textview" id="auth_tip" width="wrap_content" height="wrap_content" text="auth_tip_text_2" font="14n" color="gray2" layout_gravity="center|bottom" margin="0,0,0,15"/>
+	</ui>
+</root>

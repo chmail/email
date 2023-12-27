@@ -1,0 +1,36 @@
+<ui id="chat_item" class="framelayout" width="fill_parent" height="28">
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" mouse_action="1">
+		<imageview class="imageview" id="top_icon" width="10" height="10" src="bg_stick_top" layout_gravity="left|vcenter" margin="15,0,4,0" isview="0" visible="2"/>
+		<ui class="framelayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" isview="0">
+			<ui class="framelayout"  width="12" height="28" layout_gravity="center|vcenter" isview="0">
+				<!-- <imageview class="imageview" id="avatar" width="32" height="32" src="avatar_chat_group" layout_gravity="center|vcenter" mask="roundrect_mask" background="root_a_245" cursor="hand"/>
+				-->
+				<checkbox class="checkbox" id="online" width="12" height="12" box="12,12" icon="online2" layout_gravity="left|vcenter" margin="0,0,0,0" isview="0" />
+				<!-- <imageview class="imageview" id="mute_badge" width="8" height="8" src="budge.hint" layout_gravity="right|top"  margin="0,0,0,0" isview="0"  visible="0"/>
+				-->
+			</ui>
+		</ui>
+		<ui class="linearlayout" width="0" weight="1" height="fill_parent" layout_gravity="left|vcenter" margin="4,0,0,0" mouse_action="1">
+			<ui class="linearlayout" width="fill_parent" height="18" margin="0,0,0,0" layout_gravity="left|vcenter" mouse_action="1">
+				<checkbox class="checkbox" id="title" box="0,0" icon="na" width="0" height="fill_parent" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" color="bavigation_bar_menu_main_color" font="13B_email_unread" isview="0" ellipsis_end="1"/>
+				<!-- <textview class="textview" id="time" width="60" height="fill_parent" gravity="right|vcenter" layout_gravity="center|vcenter" text="00:00:00" color="gray5" font="12n" margin="0,2,10,0" isview="0"/>
+				-->
+				<ui class="linearlayout" width="wrap_content" height="24" layout_gravity="center|vcenter" min_limit="20,-1" margin="0,0,10,0" id="panel_hover" visible="0">
+					<checkbox class="checkbox" id="cbx_sticky" width="24" height="24" box="24,24" icon="icon_stick_top" background="na" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0" />com_btn_white_box_r2_line_hover
+				</ui>
+				<ui class="framelayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" min_limit="20,-1" margin="0,0,10,0" isview="0" id="panel_normal">
+					<textview class="textview" id="badge" width="wrap_content" height="18" gravity="center|vcenter" layout_gravity="right|vcenter" color="white" font="12B" background="" padding="6,0,6,0" visible="0"/>navigation_bar_menu_badge_color
+					budge
+					<imageview class="imageview" id="mute_icon" width="16" height="16" src="icon_mute_disturb" layout_gravity="right|vcenter"  visible="0" />
+					<!-- <imageview class="imageview" id="" width="16" height="16" src="icon_mute_disturb" layout_gravity="right|vcenter"  margin="0,0,0,0" isview="0"  visible="0"/>
+					-->
+					<indicator class="indicator" id="mute_badge" width="0" height="0" src="icon_mute_disturb" margin="-2,0,0,0" gravity="right|vcenter" layout_gravity="center|vcenter" started="1" isview="0" />
+				</ui>
+			</ui>
+			<!-- <ui class="linearlayout" width="fill_parent" height="20">
+			<textview class="textview" id="chat" width="0" height="fill_parent" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" color="gray5" font="12n" isview="0" padding="0,0,0,0" ellipsis_end="1"/>
+		</ui>
+		-->
+	</ui>
+</ui>
+</ui>

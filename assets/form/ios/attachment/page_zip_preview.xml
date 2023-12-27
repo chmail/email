@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="attachment" width="screen" height="screen" bgcolor="white">
+<ui class="navigatebar" id="navigatebar" width="fill_parent" height="56" text="">
+	<!-- <ui class="navigateitem" width="30" id="tab_archive" type="right" image="icon_navbar_archive" text=""/> -->
+</ui>
+
+<ui class="pagecontainer" id="pages" width="fill_parent" height="fill_parent" margin="0,64,0,0">
+	<ui class="framelayout" id="error_page" width="fill_parent" height="fill_parent" visible="0">
+		<ui class="textview" text="error" width="fill_parent" height="fill_parent"/>	
+	</ui>
+	<ui class="vlinearlayout" id="loading_page" width="fill_parent" height="fill_parent" >
+		<ui class="progressbar" id="bar" width="fill_parent" height="30" style="default"/>
+		<textview class="textview" width="wrap_content" height="40" text="loading..." color="gray5" font="14n" layout_gravity="center|vcenter"/>
+	</ui>
+</ui>
+
+<tableview class="tableview" id="tableview" height="fill_parent" width="fill_parent" margin="0,64,0,0" bgcolor="white" separator="line" visible="0"/>
+
+
+
+</root>

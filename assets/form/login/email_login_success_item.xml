@@ -1,0 +1,11 @@
+<ui class="vlinearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" >
+	<ui class="vlinearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" >
+		<ui class="linearlayout" width="fill_parent" height="0"  weight="1">
+			<textview class="textview" id="ac_item" width="0" weight="1" height="wrap_content" text="email...." layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" margin="10,0,10,0" color="black" font="17n"  ellipsis_end="1"/>
+			<imageview class="imageview" id="" width="wrap_content" height="wrap_content" layout_gravity="left|vcenter" src="icon_hook_b" margin="0,0,0,0" />
+			<textview class="textview" id="add_item" width="wrap_content" height="wrap_content" text="Added" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" margin="1,0,10,0" color="gray5" font="13n"  ellipsis_end="1"/>
+
+		</ui>
+		<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0"/>
+	</ui>
+</ui>

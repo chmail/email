@@ -1,0 +1,18 @@
+<ui id="validate_cell" class="linearlayout" width="fill_parent" height="56" background="menubar_special_cell_bg2">
+	<ui class="framelayout" width="60" height="fill_parent" layout_gravity="center|vcenter">
+		<imageview class="imageview" id="avatar" width="32" height="32" src="avatar_notice_info" layout_gravity="center|vcenter" mask="mask_circle_32" cursor="hand"/>
+		<imageview class="imageview" id="read_flag" width="8" height="8" src="budge.hint" layout_gravity="right|vcenter" padding="0,0,0,0" margin="0,0,15,25" isview="0" visible="0"/>
+	</ui>
+	<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" layout_gravity="left|vcenter" margin="0,0,0,0" isview="0">
+		<ui class="linearlayout" width="fill_parent" height="18" margin="0,10,0,0" >
+			<textview class="textview" id="title" width="0" height="fill_parent" weight="1" text="Notification Info" gravity="left|vcenter" layout_gravity="left|vcenter" color="blue1" font="13n" isview="0" margin="0,0,5,0"/>
+			<textview class="textview" id="time" width="60" height="fill_parent" gravity="right|vcenter" layout_gravity="center|vcenter" text="00:00:00" color="gray5" font="12n" margin="0,2,10,0" isview="0" />
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="18">
+			<textview class="textview" id="chat" width="0" height="fill_parent" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" color="gray5" font="12n" isview="0" padding="0,0,0,0" ellipsis_end="1"/>
+			<ui class="framelayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" min_limit="60,-1">
+				<textview class="textview" id="badge" width="wrap_content" height="18" gravity="center|vcenter" layout_gravity="right|vcenter" color="white" font="12n" background="budge" padding="6,0,6,0" margin="0,0,10,0" isview="0"  visible="0"/>
+			</ui>
+		</ui>
+	</ui>
+</ui>

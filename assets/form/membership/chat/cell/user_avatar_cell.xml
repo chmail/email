@@ -1,0 +1,4 @@
+<ui class="framelayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0" layout_gravity="center|vcenter" background="button_top">tool_btn_no_normal
+    <imageview class="imageview" id="user_avatar" width="fill_parent" height="fill_parent" margin="0,0,0,0" padding="3,3,3,3"/>
+	<button class="button" id="delete" cursor="hand" width="16" height="16"   icon="search_btn_close" layout_gravity="right|top" margin="0,0,0,0" background="na"  />
+</ui>

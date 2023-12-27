@@ -1,0 +1,6 @@
+<ui class="framelayout" width="40" height="40" layout_gravity="center|vcenter" bgcolor="white" >
+	<ui class="progressbar" id="loading" width="fill_parent" height="30" style="default"/>
+	<textview class="textview" id="nomore" width="fill_parent"
+		height="fill_parent"  text="Please see more mail under each account" color="gray2"
+		font="14n" gravity="center|vcebter" margin="0,0,0,0" visible="0"/>
+</ui>

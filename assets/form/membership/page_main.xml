@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="welcome" width="680" height="400" left="center" top="center" mode="caption" resize="0">
+	<ui class="framelayout" width="fill_parent"  height="fill_parent" background="login_bg">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<!-- system button -->
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/>
+		sys_close_white
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" mouse_action="1" margin="20,20,10,0">
+			<textview class="textview"  width="wrap_content" height="20" text="Welcome to YoMail" color="black" font="20n"  layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			<textview class="textview"  width="wrap_content" height="20" text="You can" color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,30,0,0"/>
+			<ui class="linearlayout" width="fill_parent" height="26" margin="0,15,0,0" >
+				<textview class="textview"  width="wrap_content" height="20" text="1." color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,10,0"/>
+				<textview class="textview"  width="wrap_content" height="20" text="yomail_feature_1" color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+				<ui class="view" width="0" height="fill_parent" weight="1" isview="0" />
+				<button class="button" id="btn_setting" width="60" height="26" icon="" text="welcome_btn_setting" color="gray1_disabled" font="12n" margin="0,0,50,0" layout_gravity="center|vcenter" background="com_btn_white_box_r2" />
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="26" margin="0,15,0,0" >
+				<textview class="textview"  width="wrap_content" height="20" text="2." color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,10,0"/>
+				<textview class="textview"  width="wrap_content" height="20" text="yomail_feature_2" color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+				<ui class="view" width="0" height="fill_parent" weight="1" isview="0" />
+				<button class="button" id="btn_sync" width="60" height="26" icon="" text="welcome_btn_sync" color="gray1_disabled" font="12n" margin="0,0,50,0" layout_gravity="center|vcenter" background="com_btn_white_box_r2"/>
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="20" margin="0,15,0,0" >
+				<textview class="textview"  width="wrap_content" height="20" text="3." color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,10,0"/>
+				<textview class="textview"  width="wrap_content" height="20" text="yomail_feature_3" color="black" font="14n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			</ui>
+			<ui class="vlinearlayout" width="fill_parent" height="60" margin="0,115,0,0" >
+				<textview class="textview"  width="240" height="30" id="btn_use" text="btn_start"  background="com_btn" color="white" font="14n"  layout_gravity="center|vcenter" gravity="center|vcenter"/>		
+				<textview class="textview"  width="240" height="30" id="btn_purchase" text="welcome_btn_purchase"  color="blue1_status" font="14n_underline"  layout_gravity="center|vcenter" gravity="center|vcenter"/>
+			</ui>
+		</ui>
+	</ui>
+</root>

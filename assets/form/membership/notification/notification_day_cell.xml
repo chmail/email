@@ -1,0 +1,7 @@
+<!-- notification_day_cell for chat windows -->
+<ui class="framelayout" width="fill_parent" height="wrap_content" isview="0" >
+	<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" bgcolor="gray11" >
+		<!-- <imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,0,0" layout_gravity="center|vcenter" isview="0"/> -->
+		<textview class="textview" id="time" width="fill_parent" height="wrap_content" text="" singleline="1" color="gray5" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" margin="10,5,0,5" padding="10,0,10,0"/> background="root_white"
+	</ui>
+</ui>

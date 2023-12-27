@@ -1,0 +1,91 @@
+<ui class="vlinearlayout" id="buddy_recent_tab" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0"  >
+	<include src="../ios/main_top_bar.xml"/>
+	<!-- radiogroup content -->
+	<ui class="radiogroup" width="fill_parent" height="wrap_content" id="chat_radio_group" margin="30,30,0,0" >
+		<ui class="linearlayout" id="email_part_tb" width="fill_parent" height="34" layout_gravity="center|vcenter" margin="20,0,0,0" padding="0,0,0,0" background="listview_bar">
+			<ui class="framelayout" width="0" height="fill_parent" weight="1">
+				<radiobox class="radiobox" id="recent" width="fill_parent" height="fill_parent" weight="1" box="30,30" icon="listbar_icon_recent" gravity="center|vcenter" background="na" padding="30,0,0,0" tooltip="Recent chat" checked="1"/>
+				<imageview class="imageview" id="recent_chat_badge" width="8" height="8" src="budge.hint" layout_gravity="left|top" padding="0,0,0,0" margin="54,4,0,0" isview="0" visible="0"/>
+			</ui>
+			<!-- <radiobox class="radiobox" id="recent" width="0" height="fill_parent" weight="1" box="30,30" icon="listbar_icon_recent" gravity="center|vcenter" background="na" padding="20,0,0,0" tooltip="Recent chat" checked="1"/>
+			-->com_btn_white_box_r2
+			<radiobox class="radiobox" id="discussion" width="0" height="fill_parent" weight="1" box="30,30" icon="listbar_icon_disccusstion" gravity="center|vcenter" background="na" padding="30,0,0,0" tooltip="Address Book"/>
+			<!-- <radiobox class="radiobox" id="buddy_list_module_opt" width="0" height="fill_parent" weight="1" box="30,30" icon="listbar_icon_buddys" gravity="center|vcenter" background="na" padding="30,0,0,0" tooltip="buddy contacts"/>
+			-->
+		</ui>
+	</ui>
+
+	<ui class="linearlayout" width="fill_parent" height="wrap_content" padding="0,0,0,0" >
+		<!--searchfarme-->
+		<ui class="framelayout" id="im_search_panel" width="fill_parent" height="30" padding="0,0,0,0">
+			background="" root_2
+			<ui class="framelayout" width="fill_parent" height="30" layout_gravity="vcenter" background="search_frame_b" margin="10,0,0,0" padding="0,0,0,0">
+				<ui class="linearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="5,0,5,0">
+					<edit class="edit" id="filter_edit" width="0" weight="1" height="fill_parent" hint="enter keywords search" hintfont="12n" hintcolor="gray4" limit="40" padding="5,4,25,4" gravity="left|vcenter" layout_gravity="left|vcenter" background="na"/>
+				</ui>
+				<ui class="framelayout" width="20" height="18" layout_gravity="right|vcenter" padding="0,0,0,0" margin="0,0,5,0">
+					<!-- <imageview class="imageview" width="1" height="fill_parent" src="line_1" layout_gravity="left|vcenter" margin="0,0,0,0" padding="0,2,0,2" isview="0"/>
+					-->
+					<imageview class="imageview" id="search_icon_img" width="0" height="0" src="search_icon" layout_gravity="right|vcenter" margin="0,0,2,0" isview="0" visible="1"/>
+					<button class="button" id="search_close_btn" width="16" height="16" icon="search_btn_close" background="na" layout_gravity="right|vcenter" padding="0,0,0,0" margin="0,0,0,0" visible="0"/>
+				</ui>
+			</ui>
+		</ui>
+	</ui>
+
+	<!-- <imageview class="imageview" width="fill_parent" height="1" src="line_0" layout_gravity="right|vcenter" padding="3,0,0,0" isview="0" />
+	-->
+	<ui class="pagecontainer" width="fill_parent" height="0" weight="1" id="buddy_recent_host" margin="0,0,0,0" padding="0,0,0,0">
+		<!-- listview -->
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="new_recent_list"   visible="1">
+			<tableview class="tableview" id="recent_list" width="fill_parent" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0" itembg="menubar_special_cell_bg_theme2"/>
+			<ui class="scrollview" width="fill_parent" height="fill_parent" id="" visible="0">
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content">
+					<!-- 
+					<tableview class="tableview" id="tableview_group" width="fill_parent" height="wrap_content" margin="0,0,0,0" padding="0,0,0,0" itembg="menubar_special_cell_bg_theme2" visible="0"/>
+
+					<ui class="framelayout" width="fill_parent" height="28" background="menubar_special_cell_bg_theme1">
+						<checkbox class="checkbox" id="checkbox_chat" width="fill_parent" height="fill_parent" icon="" box="20,20" padding="0,0,0,0" margin="2,0,0,0" layout_gravity="left|vcenter" />
+						<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="top|center" padding="0,0,0,0" margin="0,0,0,0" isview="0">
+							<textview class="textview"  width="wrap_content" height="wrap_content" text="im_chat" color="bavigation_bar_menu_main_color" font="13n" padding="0,0,0,0" margin="24,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" isview="0"/>
+							<textview class="textview" id="" width="wrap_content" height="wrap_content" text="000" color="bavigation_bar_menu_color_hint_red" font="12n" padding="5,0,5,0" margin="0,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" visible="0" isview="0"/>
+						</ui>
+					</ui>
+					<tableview class="tableview" id="tableview_chat" width="fill_parent" height="wrap_content" margin="0,0,0,0" padding="0,0,0,0" itembg="menubar_special_cell_bg_theme2" visible="0"/>
+
+					<ui class="framelayout" width="fill_parent" height="28" background="menubar_special_cell_bg_theme1">
+						<checkbox class="checkbox" id="checkbox_archive" width="fill_parent" height="fill_parent" icon="" box="20,20" padding="0,0,0,0" margin="2,0,0,0" layout_gravity="left|vcenter" />
+						<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="top|center" padding="0,0,0,0" margin="0,0,0,0" isview="0">
+							<textview class="textview"  width="wrap_content" height="wrap_content" text="Archive_menu" color="bavigation_bar_menu_main_color" font="13n" padding="0,0,0,0" margin="24,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" isview="0"/>
+							<textview class="textview" id="" width="wrap_content" height="wrap_content" text="000" color="bavigation_bar_menu_color_hint_red" font="12n" padding="5,0,5,0" margin="0,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" visible="0" isview="0"/>
+						</ui>
+					</ui>
+					<tableview class="tableview" id="tableview_archive" width="fill_parent" height="wrap_content" margin="0,0,0,0" padding="0,0,0,0" itembg="menubar_special_cell_bg_theme2" visible="0"/>
+					-->
+					<ui class="framelayout" width="fill_parent" height="28" background="menubar_special_cell_bg_theme1">
+						<button class="button" id="btn_notification" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="right|vcenter" background="na"/>
+						icon="" box="20,20"
+						<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="top|center" padding="0,0,0,0" margin="0,0,0,0" isview="0">
+							<textview class="textview"  width="wrap_content" height="wrap_content" text="im_notificaiton" color="bavigation_bar_menu_main_color" font="13n" padding="0,0,0,0" margin="24,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" isview="0"/>
+							<textview class="textview" id="" width="wrap_content" height="wrap_content" text="000" color="bavigation_bar_menu_color_hint_red" font="12n" padding="5,0,5,0" margin="0,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" visible="0" isview="0"/>
+						</ui>
+					</ui>
+
+					<ui class="framelayout" width="fill_parent" height="28" background="menubar_special_cell_bg_theme1">
+						<button class="button" id="btn_validate" width="fill_parent" height="fill_parent"  padding="0,0,0,0" margin="0,0,0,0" layout_gravity="right|vcenter" background="na"/>
+						icon="" box="20,20"
+						<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="top|center" padding="0,0,0,0" margin="0,0,0,0" isview="0">
+							<textview class="textview"  width="wrap_content" height="wrap_content" text="im_validate" color="bavigation_bar_menu_main_color" font="12n" padding="0,0,0,0" margin="24,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" isview="0"/>
+							<textview class="textview" id="" width="wrap_content" height="wrap_content" text="000" color="bavigation_bar_menu_color_hint_red" font="12n" padding="5,0,5,0" margin="0,0,0,0" gravity="center|vcenter" layout_gravity="left|vcenter" visible="0" isview="0"/>
+						</ui>
+					</ui>
+				</ui>
+			</ui>
+		</ui>
+		<tableview class="tableview" id="recent_chat_list" itembg="menubar_special_cell_bg_theme2" width="fill_parent" height="fill_parent" padding="0,0,0,0" visible="0"/>
+		background="img_recent_chat_bg"
+		<tableview class="tableview" id="im_search_list" itembg="menubar_special_cell_bg_theme2" width="fill_parent" height="fill_parent" padding="0,0,0,0" visible="0"/>
+		background="img_recent_chat_bg"
+		<tableview class="tableview" id="contact_list" itembg="menubar_special_cell_bg_theme2" width="fill_parent" height="fill_parent" padding="0,0,0,0" visible="0" />
+	</ui>
+</ui>

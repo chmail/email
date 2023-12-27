@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="show_image_form" width="400" height="300" left="center" top="center" resize="0" padding="1,1,1,1" background="root_0" limit="300,200" >
+<ui class="framelayout" width="fill_parent" height="fill_parent" background="root_a_245">
+	<ui id="root_panel" class="framelayout" width="fill_parent" height="fill_parent" margin="60,50,60,50" background="">
+		<ui class="framelayout" width="fill_parent" height="fill_parent" isview="0" >
+			<imageview id="image_view" class="imageview" width="0" height="0" padding="0,0,0,0" isview="0"  layout_gravity="center|vcenter" />
+		</ui>
+	</ui>
+	<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Send Image" font="14n" color="black" layout_gravity="center|top" margin="0,5,0,0" isview="0"/>
+	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0" />
+	<ui class="linearlayout" width="30" height="30" layout_gravity="right|top" mouse_action="1">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close"  padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+	<ui class="linearlayout" width="150" height="28" layout_gravity="right|bottom" mouse_action="1" margin="0,0,10,5">
+		<button class="button" id="cancel" width="70" height="26" icon="" text="cancel" color="gray1_disabled" font="12n" padding="10,0,10,0" layout_gravity="center|vcenter" gravity="center|vcenter" background="com_btn_white_box_r2"/>
+		<button class="button" id="ok" width="70" height="26" icon="" text="Send" color="gray1_disabled" font="12n" padding="10,0,10,0" layout_gravity="center|vcenter" gravity="center|vcenter" background="com_btn_white_box_r2" margin="10,0,0,0"/>
+	</ui>
+</ui>
+</root>

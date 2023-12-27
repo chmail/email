@@ -1,0 +1,10 @@
+<ui class="linearlayout" width="0" weight="1" height="wrap_content" >
+	<ui class="linearlayout" width="0" weight="1" height="wrap_content" margin="20,0,0,0">
+	<textview class="textview" id="text_detail_type" width="60" height="wrap_content" color="black" font="12n" layout_gravity="left|vcenter" gravity="right|vcenter" margin="0,0,0,0" text=""/>
+
+	<textview class="textview" id="text_detail_info" width="wrap_content" height="wrap_content" color="black" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" margin="5,0,0,0" text=""/>
+	<textview class="textview" id="btn_detail_email" width="wrap_content" height="wrap_content" text="" font="12n_underline"  layout_gravity="left|vcenter" color="blue1_status" background="na" margin="5,0,0,0" visible="0"/>
+
+	<textview class="textview" id="btn_emailchat" width="0" height="0" text="Recent Mails" font="12n_underline"  layout_gravity="left|vcenter" color="blue1_status" background="na" margin="20,0,0,0" visible="0"/>
+	</ui>
+</ui>

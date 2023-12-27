@@ -1,0 +1,9 @@
+<ui class="framelayout" width="fill_parent" height="48" >
+	<ui class="framelayout" width="32" height="32" layout_gravity="center|vcenter">
+		<radiobox class="radiobox" id="chat_tab" width="fill_parent" height="fill_parent" icon="avatar_chat"
+				  box="32,32" layout_gravity="center|vcenter" background="menubar_theme_icon_bg" padding="16,0,0,0" tooltip="Recent chat" />button_top_normal
+	</ui>
+	<ui class="framelayout" width="wrap_content" height="fill_parent" layout_gravity="right|top" margin="0,0,2,0" isview="0" id="badge_panel">
+		<textview class="textview" id="main_chat_badge" width="wrap_content" height="wrap_content" gravity="center|vcenter" layout_gravity="right|top" text="1" color="white" font="12n" background="budge" padding="6,0,6,0" isview="0" visible="0" />
+	</ui>
+</ui>

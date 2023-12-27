@@ -1,0 +1,8 @@
+<ui id="day_cell" class="framelayout" width="fill_parent" height="40" bgcolor="gray11">
+	<ui class="framelayout" width="fill_parent" height="wrap_content">
+	<!-- <imageview class="imageview" width="fill_parent" height="1" src="line_3" isview="0"/> -->
+		<textview class="textview" id="day" width="wrap_content" height="wrap_content"
+		color="gray5" font="12n" layout_gravity="left|vcenter" margin="6,5,0,5"/>
+	<!-- <imageview class="imageview" width="fill_parent" height="1" src="line_3" isview="0"/> -->
+	</ui>
+</ui>

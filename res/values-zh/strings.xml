@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">设置</string>
+    <string name="all_images">所有图片</string>
+    <string name="app_name">YoMail</string>
+    <string name="attachments_num">%d</string>
+    <string name="attachments_title_text" formatted="false">(%d/%d)</string>
+    <string name="done">完成</string>
+    <string name="dormant_text">休眠时将会影响邮件接收提醒，请确保已关闭相关的系统优化，点击查看详情</string>
+    <string name="dormant_title">检测到YoMail曾被休眠</string>
+    <string name="excel_title">XLS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_camera_exists">没有相机的应用程序！</string>
+    <string name="no_files_found">找不到文件</string>
+    <string name="open_att">打开</string>
+    <string name="pdf_title">PDF</string>
+    <string name="permission_camera_denied">相机权限被拒绝。请考虑授予它，以访问相机！</string>
+    <string name="permission_camera_never_askagain">相机权限被拒绝，从不再询问。</string>
+    <string name="permission_camera_rationale">需要相机权限才能显示相机预览。</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_contacts_rationale">需要联系人权限才能显示对联系人数据库的访问权限。</string>
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="permission_message_permission_rationale">您已经拒绝过我们申请授权，请您同意授权，否则功能无法正常使用！</string>
+    <string name="permission_resume">继续</string>
+    <string name="permission_setting">去设置</string>
+    <string name="permission_title_permission_failed">权限申请失败</string>
+    <string name="permission_title_permission_rationale">权限已被拒绝</string>
+    <string name="ppt_title">PPT</string>
+    <string name="select_doc_text">选择文档</string>
+    <string name="select_photo_text">选择照片</string>
+    <string name="send_by_email">通过电子邮件发送</string>
+    <string name="txt_title">TXT</string>
+    <string name="ucrop_label_edit_photo">裁剪</string>
+    <string name="ucrop_label_original">原始比例</string>
+    <string name="ucrop_menu_crop">裁剪</string>
+    <string name="word_title">DOC</string>
+</resources>

@@ -1,0 +1,39 @@
+<ui class="framelayout" id="email_login_success_panel" width="fill_parent" height="fill_parent" margin="0,0,0,0"
+	layout_gravity="center|vcenter" visible="0">
+	<ui class="scrollview" width="fill_parent" height="fill_parent">
+		<ui class="vlinearlayout" id="" width="fill_parent" height="wrap_content" mouse_action="1" visible="1">
+
+			<textview class="textview"  width="wrap_content" height="wrap_content" text="Setp 1, Add your mailbox" font="20n" color="black" margin="20,47,20,0" layout_gravity="center|vcenter" isview="0" singleline="0"/>
+
+			<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="20,57,20,0">
+			 	<tableview class="tableview" id="email_list" width="fill_parent" height="wrap_content" max_limit="-1,460" itembg="hlinearlayout" background="editor_view"/>
+			</ui>
+
+			<button class="button" id="btn_more_email" width="fill_parent" height="40" text="Add your email account" color="white" font="17n" gravity="left|vcenter" layout_gravity="center|vcenter" background="com_btn_round_shadow" margin="20,30,20,0"/>
+
+			<button class="button" id="btn_complete_add" width="fill_parent" height="40" text="Next step" color="black" font="17n" layout_gravity="center|vcenter" background="com_btn_round_line" margin="20,15,20,0"/>
+<!----------    useless         -->
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="0,20,0,0" visible="0" id="useless">
+				<textview class="textview" id="email_list_info" width="wrap_content" height="wrap_content" text="Email list" font="14n" color="gray1" margin="0,20,0,0" layout_gravity="left|vcenter" isview="0"/>
+				<imageview class="imageview" id="btn_more_email_image" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" src="icon_add" margin="4,0,0,0" />
+				<button class="button" id="btn_previous_step" width="130" height="40" text="Prev step" color="black_white_status" font="14n" layout_gravity="center|vcenter" background="com_btn_round_line" margin="0,0,0,0" padding="0,0,0,0"/>
+			</ui>
+		</ui>
+	</ui>
+
+
+
+	<ui class="framelayout" width="fill_parent" height="36" layout_gravity="center|bottom" >
+		<imageview class="imageview" width="fill_parent" height="6" layout_gravity="center|bottom" src="progress_bar_box_bg" isview="0"/>
+		<ui class="linearlayout" width="fill_parent" height="fill_parent" >
+			<ui class="framelayout" width="0" weight="1" height="fill_parent" layout_gravity="center|vcenter" >
+				<imageview class="imageview" width="fill_parent" height="6" layout_gravity="center|bottom" src="progress_bar_box_concent" margin="0,0,17,0"  isview="0"/>
+				<ui class="framelayout" width="34" height="28" layout_gravity="right|top" >
+					<imageview class="imageview" width="fill_parent" height="fill_parent" layout_gravity="right|vcenter" src="progress_bar_bubble" isview="0"/>
+					<textview class="textview" width="wrap_content" height="wrap_content" text="1" font="14B" color="white" layout_gravity="center|vcenter" isview="0"/>
+				</ui>
+			</ui>
+			<ui class="view" weight="2" width="0" height="0" />
+		</ui>
+	</ui>
+</ui>

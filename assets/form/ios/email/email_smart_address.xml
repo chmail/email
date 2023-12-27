@@ -1,0 +1,8 @@
+<ui id="address_smart" class="framelayout" width="wrap_content" height="28" margin="2,2,2,2" layout_gravity="center|vcenter" background="smart_address"   cornerRadius="14.0">
+	<ui class="linearlayout" width="wrap_content" height="26" layout_gravity="center|vcenter">
+		<ui class="linearlayout" id="titleButton" height="22" width="wrap_content" layout_gravity="center|vcenter">
+			<textview class="textview" id="title" width="wrap_content" height="fill_parent" color="smart_address_text_color" font="13n" layout_gravity="center|vcenter" margin="9,0,0,0" drag="site"/>
+		</ui>
+		<button class="imagebutton" id="btn" width="22" height="fill_parent" layout_gravity="left|vcenter" icon="com_btn_close_p1" background="com_btn_close_bg_r2"/>
+	</ui>
+</ui>

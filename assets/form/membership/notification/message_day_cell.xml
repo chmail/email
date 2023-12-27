@@ -1,0 +1,10 @@
+<ui class="framelayout" width="fill_parent" height="30" margin="0,0,0,0" padding="30,0,30,0" background="na" layout_gravity="center|vcenter" isview="0">
+	<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" bgclor="gray11">
+		<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,0,0" layout_gravity="center|vcenter" isview="0"/>
+		<textview class="textview" id="topic" width="wrap_content" height="26" text="" singleline="1" color="red" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" padding="10,0,10,0" background="root_white"/>
+	</ui>
+</ui>
+
+<!-- <imageview class="imageview" width="80" height="1" src="line_6" margin="0,0,0,0" padding="0,0,0,0" layout_gravity="center|vcenter" />
+		<textview class="textview" id="topic" width="70" height="22" text="" color="gray3" font="12n" layout_gravity="center|vcenter" gravity="center" />background="topic_bg_blue"   wrap_content
+		<imageview class="imageview" width="80" height="1" src="line_7" margin="0,0,0,0" padding="0,0,0,0" layout_gravity="center|vcenter"/> -->

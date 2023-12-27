@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="discussion" width="960" height="676" limit="620,500" left="center" top="center" resize="1" padding="0,0,0,0" margin="0,0,0,0" background="">root_0
+<ui class="framelayout" width="fill_parent" height="fill_parent" margin="1,1,1,1">
+	<!-- <ui class="view" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" background="" isview="0"/>root -->
+	<ui class="view" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" background="mask_chat_pop" isview="0"/>
+	<include src="discussion.xml"/>
+</ui>
+</root>

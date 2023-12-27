@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>email group view</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0,minimum-scale=0.01">
+    <script type="text/javascript">
+function init_js_bridge_function(){
+    var cpp_js_call_map={};
+    var cpp_call_counter=0;
+    window.cpp_bridge=(function()
+    {
+        return {
+            call:function(a,b,c){
+                if("function"!=typeof c)
+                    {
+                        console.log("ERROR:","arg 3 must be function");
+                        return ;
+                    }
+                var call_id = 'cb_' + (cpp_call_counter++) + '_' + new Date().getTime();
+                cpp_js_call_map[call_id]=c;
+                window.cpp_js_bridge.call(a,b,call_id);
+            },
+            callback:function(call_id,a){
+                var cf=cpp_js_call_map[call_id];
+                if("function"!=typeof cf)
+                    {
+                        console.log("ERROR:","no such callback id:"+callid);
+                        return ;
+                    }
+                    cf(a);
+                    delete cpp_js_call_map[call_id];
+            }
+        };
+    })();
+    if(!window.cefQuery)
+    {
+        window.cefQuery=function(dict)
+        {
+            var request=dict["request"];
+            window.cpp_bridge.call("cefQuery",request,function(response_str){
+                    var js = JSON.parse(response_str);
+                      if(js["onSuccess"])
+                      {
+                        console.log("onSuccess: in  html");
+                        dict["onSuccess"](js["onSuccess"]);
+                        return ;
+                      }
+                      if(js["onFailure"])
+                      {
+                        console.log("onFailure:"+js["onFailure"]);
+                        dict["onFailure"](js["onFailure"]);
+                        return ;
+                      }
+                      dict["onSuccess"]("");
+            });
+        }
+    }
+}
+init_js_bridge_function();
+
+    </script>
+    <LINK rel=stylesheet href="fs://res/css/mobile/common.css"/>
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+        .-eMc-show-quote-placeholder span{
+            display: none;
+            position:absolute;
+            margin-left:30px;
+            margin-top: -11px;
+            border:1px solid;
+            padding: 3px;
+            font-size:12px;
+            background-color:rgb(250, 233, 206);
+            z-index:99999;
+        }
+        .-eMc-show-quote-placeholder
+        {
+            width : 36px;
+            height: 24px;
+            background: url("fs://res/tpl_img/icon_sprites.png") no-repeat -105px -48px;
+            margin: 10px 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+
+
+        @media
+        (-webkit-min-device-pixel-ratio: 1.98),
+        (min-resolution: 192dpi) {
+            .-eMc-show-quote-placeholder {
+                background-image: url("fs://res/tpl_img/icon_sprites@h.png") !important;
+                background-size: 264px 312px !important;
+            }
+
+        }
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2.98),
+        (min-resolution: 288dpi) {
+            .-eMc-show-quote-placeholder {
+                background-image: url("fs://res/tpl_img/icon_sprites@hh.png") !important;
+                background-size: 264px 312px !important;
+            }
+        }
+        
+        .eMc-quote-hide {
+            display: none !important;
+        }
+        a {
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things wherever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+
+            /* Adds a hyphen where the word breaks, if supported (No Blink) */
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        /**body {background-color: green !important;}**/
+    </style>
+    <!--LINK rel=stylesheet href="css/mobile/email.css"/-->
+    <script type="text/javascript" src="yomail://render/js/event.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/lodash.min.js"></script>
+    <LINK rel=stylesheet href="yomail://render/3p/fontawesome/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="yomail://render/js/plugin/plugin-api.js"></script>
+    <script type="text/javascript" src="yomail://render/js/js-loader.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/jquery.min.js"></script>
+    <script type="text/javascript" src="yomail://render/js/nativeBridge.js"></script>
+    <script type="text/javascript" src="yomail://render/js/dataProvider.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/vue/vue.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/vue/vue-i18n.js"></script>
+    <script type="text/javascript" src="yomail://render/js/yoLocale.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/linkify.min.js"></script>
+    <script type="text/javascript" src="yomail://render/3p/linkify-html.min.js"></script>
+    <script type="text/javascript">
+        function setViewPortContent(initialScale , minScale, maxScale, userscalable, width) {
+            var scalble = 'yes';//userScaleable ? 'yes' : 'no';
+            if(!userscalable)
+            {
+                scalble='no';
+            }
+            var viewport = document.querySelector("meta[name=viewport]");
+
+            viewport.setAttribute('content' ,  "initial-scale=" + initialScale + ", " +
+                    "width=" + (width || 'device-width')  + ", " +
+                    "user-scalable=" + scalble + ", " +
+                    "maximum-scale=" + maxScale + "," +
+                    "minimum-scale=" + minScale);
+        }
+
+    </script>
+
+    <script type="text/x-template" id="emails-template">
+        <div>
+            <div class="-eMc-email-full-body">
+
+                <div v-if="email.calendar && email.calendar.length == 0"
+                     class="-eMc-html-content-cal -eMc-text-loading"
+                     :id="'-eMc-html-content-cal-id-' + email.emailId"
+                     :data-emailid="email.emailId">
+                    <img width="20px" height="20px" src="fs://res/tpl_img/loading@h.gif"/>
+                </div>
+
+                <div v-if="email.calendar && email.calendar.length > 0" class="-emc-ical-meetting">
+                    <div v-for="event in email.calendar" class="-emc-event_body">
+                        <template v-if="event.method == 'CANCEL'">
+                            <div class="-emc-note">{{ $t("meeting_canceled") }}</div>
+                        </template>
+                        <template v-if="event.method != 'CANCEL'">
+                            <template v-if="requestMeetingHasBeenUpdated(email,event)">
+                                <div v-if="email.from && event.organizer && email.from.address == event.organizer.address"
+                                     class="-emc-note">{{ $t("meeting_updated") }}
+                                </div>
+                                <div v-if="!(email.from && event.organizer && email.from.address == event.organizer.address)"
+                                     class="-emc-note">{{ $t("meeting_response_updated") }}
+                                </div>
+                            </template>
+                            <template v-if="!requestMeetingHasBeenUpdated(email,event)">
+                                <template
+                                        v-if="event.isOrganizer && emailCalendarProperty(email, event) != 3 && emailCalendarProperty(email, event) != 4">
+                                    <div class="-emc-note">{{ calStatusSummary(event) }}</div>
+                                </template>
+                                <template
+                                        v-if="!event.isOrganizer && emailCalendarProperty(email, event) != 3 && emailCalendarProperty(email, event) != 4">
+                                    <template v-if="event.mySyncFlag == 2">
+                                        <div v-if="event.myResponse == 'ACCEPTED'"
+                                             class="-emc-note"><span
+                                                style="color: rgb(223, 52, 30); padding-right: 4px; font-weight: bold;">!</span>{{
+                                            $t("you_failed_to_notify_organizer_accepted") }}
+                                        </div>
+                                        <div v-if="event.myResponse == 'DECLINED'"
+                                             class="-emc-note"><span
+                                                style="color: rgb(223, 52, 30); padding-right: 4px; font-weight: bold;">!</span>{{
+                                            $t("you_failed_to_notify_organizer_declined") }}
+                                        </div>
+                                        <div v-if="event.myResponse == 'TENTATIVE'"
+                                             class="-emc-note"><span
+                                                style="color: rgb(223, 52, 30); padding-right: 4px; font-weight: bold;">!</span>{{
+                                            $t("you_failed_to_notify_organizer_tentative") }}
+                                        </div>
+                                    </template>
+                                    <template v-if="event.mySyncFlag != 2">
+                                        <div v-if="event.myResponse == 'ACCEPTED'"
+                                             class="-emc-note">{{
+                                            $t("you_have_accepted_this_meeting") }}
+                                        </div>
+                                        <div v-if="event.myResponse == 'DECLINED'"
+                                             class="-emc-note">{{
+                                            $t("you_have_declined_this_meeting") }}
+                                        </div>
+                                        <div v-if="event.myResponse == 'TENTATIVE'"
+                                             class="-emc-note">{{
+                                            $t("you_have_tentative_this_meeting") }}
+                                        </div>
+                                    </template>
+                                </template>
+                            </template>
+                        </template>
+                        <div class="-emc-meeting">
+                            <div class="-emc-meeting-date">
+                                <div class="-emc-meeting-day">
+                                    {{ event.day }}
+                                </div>
+                                <div class="-emc-meeting-month-week">
+                                    {{ event.month }}
+                                    {{ event.week }}
+                                </div>
+                            </div>
+                            <div class="-emc-plan">
+                                <ul class="-emc-info">
+                                    <li class="-emc-info"><span style="color: darkgray">{{ $t("subject") }}: </span><span>{{event.topic}}</span>                                    
+                                    <li class="-emc-info" v-if="event.ruleStr"><span style="color: darkgray">{{ $t("time_m") }}: </span>
+                                        <span class="-emc-meeting-rule">
+                                            {{event.ruleStr}}
+                                        </span>
+                                    </li>
+                                    <template v-else>
+                                        <li class="-emc-info"><span style="color: darkgray">{{ $t("start_time") }}: </span>
+                                            <span class="-emc-start_time">{{event.startTime}}</span>
+                                        </li>
+                                        <li class="-emc-info"><span style="color: darkgray">{{ $t("end_time") }}: </span>
+                                            <span class="-emc-end_time">{{event.endTime}}</span>
+                                        </li>
+                                    </template>
+                                    <li class="-emc-info"><span style="color: darkgray">{{ $t("address_m") }}: </span><span>{{event.address}}</span>
+                                    </li>
+                                    <li class="-emc-info"><span style="color: darkgray">{{ $t("organizer_m") }}: </span>
+                                        <span class="-eMc-email-address-cell-attendee -eMc-email-person"
+                                                @click.stop.prevent='addressInfo(event.organizer);'>{{event.organizer.nickName}}</span>
+                                    </li>
+                                    <li class="-emc-info"><span style="color: darkgray">{{ $t("required_attendee") }}: </span>
+                                        <template v-for="oneAttendee in event.attendee">
+                                            <span v-if="oneAttendee.requiredFlag == 0"
+                                                    class="-eMc-email-address-cell-attendee -eMc-seperate -eMc-email-person"
+                                                    @click.stop.prevent='addressInfo(oneAttendee);'>{{oneAttendee.nickName}}<template
+                                                    v-if="event.isOrganizer && oneAttendee.response && oneAttendee.response != 'NEED_REQUEST'">({{ $t(oneAttendee.response.toLowerCase() + '_status') }})</template></span>
+                                        </template>
+                                    </li>
+                                    <li v-if="hasOtherPartner(0, event, 1)" class="-emc-info">
+                                        <span style="color: darkgray">{{ $t("optional_attendee") }}: </span>
+                                        <template v-for="oneAttendee in event.attendee">
+                                            <span v-if="oneAttendee.requiredFlag == 1"
+                                                    class="-eMc-email-address-cell-attendee -eMc-seperate -eMc-email-person"
+                                                    @click.stop.prevent='addressInfo(oneAttendee);'>{{oneAttendee.nickName}}<template
+                                                    v-if="event.isOrganizer && oneAttendee.response && oneAttendee.response != 'NEED_REQUEST'">({{ $t(oneAttendee.response.toLowerCase() + '_status') }})</template></span>
+                                        </template>
+                                    </li>
+                                    <template
+                                            v-if="event.latestEmailId != 0 && event.method != 'CANCEL' && !requestMeetingHasBeenUpdated(email,event)">
+                                        <li v-if="event.isOrganizer && emailCalendarProperty(email, event) != 3 && emailCalendarProperty(email, event) != 4"
+                                            class="-emc-info -emc-info-actions">
+                                            <button type="button"
+                                                    class="-emc-btn -emc-btn-default"
+                                                    @click="meetingUpdate(event)">
+                                                {{ $t("update_meeting") }}
+                                            </button>
+                                            <button type="button"
+                                                    class="-emc-btn -emc-btn-default"
+                                                    @click="meetingCancel(event)">
+                                                {{ $t("cancel_meeting") }}
+                                            </button>
+                                        </li>
+                                        <li v-if="!event.isOrganizer && emailCalendarProperty(email, event) != 3 && emailCalendarProperty(email, event) != 4"
+                                            class="-emc-info -emc-info-actions">
+                                            <button v-if="event.myResponse != 'ACCEPTED'"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-default"
+                                                    @click="meetingResult(event, 'ACCEPTED')">
+                                                <i class="-emc-icon -emc-icon-accept"></i>{{
+                                                $t("yes") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'ACCEPTED' && event.mySyncFlag == 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-accept disabled"
+                                                    @click="meetingResult(event, 'ACCEPTED')">
+                                                <i class="-emc-icon -emc-icon-accept-disabled"></i>{{
+                                                $t("yes") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'ACCEPTED' && event.mySyncFlag != 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-accept disabled"
+                                                    style="cursor: default">
+                                                <i class="-emc-icon -emc-icon-accept-disabled"></i>{{
+                                                $t("yes") }}
+                                            </button>
+                                            <button v-if="event.myResponse != 'TENTATIVE'"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-default"
+                                                    @click="meetingResult(event, 'TENTATIVE')"
+                                                    style="margin-left: 5px;margin-right:5px;">
+                                                <i class="-emc-icon -emc-icon-tentative"></i>{{
+                                                $t("maybe") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'TENTATIVE' && event.mySyncFlag == 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-tentative disabled"
+                                                    @click="meetingResult(event, 'TENTATIVE')"
+                                                    style="margin-left: 5px;margin-right:5px;">
+                                                <i class="-emc-icon -emc-icon-tentative-disabled"></i>{{
+                                                $t("maybe") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'TENTATIVE' && event.mySyncFlag != 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-tentative disabled"
+                                                    style="margin-left: 5px;margin-right:5px; cursor: default">
+                                                <i class="-emc-icon -emc-icon-tentative-disabled"></i>{{
+                                                $t("maybe") }}
+                                            </button>
+                                            <button v-if="event.myResponse != 'DECLINED'"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-default"
+                                                    @click="meetingResult(event, 'DECLINED')">
+                                                <i class="-emc-icon -emc-icon-decline"></i>{{
+                                                $t("no") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'DECLINED' && event.mySyncFlag == 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-declined disabled"
+                                                    @click="meetingResult(event, 'DECLINED')">
+                                                <i class="-emc-icon -emc-icon-decline-disabled"></i>{{
+                                                $t("no") }}
+                                            </button>
+                                            <button v-if="event.myResponse == 'DECLINED' && event.mySyncFlag != 2"
+                                                    type="button"
+                                                    class="-emc-btn -emc-btn-declined disabled"
+                                                    style="cursor: default">
+                                                <i class="-emc-icon -emc-icon-decline-disabled"></i>{{
+                                                $t("no") }}
+                                            </button>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div v-keyword-enabled class="-eMc-html-content -eMc-filter-back"
+                     :id="'-eMc-html-content-id-' + email.emailId">
+                    <transition name="-emc-transition" mode="out-in">
+                        <div v-remove-emc-tag v-pintch-enabled class="-eMc-html-content-wrapper"
+                             v-if=" email.hasOwnProperty('content') && email.content!='' && email.content!=' '" v-html="linkify(email.content)">
+                        </div>
+                        <div v-if=" email.hasOwnProperty('content') && email.content=='' ">
+                            <div class="-eMc-text-loading"
+                                 :id="'-eMc-text-loading-id-' + email.emailId">
+                                <img width="20px" height="20px" src="fs://res/tpl_img/loading@h.gif"/>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+            </div>
+        </div>
+
+    </script>
+</head>
+<body style="padding: 0 10px; margin: 0; word-break: break-word;">
+<div class="-eMc-emails-body" id="-eMc-emails-body-id">
+    <div id="-emc-email-container">
+    </div>
+</div>
+<!--script type="text/javascript" src="fs://res/js/plugin/content-filter.js"></script-->
+<script type="text/javascript" src="yomail://render/js/oneemail.js"></script>
+<script type="text/javascript">
+    loadPluginFor("emailgroup");
+
+</script>
+</body>
+</html>

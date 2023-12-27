@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="error" width="350" height="180" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+<ui class="vlinearlayout" id="form_panel" width="fill_parent" height="fill_parent" margin="0,0,0,0" >
+<ui class="framelayout" id="captionbar" width="fill_parent" height="30" padding="0,0,0,0" background="captionbar_bg">
+ 	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+	<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+		<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+		<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Tips" font="14n" color="gray3" gravity="center|vcenter" padding="0,0,0,0" /> 
+	</ui>
+	<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+</ui>
+	<ui class="linearlayout" id="content_panel" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" margin="0,10,0,0" padding="0,0,0,0">
+		<imageview class="imageview" id="type_icon" width="60" height="60" src="icon_failed" margin="10,0,10,0" layout_gravity="left"/>
+		<textview class="textview" id="msg" text="Here" width="fill_parent" height="fill_parent" singleline="0" color="blue1" font="13n" padding="0,10,10,0" margin="0,0,0,0" layout_gravity="left" />
+    </ui>
+	<imageview class="imageview" width="fill_parent" height="1" src="line_1" margin="0,10,0,6"/>
+    <ui class="linearlayout" width="fill_parent" height="30" layout_gravity="right|vcenter" >
+		<button class="button" id="copy" width="60" height="25" text="Copy" color="white" font="13n" background="com_btn" margin="10,0,0,0" visible="0"/>
+	    <ui class="view"  width="0" height="0" weight="1"/>
+	    <button class="button" id="ok" width="wrap_content" height="25" text="Use Cloud" color="white" font="13n" background="com_btn" padding="8,0,8,0"  margin="0,0,10,0"/>
+	    <button class="button" id="no" width="wrap_content" height="25" text="Not Use Cloud" color="white" font="13n" background="com_btn" padding="8,0,8,0" margin="0,0,10,0" visible="0" />
+        <button class="button" id="cancel" width="wrap_content" height="25" text="Cancel" color="white" font="13n" background="com_btn" padding="8,0,8,0" margin="0,0,10,0" />
+	</ui>
+</ui>
+</root>

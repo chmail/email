@@ -1,0 +1,41 @@
+<ui id="dchat_item" class="framelayout" width="fill_parent" height="wrap_content">
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" mouse_action="1" margin="0,5,0,5">
+		<imageview class="imageview" id="top_icon" width="10" height="10" src="bg_stick_top" layout_gravity="left|vcenter" margin="15,0,4,0" isview="0" visible="2"/>
+		<ui class="framelayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" isview="0">
+			<ui class="framelayout"  width="12" height="wrap_content" layout_gravity="center|vcenter" >
+				<!-- <imageview class="imageview" id="avatar" width="32" height="32" src="avatar_chat_group" layout_gravity="center|vcenter" mask="roundrect_mask" background="root_a_245" cursor="hand"/>
+				-->
+				<textview class="textview" text="#" width="wrap_content" height="18"  gravity="left|vcenter" layout_gravity="left|vcenter" color="black" font="13n" isview="0"/>
+				<!-- <imageview class="imageview" id="mute_badge" width="8" height="8" src="budge.hint" layout_gravity="right|top"  margin="0,0,0,0" isview="0"  visible="0"/>
+				-->
+			</ui>
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" margin="4,0,0,0" mouse_action="1">
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,5,0,5" layout_gravity="left|vcenter" mouse_action="1">
+				<ui class="linearlayout" width="0" height="wrap_content" weight="1" margin="0,0,0,0" layout_gravity="left|vcenter" mouse_action="1">
+					<checkbox class="checkbox" id="title" box="0,0" icon="na" width="wrap_content" height="wrap_content" color="black"
+						   gravity="left|vcenter" layout_gravity="left|vcenter"  font="14n" isview="0" ellipsis_end="1"/>
+				</ui>
+				<!-- <textview class="textview" id="time" width="60" height="fill_parent" gravity="right|vcenter" layout_gravity="center|vcenter" text="00:00:00" color="gray5" font="12n" margin="0,2,10,0" isview="0"/>
+				-->
+				<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" min_limit="20,-1" margin="0,0,10,0" id="panel_hover" visible="0" showrect="0">
+
+					<checkbox class="checkbox" id="cbx_sticky" width="24" height="24" box="24,24" icon="sticky" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,6,0" />com_btn_white_box_r2_line_hover
+					<checkbox class="checkbox" id="cbx_archive" width="24" height="24" box="24,24" icon="icon_archive" background="na" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0" visible="0"/>com_btn_white_box_r2_line_hover
+					<button class="button" id="btn_delete" width="20" height="20" icon="icon_remove" background="na" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0" tooltip="delete from recent list" />com_btn_white_box_r2_line_hover
+				</ui>
+				<ui class="framelayout" width="wrap_content" height="wrap_content" layout_gravity="right|vcenter" min_limit="20,-1" margin="0,0,10,0" isview="0" id="panel_normal" bgcolor="red">
+					<textview class="textview" id="badge" width="wrap_content" height="wrap_content" color="white" font="12n" background="budge" padding="14,0,2,0" gravity="center|vcenter" layout_gravity="right|vcenter" visible="0"/>navigation_bar_menu_badge_colors
+					<imageview class="imageview" id="mute_icon" width="16" height="16" src="icon_mute_disturb" layout_gravity="right|vcenter" visible="0" />
+					<imageview class="imageview" id="mute_badge" width="16" height="16" src="icon_mute_disturb" layout_gravity="right|vcenter"  margin="0,0,0,0" isview="0"  visible="0"/>
+
+				</ui>
+			</ui>
+			<!-- <ui class="linearlayout" width="fill_parent" height="20">
+			<textview class="textview" id="chat" width="0" height="fill_parent" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" color="gray5" font="12n" isview="0" padding="0,0,0,0" ellipsis_end="1"/>
+		</ui>
+		-->
+		</ui>
+	</ui>
+	<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" layout_gravity="right|bottom" margin="15,0,0,0"/>
+</ui>

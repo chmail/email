@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="im_contact_page" width="fill_parent" height="fill_parent">
+    <tableview class="tableview" id="buddy_list" width="fill_parent" height="fill_parent"/>
+</root>
+	
+	
+	

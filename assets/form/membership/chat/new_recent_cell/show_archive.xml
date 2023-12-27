@@ -1,0 +1,6 @@
+<ui id="dchat_item" class="framelayout" width="fill_parent" height="28">
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" isview="0">
+		<imageview class="imageview" id="top_icon" width="10" height="10" src="bg_stick_top" layout_gravity="left|vcenter" margin="15,0,4,0" isview="0" visible="2"/>
+		<textview class="textview" id="text" text="Show Archive List" width="wrap_content" height="18"  gravity="left|vcenter" layout_gravity="left|vcenter" color="blue1" font="13n" isview="0" cursor="hand"/>
+	</ui>
+</ui>

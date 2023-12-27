@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button n1:layout_gravity="bottom|center|right" n1:id="@id/button2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="250.0dip" n1:drawableStart="@mipmap/icon_app" />
+    <Button n1:id="@id/button" n1:layout_width="122.0dip" n1:layout_height="105.0dip" n1:text="Button" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <WebView n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

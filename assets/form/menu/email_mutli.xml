@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="1" title="Make as Unread" image="email_menu_unread"/>
+     <item tag="2" title="Make as Read" image=""/>
+    <item tag="3" title="Move to Trash" image="email_menu_delete" key="" selector="onWorkMenuPopup:"/>
+    <item tag="4" title="Delete Permanent" key="" selector="onWorkMenuPopup:"/>
+    <item tag="10" title="This is Junk" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="11" title="This is not Junk" image="" key="" selector="onWorkMenuPopup:"/>
+    <!-- not gmail -->
+    <!--end -->
+    <!-- <item tag="8" title="Save Attachment" key=""/> -->
+     <item title="Move To" tag="20">
+        <menu>
+
+        </menu>
+    </item>
+</menu>

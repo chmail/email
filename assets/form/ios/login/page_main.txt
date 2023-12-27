@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" width="screen" height="screen" bgcolor="white" rotate="none">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent"  >
+	<ui class="drawer" id="drawer" width="fill_parent" height="fill_parent" barwidth="80%">
+
+		<!-- right page -->
+		<include src="main/main_right_page.xml"/>
+		<include src="main/main_left_account.xml"/>
+
+	</ui>
+</ui>
+</root>
+	
+	
+	

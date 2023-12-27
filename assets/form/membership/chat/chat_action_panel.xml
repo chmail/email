@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui class="pagecontainer" id="bottom_page" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" >
+	<!-- send_host -->
+	<ui class="vlinearlayout" id="send_host" width="fill_parent" height="fill_parent" margin="0,0,0,10" padding="0,0,0,0" >
+		<ui id="toolbar2" class="linearlayout" width="fill_parent" height="30" margin="0,0,0,0" padding="5,0,0,0" background="listview">
+			<button class="button" id="btn_image" width="28" height="fill_parent" icon="chat_tb_pic" padding="2,2,2,2" margin="5,1,5,1" background="com_btn_white_box_r2_line_hover" tooltip="Send Image"/>
+			<button class="button" id="btn_screen" width="28" height="fill_parent" icon="chat_tb_capture" padding="2,2,2,2" margin="5,1,5,1" background="com_btn_white_box_r2_line_hover" tooltip="Screenshot"/>
+			<button class="button" id="btn_file" width="28" height="fill_parent" icon="chat_tb_file"  padding="2,2,2,2" margin="5,1,5,1" background="com_btn_white_box_r2_line_hover" tooltip="Send Flie" visible="0"/>
+		</ui>
+		<richedit class="richedit" id="send_text"  rich="0" width="fill_parent" weight="1" height="0" background="na" singleline="0" color="blue1" font="14n" limit="250"  margin="5,3,115,0"/>
+		<ui class="framelayout" width="96" height="28" layout_gravity="right|vcenter" margin="0,0,10,0" background="chat_send.normal" padding="0,0,0,0">
+			<button class="button" id="send_btn" width="68" height="fill_parent" text="SEND" color="white" font="14n" background="chat_send1" layout_gravity="left|vcenter" gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0"/>
+			<imageview class="imageview" width="1" height="fill_parent" src="line_2" padding="0,5,0,5" layout_gravity="right|vcenter" margin="0,0,28,0" isview="0"/>
+			<button class="button" id="set_ctrl_send" width="28" height="fill_parent" background="chat_send2" icon="menu_arrow_down_white" layout_gravity="right|vcenter" padding="4,4,4,4" margin="0,0,0,0" />
+		</ui>
+	</ui>
+	<ui id="select_toolbar" class="framelayout" width="fill_parent" height="fill_parent" margin="0,0,0,10" padding="0,0,0,0" visible="0">
+		<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,0,0,0">
+			<ui class="vlinearlayout" width="80" height="56" layout_gravity="center|vcenter" mouse_action="1">'
+				<button class="button" id="btn_copy" width="31" height="31" text="" icon="icon_toolbar_copy" layout_gravity="center|vcenter" padding="2,2,2,2" margin="0,0,0,0" background="com_btn_white_box_r2_line_hover" tooltip="Copy"/>
+				<textview class="textview" id="" width="wrap_content" height="wrap_content" text="Copy" padding="0,0,0,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+			</ui>
+			<ui class="vlinearlayout" width="80" height="56" layout_gravity="center|vcenter" mouse_action="1">
+				<button class="button" id="btn_merge_forword" width="31" height="31" text="" icon="icon_toolbar_merge_forword" layout_gravity="center|vcenter" padding="2,2,2,2" margin="0,0,0,0" background="com_btn_white_box_r2_line_hover" tooltip="Merge Forward"/>
+				<textview class="textview" id="" width="wrap_content" height="wrap_content" text="Merge Forward" padding="0,0,0,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+			</ui>
+			<ui class="vlinearlayout" width="80" height="56" layout_gravity="center|vcenter" mouse_action="1">
+				<button class="button" id="btn_send_to" width="31" height="31" text="" icon="icon_toolbar_forword" layout_gravity="center|vcenter" padding="2,2,2,2" margin="0,0,0,0" background="com_btn_white_box_r2_line_hover" tooltip="Add to Email"/>
+				<textview class="textview" id="" width="wrap_content" height="wrap_content" text="Add to Email" padding="0,0,0,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+			</ui>
+			<ui class="vlinearlayout" width="80" height="56" layout_gravity="center|vcenter" mouse_action="1">
+				<button class="button" id="btn_cancel" width="31" height="31" text="" icon="icon_toolbar_cancel" layout_gravity="center|vcenter" padding="2,2,2,2" margin="0,0,0,0" background="com_btn_white_box_r2_line_hover" tooltip="Cancel"/>
+				<textview class="textview" id="" width="wrap_content" height="wrap_content" text="Cancel" padding="0,0,0,0" margin="0,0,0,0" isview="0" layout_gravity="center|vcenter" gravity="center|vcenter" color="gray" font="12n" ellipsis_end="1" singleline="0" />
+			</ui>
+		</ui>
+		<!-- <button class="button" id="btn_cancel" width="24" height="24" text="" icon="sys_close3" padding="2,2,2,2" margin="5,0,5,0" layout_gravity="right|top" background="com_btn_white_box_r2_line_hover" tooltip="Cancel"/> -->
+	</ui>
+</ui>

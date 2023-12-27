@@ -1,0 +1,8 @@
+<ui class="linearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" margin="0,0,0,0">
+	<ui class="wrappedlinearlayout" width="fill_parent" id="editor_list" height="wrap_content" layout_gravity="center|vcenter" min_limit="-1,30" showrect="0" margin="0,0,0,0" >
+		<ui class="linearlayout" id="lastviewid" width="0" weight="1" height="wrap_content" min_limit="100,-1">
+			<edit class="edit" id="editor_text" border="none" background="na"  width="fill_parent" height="wrap_content"
+				  hintcolor="gray5" hintfont="12n" keyboard="email" />
+		</ui>
+	</ui> 
+</ui>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray10">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" bgcolor="white" text="Avatar setting">
+    	<ui class="framelayout" height="fill_parent" width="fill_parent" >
+    		<ui class="linearlayout" height="fill_parent" width="fill_parent">
+    			<ui class="navigateitem" id="tb_close" image="icon_navigatebar_arrow_left"  width="40" height="40" text="" layout_gravity="left|vcenter" type="left"  action="close"/>
+    			<ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+    			<button background="na" class="button" color="blue1" font="17n" gravity="center|vcenter" height="40" id="btn_ok" layout_gravity="right|vcenter" text="Ok" width="60" />
+        	</ui>
+        	<ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="Avatar setting"/>
+            </ui>
+        	<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="0" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+
+	<!--Option-->
+	<!-- <simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" bgcolor="gray9" >separator="line" -->
+		<ui class="framelayout" width="fill_parent" height="100" background="empty" bgcolor="gray10" >
+			<ui class="framelayout" width="60" height="60" id="basic_info_box" layout_gravity="center|vcenter"  >
+				<imageview class="imageview" id="preview" width="60" height="60" src="default_h_avatar" cornerRadius="30" layout_gravity="center|vcenter" borderWidth="2" borderColor="white"/>	
+				<imageview class="imageview" width="16" height="16" layout_gravity="right|bottom" src="icon_edit" cornerRadius="8" borderWidth="1" borderColor="white" visible="0"/>
+			</ui>
+		</ui>
+
+		<ui class="framelayout" width="fill_parent" height="fill_parent" id="avatar_box" bgcolor="white">
+			<ui class="framelayout" width="fill_parent" height="fill_parent" id="default_avatar_page" showrect="0">
+				<ui class="framelayout" width="fill_parent" height="wrap_content" margin="10,10,10,10" >
+					<gridview class="gridview" id="default_avatar_panel" width="fill_parent" height="wrap_content" itembg="button_top_gridview" bgcolor="white"/> margin="-2,-2,-2,-2" itemsize="60,60" 
+				</ui>
+			</ui>	
+		</ui>
+	<!-- </simplelistbox> -->
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

@@ -1,0 +1,7 @@
+<ui class="linearlayout" width="fill_parent" height="60" margin="60,2,60,2" padding="0,0,0,0">
+	<ui class="linearlayout" width="wrap_content" height="56" margin="60,0,60,0" background="topic_bg" layout_gravity="center" padding="20,4,20,4">
+		<imageview class="imageview" width="24" height="24" layout_gravity="vcenter" src="icon_topic" layout_gravity="vcenter" margin="0,0,5,0"/>
+		<textview class="textview" id="subtip" width="70" height="fill_parent" text="Subject :" color="gray3" font="14B" gravity="vcenter" margin="0,0,5,0"/>
+		<textview class="textview" id="topic" width="fill_parent" height="fill_parent" text="EMail Topic..." font="18n" color="blue1" gravity="vcenter" />
+	</ui>
+</ui>

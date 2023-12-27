@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui id="notification_panel" class="vlinearlayout" width="fill_parent" height="fill_parent" margin="1,1,1,1" background="root_white">
+	<ui class="framelayout" width="fill_parent" height="30" padding="0,0,0,0">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="1"/>
+	</ui>
+		<ui class="linearlayout" width="wrap_content" height="50" showrect="0" >
+			<imageview class="imageview" width="32" height="32" src="icon_tab_addressbook" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+			<textview class="textview" id="caption_title" width="wrap_content" height="fill_parent" text="Notification" gravity="left|vcenter" margin="8,0,0,0" isview="0" color="gray7" font="20n" />
+		</ui>
+	<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,0,0" isview="0"/>	
+	<!-- left -->
+	<ui class="linearlayout" width="fill_parent" height="0" weight="1" >
+        <ui class="vlinearlayout" width="220" height="fill_parent" padding="0,0,0,0"> background="theme_color" 
+	      	<ui class="radiogroup" id="notification_radiogroup" width="fill_parent" height="fill_parent" margin="0,20,0,0" layout_gravity="center|vcenter">
+	      		<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
+					 <ui class="framelayout" width="fill_parent" height="26" layout_gravity="center|vcenter" margin="0,0,0,0">
+						<radiobox class="radiobox" id="btn_verification" width="fill_parent" height="26" box="1,1" margin="0,0,0,0" padding="0,0,0,0" text="Verification" color="gray" font="12n" gravity="left|vcenter" background="menubar_special_cell_bg2" checked="1"/>	
+						<textview class="textview" id="verification_badge" width="wrap_content" height="17" gravity="center|vcenter" layout_gravity="right|vcenter" text="1" color="white" font="12n" background="budge" padding="6,0,6,0" margin="0,0,8,0" isview="0" visible="0"/>
+					</ui>
+	      		</ui>
+	      	</ui>
+		</ui>
+		<!-- <imageview class="imageview" width="1" height="fill_parent" src="line_2" isview="0"/>	 -->
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent">	
+			<ui class="framelayout" width="fill_parent" height="fill_parent">
+				<ui class="pagecontainer" id="notification_tab_page" width="fill_parent" height="fill_parent">
+					<include src="verification_page.xml"/>
+					<!-- <include src="message_page.xml"/> -->
+				</ui>
+			</ui>		
+		</ui>
+	</ui>
+</ui>

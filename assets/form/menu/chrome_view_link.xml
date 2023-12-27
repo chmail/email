@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<item tag="30" title="Open In Window" image="email_menu_fullwindow" key="" selector="onWorkMenuPopup:"/>
+	<item tag="999" title="" image="menu_seperator" />
+    <item tag="2" title="Select All" image="" key="" selector="onWorkMenuPopup:"/>
+</menu>

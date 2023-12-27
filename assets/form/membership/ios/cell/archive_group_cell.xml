@@ -1,0 +1,23 @@
+<ui class="framelayout" width="fill_parent" height="wrap_content"  id="archive_group_cell">
+	<!-- <imageview class="imageview" id="" width="11" height="11" src="host_times_node_single" margin="6,0,0,0" layout_gravity="left|vcenter" /> -->
+	<ui class="vlinearlayout" width="fill_parent" height="wrap_content" id="notifyform_item_panel" margin="10,5,10,0" isview="0">
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,0,0">
+			<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter">
+				<ui class="linearlayout" width="fill_parent" height="wrap_content" padding="0,5,0,5">
+					<textview class="textview" id="time" width="60" height="wrap_content" layout_gravity="center|vcenter" gravity="left|vcenter" margin="5,0,0,0"  color="gray5" font="12n" isview="0" />
+					<ui class="linearlayout" width="0" height="wrap_content" weight="1" margin="0,0,0,0" layout_gravity="left|vcenter" mouse_action="1">
+						<textview class="textview" text="#" width="wrap_content" height="18"  gravity="left|vcenter" layout_gravity="left|vcenter" color="black" font="13n" isview="0"/>
+						<checkbox class="checkbox" id="title" box="0,0" icon="na" width="wrap_content" height="wrap_content" color="black"
+						   gravity="left|vcenter" layout_gravity="left|vcenter"  font="14n" isview="0" ellipsis_end="1" text="Added %1%" font="16n" margin="5,0,0,0"/>
+					</ui>
+				</ui>
+				<ui class="linearlayout" width="fill_parent" height="wrap_content" padding="0,5,0,5">
+					<textview class="textview" width="wrap_content" height="wrap_content" text="by" layout_gravity="center|vcenter" gravity="left|vcenter" margin="60,0,3,0"  color="gray5" font="12n" isview="0" />
+					<textview class="textview" id="user" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,3,0"  color="blue1" font="12n" isview="0" />
+					<textview class="textview"  width="wrap_content" height="wrap_content" text="group_archive" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,0,0"  color="gray5" font="12n" isview="0" />
+				</ui>
+			</ui>
+		</ui>
+		<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" layout_gravity="right|bottom" margin="60,5,0,0"/>
+	</ui>
+</ui>

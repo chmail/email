@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="im_archive_page" width="fill_parent" height="fill_parent">
+    <ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="archive_list_Panel">
+			<tableview class="tableview" id="archive_list" weight="1" width="fill_parent" height="0"  itembg="hlinearlayout"/>
+			<ui class="framelayout" width="fill_parent" height="wrap_content" margin="0,0,0,30">
+				<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" >
+					<button class="button" id="btn_up" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" text="Page Up" color="white" font="12n" margin="0,0,10,0" background="com_btn" visible="0"/>
+					<button class="button" id="btn_down" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" text="Page Down" color="white" font="12n" margin="0,0,10,0" background="com_btn" visible="0"/>
+				</ui>
+			</ui>
+		</ui>
+</root>
+	
+	
+	

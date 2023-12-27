@@ -1,0 +1,8 @@
+<ui id="address_label_cell" class="framelayout" width="fill_parent" height="24" bgcolor="gray11">
+	<ui class="framelayout" width="fill_parent" height="fill_parent" >
+		<checkbox class="checkbox" id="arrow" width="fill_parent" height="fill_parent" icon="folder_icon2" box="20,20" layout_gravity="left|vcenter" checked="1" background="day_cell_bg2" visible="0"/>
+		<ui class="linearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" isview="0">
+			<textview class="textview" id="label" width="wrap_content" height="wrap_content" text="..." color="gray5" font="12n" margin="6,0,0,0" layout_gravity="left|vcenter"/>
+		</ui>
+	</ui>	
+</ui>

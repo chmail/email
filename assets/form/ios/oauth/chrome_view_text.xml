@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="1" title="Copy" image="email_menu_copy" key="" selector="onWorkMenuPopup:"/>
+    <item tag="2" title="Select All" image="" key="" selector="onWorkMenuPopup:"/>
+</menu>

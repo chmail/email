@@ -1,0 +1,4 @@
+<ui class="framelayout" width="fill_parent" height="24" layout_gravity="center|vcenter" background="main_host_avatar_selected_bg_formac">
+	<textview class="textview" id="email_addr" width="wrap_content" height="wrap_content" text="lis" singleline="1" color="gray5" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" background="na" margin="0,0,0,0" isview="0"/>
+	<textview class="textview" id="split" width="wrap_content" height="wrap_content" text="," singleline="1" color="black" font="12n" layout_gravity="left|vcenter" isview="0" visible="0"/>
+</ui>

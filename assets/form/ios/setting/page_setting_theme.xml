@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray9">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="UI">
+		
+	</ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60"  background="na" separator="line">
+		<!-- -->
+		<ui class="framelayout" width="fill_parent" height="60" id="email_tab"  >
+			<imageview class="imageview" width="24" height="24" src="unread" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Current Theme" font="16n" color="black" width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+		</ui>
+		
+		<ui class="framelayout" width="fill_parent" height="30" bgcolor="gray9"/>
+
+		<ui class="framelayout" width="fill_parent" height="60" background="bg_leftbar_cell">
+			<!-- <imageview class="imageview" width="26" height="26" src=" " layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/> -->
+			<textview class="textview" text="email view zoom" font="16n" color="black" id="btn_important_list" layout_gravity="left|vcenter" width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+			<textview class="textview" text="100%" font="16n" color="blue1" layout_gravity="right|vcenter" width="wrap_content" height="fill_parent" margin="20,0,20,0"/>
+		</ui>
+
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

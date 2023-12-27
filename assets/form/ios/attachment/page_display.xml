@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="attachment" width="screen" height="screen" bgcolor="white">
+<ui class="navigatebar" id="navigatebar" width="fill_parent" height="56" bgcolor="white" text="">
+	<!-- <ui class="navigateitem" width="30" id="tab_archive" type="right" image="icon_navbar_archive" text=""/> -->
+</ui>
+<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="vcenter|center">
+	<ui class="imageview" id="icon" width="80" height="80" /> 
+	<ui class="textview" id="filename" width="wrap_content" height="wrap_content" /> 
+</ui>
+</root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/ucrop_ic_done" n1:id="@id/menu_crop" n1:title="@string/ucrop_menu_crop" n2:showAsAction="ifRoom"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <item n3:icon="@drawable/ucrop_vector_loader_animated" n3:enabled="false" n3:id="@id/menu_loader" n3:title="" n4:showAsAction="ifRoom"
+      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</menu>

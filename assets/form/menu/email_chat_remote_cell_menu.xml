@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="3" title="Make as Unread" image="email_menu_unread" key="" selector="onWorkMenuPopup:"/>
+    <item tag="4" title="Make as Read" key="" selector="onWorkMenuPopup:"/>
+    <item tag="1" title="Move to Trash" image="email_menu_delete" key="" selector="onWorkMenuPopup:"/>
+    <item tag="2" title="Delete Permanent" key="" selector="onWorkMenuPopup:"/>
+    <!--<item tag="5" title="Spam" key="" selector="onWorkMenuPopup:"/>-->
+</menu>

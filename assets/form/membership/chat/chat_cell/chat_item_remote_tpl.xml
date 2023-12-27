@@ -1,0 +1,19 @@
+<ui class="linearlayout"  id="chat_item_cell" width="wrap_content" height="wrap_content" >
+	<ui id="chat_item" class="linearlayout" width="wrap_content" height="wrap_content" padding="0,8,0,8" mouse_action="1" margin="0,0,40,0">
+		<checkbox class="checkbox" id="prefix_checkbox" width="32" height="32" icon="checkbox" box="14,14" padding="0,0,0,0" visible="0"  showrect="0"/>
+		<imageview class="imageview" id="user_avatar" width="24" height="24" src="avatar_default" layout_gravity="center|top"  cornerRadius="12" margin="10,0,5,0" cursor="hand"/>
+		<ui class="vlinearlayout" width="wrap_content" height="wrap_content" padding="0,0,0,0" mouse_action="1">
+			<ui class="linearlayout" width="wrap_content" height="wrap_content" padding="0,0,0,0" mouse_action="1">
+				<textview class="textview" id="name" width="wrap_content" height="20" color="black" font="13n" text="name" margin="10,0,10,0" />
+				<textview id="lab_time"  width="wrap_content" class="textview" height="wrap_content"  padding="0,0,0,0" color="gray5" font="12n"/>
+			</ui>
+			<ui class="linearlayout" width="wrap_content" height="wrap_content" padding="0,0,0,0" mouse_action="1">
+				<ui class="framelayout" id="content_panel" width="wrap_content" height="wrap_content" background="left_bubble" padding="16,10,10,10" >
+					<!-- content -->
+
+					<!-- end -->
+				</ui>
+			</ui>
+		</ui>
+	</ui>
+</ui>

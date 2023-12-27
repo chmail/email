@@ -1,0 +1,3 @@
+<ui class="linearlayout" width="fill_parent" height="60" background="hlinearlayout" >
+	<textview class="textview" id="filename" ellipsize="middle" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="20,0,20,0"/>
+</ui>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="group_member_add_form" width="400" height="200" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+<ui class="framelayout" id="captionbar" width="fill_parent" height="fill_parent" background="">root_1
+	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+	<ui class="vlinearlayout" id="" width="fill_parent" height="fill_parent" margin="0,10,0,0" mouse_action="1">
+		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" isview="0" margin="15,5,0,0">
+			<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Invite join group" font="16B" color="black" layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,0,0" /> 
+			<textview class="textview" width="fill_parent" height="wrap_content" text="invite_join_group_tip" font="12n" color="gray2" layout_gravity="left|vcenter" gravity="left|top" margin="0,10,0,0" singleline="0"/> 
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" margin="0,10,0,26" padding="0,0,0,0" showrect="0">
+			<textview class="textview" id="name_lab" width="wrap_content" height="26" text="Email Address :" font="12n" color="gray1" gravity="left|vcenter" layout_gravity="left|vcenter" margin="15,0,0,0" padding="0,0,0,0" /> 
+			<ui class="framelayout" width="fill_parent" height="30" layout_gravity="center|vcenter" background="editview" padding="0,0,0,0" margin="10,0,30,0" showrect="0">
+				<edit class="edit" id="input" width="fill_parent" height="26" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" singleline="1" hint="" hintcolor="gray5" hintfont="12n" color="black" font="12n" padding="3,3,3,3" limit="30"/>
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1" margin="0,0,0,0"/>
+		<ui class="linearlayout" width="fill_parent" height="40" background="root_a_245" mouse_action="1">
+			<ui class="view"  width="0" height="0" weight="1"/>
+			<!-- <button class="button" id="cancel" width="60" height="25" layout_gravity="right|top" text="Cancel" color="white" font="12n" margin="0,0,15,0" background="com_btn"/> -->
+			<button class="button" id="ok" width="75" height="24" text="btn_invite" color="white" font="12n" background="com_btn" margin="0,0,10,0" layout_gravity="center|vcenter"/>
+			<!-- <button class="button" id="cancel" width="75" height="24" text="Cancel" color="white" font="12n" background="com_btn" margin="0,0,10,0" layout_gravity="center|vcenter"/> -->
+		</ui>
+	</ui>
+	<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+</ui>
+</root>

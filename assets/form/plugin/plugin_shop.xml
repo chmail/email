@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root width="screen" height="screen" style="navigate" bgcolor="white">
+	   <ui class="navigatebar" height="56" id="navigatebar" text="email" width="fill_parent">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="btn_close" image="icon_navigatebar_close" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
+                <ui class="navigateitem" id="btn_expand" layout_gravity="right|vcenter"  width="40" height="40" visible="0"/>
+            </ui>
+        	<ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+				<textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="plugin store"/>
+			</ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom"/>
+        </ui>
+    </ui>
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,56,0,0">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="36" padding="0,0,0,0" background="captionbar_bg" visible="0">captionbar_bg2
+			<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+				<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="5,0,5,0" isview="0"/>
+				<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="plugin store" font="14n" color="black" layout_gravity="center|vcenter" padding="0,0,0,0" isview="0"/> color="white"
+			</ui>
+			<ui class="linearlayout" width="wrap_content" height="12" padding="0,0,0,0" margin="10,0,0,0" layout_gravity="left|vcenter" background="sysbutton_bg" showrect="0">
+			</ui>
+		</ui>
+		<ui class="chromeview" id="plugin_shop" width="fill_parent" height="0" weight="1" padding="0,0,0,0" margin="0,0,0,0" drag="move"/>
+		<!-- <ui class="framelayout" width="fill_parent" height="12" layout_gravity="right|bottom" padding="0,0,0,0" background="na" >
+			<imageview class="imageview" width="fill_parent" height="1" src="line_1" layout_gravity="top" margin="0,0,0,0" isview="0" padding="0,0,0,0"/>
+			<ui class="captionbar" id="caption" width="fill_parent" height="fill_parent" />
+			<ui class="framelayout" width="12" height="12" layout_gravity="right|bottom" padding="0,0,0,0" margin="0,0,1,1" >
+				<imageview class="imageview" width="9" height="9" src="caption_small" layout_gravity="right|bottom" margin="0,0,0,0" isview="0"/>
+				<ui class="captionbar" id="caption" width="fill_parent" height="fill_parent" />
+			</ui>
+		</ui> -->
+	</ui>
+</root>

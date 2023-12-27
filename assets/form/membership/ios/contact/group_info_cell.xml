@@ -1,0 +1,19 @@
+<!-- main list view  -->
+<ui id="discussion_cell" class="linearlayout" width="fill_parent" height="30" >background="menubar_special_cell_bg2"
+	<ui class="framelayout" width="30" height="fill_parent" layout_gravity="center|vcenter" isview="0" margin="20,0,0,0">
+		<imageview class="imageview" id="icon" width="24" height="24" src="avatar_chat_group" layout_gravity="center|vcenter" mask="roundrect_mask" background="root_a_245" cursor="hand" visible="0" /> avatar_default  mask_circle_32
+		<textview class="textview" id="xxxxx" width="wrap_content" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" text="#" color="bavigation_bar_menu_main_color" font="13n" isview="0"/> showrect="1"
+	</ui>
+	<ui class="linearlayout" width="0" weight="1" height="fill_parent" layout_gravity="left|vcenter" margin="0,0,0,0" isview="0">
+		<ui class="linearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" >
+			<textview class="textview" id="title" width="wrap_content" height="fill_parent" gravity="left|vcenter" layout_gravity="left|vcenter" color="bavigation_bar_menu_main_color" font="13n" isview="0"/> showrect="1"
+			<!-- <textview class="textview" id="" width="wrap_content" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" text="(" color="gray5" font="12n" isview="0" margin="10,0,0,0"/> -->
+			<textview class="textview" id="num" width="wrap_content" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" text="" color="gray5" font="12n" isview="0"/>
+			<!-- <textview class="textview" id="" width="wrap_content" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" text=")" color="gray5" font="12n" isview="0"/> -->
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="wrap_content">
+			<textview class="textview" id="chat" width="0" height="18" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" color="gray5" font="12n" text="" isview="0" padding="0,0,0,0"/>
+			<textview class="textview" id="badge" width="wrap_content" height="18" gravity="center|vcenter" layout_gravity="center|vcenter" color="white" font="12n" text="12" background="budge" padding="6,0,6,0" margin="0,0,10,0" isview="0"  visible="0"/>
+		</ui>
+	</ui>
+</ui>

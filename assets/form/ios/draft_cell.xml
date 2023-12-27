@@ -1,0 +1,21 @@
+          <ui class="vlinearlayout" id="draft_cell" width="fill_parent" height="110" showrect="0">
+	<ui class="vlinearlayout" width="200" height="100" weight="1" margin="0,0,0,0"  showrect="0" > 
+		<ui class="framelayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" layout_gravity="center|vcenter" showrect="0">
+
+			<ui class="vlinearlayout" id="draft_cell_panel"  width="fill_parent" height="fill_parent" margin="0,0,30,0" showrect="0"> 
+
+				<ui class="linearlayout" width="fill_parent" height="30" margin="0,0,0,0">
+					<textview class="textview" width="wrap_content"  height="30" gravity="left|vcenter" margin="5,0,0,0" text="To: " singleline="1" color="gray1" font="16B" isview="0" showrect="0"/>
+					<textview class="textview" id="email_receive" width="wrap_content"  height="30" layout_gravity="right|vcenter" gravity="center|vcenter" margin="0,0,0,0" ellipsize="end" singleline="1" color="gray1" font="16B" isview="0" showrect="0"/>
+				</ui>
+				<textview class="textview" id="email_subject" width="wrap_content"  height="30" gravity="left|vcenter" ellipsize="end" margin="5,0,0,0" text="" singleline="1" color="gray1" font="16B" isview="0"/>
+
+				<textview class="textview" id="email_summary" width="wrap_content"  height="40" gravity="left|vcenter" ellipsize="end" margin="5,0,0,0" text="" singleline="1" color="gray1" font="16B" isview="0"/>
+			</ui>
+			<ui class="framelayout" width="30" height="fill_parent" margin="0,0,0,0" layout_gravity="right|vcenter">
+				<button class="button" id="btn_delete" layout_gravity="center|vcenter" width="30" height="fill_parent" icon="icon_navigatebar_close" />
+			</ui>
+		</ui>
+	</ui>
+	<ui class="view" width="fill_parent" height="3" isview="0" />
+</ui>

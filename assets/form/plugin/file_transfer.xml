@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="file_transfer" width="300" height="500" left="center" top="center"  resize="1" padding="2,0,2,2">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
+	<include src="../common_caption.xml"/>
+	<ui class="linearlayout" id="toolbar" width="fill_parent" height="50">
+		<button class="button" width="80" height="46" id="browser"/>
+	</ui>
+	<tableview class="tableview" id="listview" width="fill_parent" height="fill_parent" background="listview" />
+</ui>
+</root>

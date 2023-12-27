@@ -1,0 +1,32 @@
+﻿<emails>
+    <email>
+        <folder type="INBOX" name="INBOX"/>
+        <!--<folder type="drafts" name="Draft|[Gmail]/草稿|草稿|草稿箱|草稿夹|Drafts|INBOX.草稿箱"/>-->
+        <folder type="allmail" name="Archive|[Gmail]/所有邮件|归档"/>
+        <folder type="spam" name="Junk|[Gmail]/垃圾邮件|垃圾邮件|Bulk Mail|垃圾箱|Spam|INBOX.Junk|Junk E-mail|INBOX.垃圾箱"/>
+        <folder type="sentmail" name="Sent|[Gmail]/已发邮件|已发送|已发送邮件|已发邮件|Sent Messages|发件箱|INBOX.Sent|Sent Items|INBOX.发件箱"/>
+        <folder type="trash" name="Deleted|[Gmail]/已删除邮件|已删除|已删除邮件|Deleted Messages|Trash|INBOX.Trash|Deleted Items"/>
+        <!-- <folder type="starred" name="Starred|[Gmail]/已加星标|星标邮件"/> -->
+    </email>
+
+	<!-- <email id="cecgw.cn">
+        <folder type="INBOX" name="INBOX"/>
+        <folder type="drafts" name="Draft"/>
+        <folder type="allmail" name="Archive"/>
+        <folder type="spam" name="Spam|垃圾邮件"/>
+        <folder type="sentmail" name="Sent Messages|Sent|已发送"/>
+        <folder type="trash" name="Junk"/>
+        <folder type="starred" name="Starred"/>
+    </email>
+
+	<email id="tricaas.com">
+        <folder type="INBOX" name="INBOX"/>
+        <folder type="drafts" name="Draft"/>
+        <folder type="allmail" name="Archive"/>
+        <folder type="spam" name="Spam|垃圾邮件"/>
+        <folder type="sentmail" name="Sent Messages|Sent|已发送"/>
+        <folder type="trash" name="Junk"/>
+        <folder type="starred" name="Starred"/>
+    </email> -->
+	
+</emails>

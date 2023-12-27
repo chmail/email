@@ -1,0 +1,25 @@
+<ui id="email_item" class="framelayout" width="fill_parent" height="90" background="">hlinearlayout   com_checked_cell_bg
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" isview="0"  margin="0,0,30,0">
+		<ui id="buddy_item" class="framelayout" width="50" height="60" layout_gravity="center|vcenter" visible="0">
+			<imageview class="imageview" id="user_avatar" width="32" height="32" src="email_frame" margin="0,0,0,0" layout_gravity="center|vcenter" isview="0" mask="mask_circle_32"/>
+		</ui>
+		<ui id="email_body" class="vlinearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" weight="1" margin="0,6,0,0" showrect="0">
+				<imageview class="imageview" id="sent_flag" width="16" height="16" layout_gravity="left|vcenter" margin="6,0,0,0" visible="1"/>
+				<textview class="textview" id="email_to" text="(no recipients)" width="wrap_content" height="wrap_content" weight="1" ellipsize="end" singleline="1" color="black" font="16B" layout_gravity="left|vcenter" margin="10,0,6,0" showrect="0"/>	
+				<textview class="textview" id="email_time" width="40" height="16" color="gray5" font="12n" layout_gravity="center|vcenter" margin="10,0,6,0" showrect="0"/>
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,6,0,0" >
+				<imageview class="imageview" id="draft_attachment" width="16" height="16" src="icon_email_attachment" layout_gravity="left|vcenter" margin="6,0,0,0" isview="0" visible="2"/>
+				<textview class="textview" id="email_title" text="(no subject)" width="fill_parent" height="wrap_content" margin="10,2,6,0" singleline="1" color="gray2" font="12n" showrect="0" ellipsize="end"/>
+			</ui>
+			<textview class="textview" id="email_summary" ellipsize="end" width="fill_parent" height="wrap_content" margin="30,2,6,0" max_limit="0,30" singleline="0" color="gray4" font="12n" showrect="0"/>
+		</ui>
+	</ui>
+	<button class="imagebutton" id="btn_del" width="24" height="24" layout_gravity="right|bottom" icon="menubar_icon_delete_red" background="email_tb_bg" margin="0,0,4,10" visible="1"/>
+	<ui class="linearlayout" width="fill_parent" height="1" layout_gravity="left|bottom">
+		<imageview class="imageview" width="230" height="1" src="line_4" isview="0" margin="34,0,0,0" />
+		<imageview class="imageview" width="230" height="1" src="line_4" isview="0" margin="0,0,0,0" />
+		<imageview class="imageview" width="230" height="1" src="line_4" isview="0" margin="0,0,0,0" />
+	</ui>
+</ui>

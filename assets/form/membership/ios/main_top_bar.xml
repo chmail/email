@@ -1,0 +1,13 @@
+<ui class="vlinearlayout" height="40" id="email_tabbar" width="fill_parent"><!--ios must be 49 -->
+	<ui class="linearlayout" height="39" width="fill_parent">
+	    <button class="button" height="fill_parent"  id="tab_0" text="recently used"
+	                weight="1" width="0"  color="gray5" font="14n"/>
+	    <button class="button" height="fill_parent"  id="tab_1"
+	                text="im_archive" weight="1" width="0"  color="gray5" font="14n"/>
+	    <button class="button" height="fill_parent"  id="tab_2" text="Buddy"
+	                weight="1" width="0" color="gray5" font="14n"/>
+	    <button class="button" height="fill_parent"  id="tab_3" text="Category Notify"
+	                weight="1" width="0" color="gray5" font="14n"/>
+    </ui>
+    <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" margin="0,0,0,0"/>
+</ui>

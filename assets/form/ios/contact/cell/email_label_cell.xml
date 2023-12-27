@@ -1,0 +1,8 @@
+<ui id="label_item" class="vlinearlayout" width="fill_parent" height="28" padding="0,0,0,0" margin="0,0,0,0" background="hlinearlayout">
+	<ui class="linearlayout" width="fill_parent" height="0" weight="1" padding="0,1,0,1" margin="5,0,0,0" isview="0">
+		<imageview class="imageview" id="avatar" width="20" height="20" src="icon_mail_avatar" layout_gravity="center|vcenter" isview="0" margin="2,0,0,0" cornerRadius="10"/>
+		<textview class="textview" id="label_name" width="wrap_content" height="18" text="howie_direct_team" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray1" font="12n" margin="6,0,0,0" isview="0"/>
+		<textview class="textview" id="label_number" width="fill_parent" height="18" text="[7]" layout_gravity="left|vcenter" gravity="left|vcenter" color="gray5" font="12n" margin="6,0,0,0"  isview="0"/>
+	</ui>
+	<!-- <imageview class="imageview" width="fill_parent" height="1" src="day_cell_bg" layout_gravity="center|vcenter" isview="0" margin="0,0,0,0"/> -->
+</ui>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imageView2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n2:srcCompat="@mipmap/icon_app" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textStyle="bold" n1:id="@id/editText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n1:text="不只是好看的邮件应用" n1:ems="10" n1:inputType="textPersonName" n1:textAlignment="center" />
+</LinearLayout>

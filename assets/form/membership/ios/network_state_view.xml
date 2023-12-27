@@ -1,0 +1,3 @@
+<ui class="linearlayout" height="wrap_content" id="network_state" width="wrap_content" visible="0"><!--ios must be 49 -->
+    <ui class="textview" height="wrap_content"  id="title" width="wrap_content" />
+</ui>

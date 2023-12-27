@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="tray" width="250" height="348" bgcolor="white"> 
+<ui class="framelayout" width="250" height="348" bgcolor="white" layout_gravity="center|vcenter">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0"  background="bg_menu_round_20" id="pop_menu_form"> bgcolor="red" 
+
+	<ui class="vlinearlayout" id="content_panel" width="fill_parent" height="wrap_content" margin="0,94,0,0"> bgcolor="email_swipe_yellow"
+		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" >
+			<!-- Name -->
+			<ui id="name_edt_panel" class="framelayout" width="fill_parent" height="wrap_content"  margin="0,14,0,0" layout_gravity="center|vcenter" >
+				<!-- normal -->
+				<ui class="linearlayout" id="name_normal_panel" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" >
+					<textview class="textview" id="name" width="wrap_content" height="wrap_content" text="" color="black" font="16n" margin="0,0,5,0" background="na" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="1" ellipsis_end="1" />min_limit="20,-1" max_limit="160,-1"
+					<button class="button" id="btn_edit" width="30" height="fill_parent" text="Edit" font="12n" color="blue1_status" margin="0,2,0,0" background="na" layout_gravity="right|vcenter" gravity="center|vcenter" visible="2" padding="0,0,0,0" />
+					<ui class="framelayout" id="detail_info_panel" width="0" height="0" visible="0" min_limit="0,-1">
+						<textview class="textview" id="detail_info" width="0" height="0" text="detail_info" font="12n" color="blue1" />
+					</ui>
+				</ui>
+			</ui>
+			<!-- Nick Name -->
+			<ui id="nickname_edt_panel" class="framelayout" width="wrap_content" height="22" layout_gravity="center|vcenter" >
+				<ui class="linearlayout" id="memo_normal_panel" width="wrap_content" height="22" layout_gravity="center|vcenter" visible="0">
+					<button class="button" id="nickname" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" background="na" color="black" font="12n" readonly="1" min_limit="20,-1" max_limit="200,-1" ellipsis_end="1" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+				</ui>
+			</ui>
+			<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="10,0,10,0">
+				<textview class="textview" id="address" width="wrap_content" height="wrap_content" color="gray5" font="12n" layout_gravity="center|vcenter" background="na" readonly="1" ellipsis_end="1"/>
+				<imageview id="show_more_arrow" class="imageview" width="16" height="16" src="menu_arrow_down" layout_gravity="center|vcenter" margin="10,0,0,0" visible="0"/>
+			</ui>
+			<edit class="edit" id="address_1" width="fill_parent" height="18" color="gray5" font="12n" background="na" readonly="1" visible="0" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+			<edit class="edit" id="address_2" width="fill_parent" height="18" color="gray5" font="12n" background="na" readonly="1" visible="0" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+			<edit class="edit" id="address_3" width="fill_parent" height="18" color="gray5" font="12n" background="na" readonly="1" visible="0" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+		</ui>
+		<!-- details/invite/add -->
+		<!-- <ui id="func_btns_panel" class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" visible="1"> bgcolor="red" 
+			<ui class="framelayout" id="add_user_panel" width="178" height="36" layout_gravity="center|vcenter"  > blue1
+				<button class="button" id="add_user" icon="popup_email_add" width="fill_parent" height="fill_parent" text="add_user" font="12n" color="blue1" gravity="center|vcenter" layout_gravity="center|vcenter" margin="0,0,0,0" background="com_btn_round_line"/>
+			</ui>
+			<ui class="framelayout" id="add_to_existing_panel" width="0" height="0" layout_gravity="center|vcenter" visible="0">
+				<button class="button" id="add_to_existing" icon="popup_email_add"  width="wrap_content" height="wrap_content" text="Add To Existing Contact" font="12n" color="blue1" gravity="center|vcenter" layout_gravity="center|vcenter" margin="0,0,0,0" background="com_btn_round_line"/>
+			</ui>
+		</ui> -->
+		<ui class="linearlayout" id="plugin_list_panel" width="0" height="0" margin="0,0,0,0" visible="1">
+			<gridview class="gridview" id="plugin_list_gridview" width="fill_parent" height="fill_parent" margin="0,0,0,0" gravity="left|vcenter" itemsize="24,24" />min_limit="100,28"
+		</ui>
+		<!-- <ui class="linearlayout" width="fill_parent" height="0" weight="1"/> -->
+	</ui>
+	<!-- <imageview class="imageview" width="fill_parent" height="1" src="line_1" isview="0"/> -->
+	<!-- <ui class="framelayout" width="fill_parent" height="fill_parent" > -->
+		<ui class="vlinearlayout" id="menu_btn" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,20,0,0">bgcolor="email_swipe_green"
+			<!-- ReMail -->
+			<ui class="framelayout" width="178" height="36" layout_gravity="center|vcenter" margin="0,10,0,0" >info_card_email
+				<button class="button" id="reply_email" width="fill_parent" height="fill_parent" icon="" gravity="center|vcenter" layout_gravity="center|vcenter" text="Compose" color="blue1EX" font="12n" background="com_btn_round_line" tooltip="New EMail"/>tool_btn_hover
+			</ui>
+			<!-- emailchat -->
+			<ui class="framelayout" id="emailchat_panel" width="178" height="36" layout_gravity="center|vcenter" margin="0,10,0,0" >info_card_emailchat
+				<button class="button" id="emailchat" width="fill_parent" height="fill_parent" icon="" gravity="center|vcenter" layout_gravity="center|vcenter" text="Emailchat" color="white" font="12n" background="com_btn_round_shadow" tooltip="Emailchat"/>tool_btn_hover
+			</ui>
+
+			<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="0,10,0,0" visible="1" >
+				<!-- VIP -->
+				<ui class="framelayout" id="vip_panel" width="178" height="36" layout_gravity="center|vcenter" margin="0,0,0,0" visible="1" >
+					<!-- <checkbox class="checkbox" id="chxVIP" width="24" height="24" icon="vip_yellow_checked" layout_gravity="center|vcenter" background="" box="20,20" text="" margin="4,0,0,0" tooltip="Set VIP"/> -->
+
+					<commoncheckbox class="commoncheckbox" id="chxVIP" width="fill_parent" height="fill_parent" icon="na" text="VIP" color="white" font="12n" margin="0,0,0,0" layout_gravity="center|vcenter" background="com_btn_round_yellow_checked"/>
+				</ui>
+
+				<!-- details/invite/add -->
+				<ui id="func_btns_panel" class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" visible="1"> bgcolor="red" 
+					<ui class="framelayout" id="add_user_panel" width="178" height="36" layout_gravity="center|vcenter"  > blue1
+						<button class="button" id="add_user" width="fill_parent" height="fill_parent" text="add_user" font="12n" color="white" gravity="center|vcenter" layout_gravity="center|vcenter" margin="0,0,0,0" background="com_btn_round_yellow_checked"/>
+					</ui>
+					<ui class="framelayout" id="add_to_existing_panel" width="0" height="0" layout_gravity="center|vcenter" visible="0">
+						<button class="button" id="add_to_existing" icon="popup_email_add"  width="wrap_content" height="wrap_content" text="Add To Existing Contact" font="12n" color="blue1" gravity="center|vcenter" layout_gravity="center|vcenter" margin="0,0,0,0" background="com_btn_round_yellow_checked"/>
+					</ui>
+				</ui>
+			</ui>
+
+			<!-- reply -->
+			<ui class="framelayout" width="24" height="24" layout_gravity="center|vcenter" margin="0,0,0,0" visible="0">
+				<button class="button" id="reply" width="fill_parent" height="fill_parent" icon="info_card_chat" gravity="center|vcenter" color="black" font="12n" background="tool_btn_hover" padding="0,0,0,0"/>background="tool_btn"
+			</ui>
+			<!-- hidden -->
+			<ui class="framelayout" id="block_panel" width="0" height="0" layout_gravity="center|vcenter" margin="0,0,0,0" background="tool_btn_hover" visible="0">
+				<checkbox class="checkbox" id="chxBlock" width="fill_parent" height="24" icon="hidden" background="na" box="16,16" text="" color="black" font="12n" isview="1" padding="0,0,0,0" tooltip="Stop/Unblock"/>
+			</ui>
+			<!-- <ui class="view" width="0" height="0" weight="1"/> -->
+			<!-- Invite -->						
+			<ui class="framelayout" width="0" height="0" layout_gravity="center|vcenter" margin="0,0,0,0">
+				<button class="button" id="invite_user" width="fill_parent" height="fill_parent" icon="info_card_invite" gravity="center|vcenter" color="gray3" font="12n" background="tool_btn_hover" padding="0,0,0,0" tooltip="invite_user"/>						
+			</ui>
+		</ui>
+	<!-- </ui> -->
+</ui>
+	<!-- avatar -->
+	<ui class="framelayout" width="96" height="96" layout_gravity="center|top" isview="0" background="na" shadowColor="gray3" shadowOffset="0,4" shadowRadius="4" shadowOpacity="0.5" margin="0,20,0,0">
+		<imageview class="imageview" id="avatar" width="80" height="80" src="default_h_avatar" margin="0,1,0,0" layout_gravity="center|top" cornerRadius="40" borderWidth="3" borderColor="white"/>
+		<imageview class="imageview" id="user_state" width="16" height="16" src="online" margin="0,0,2,2" layout_gravity="right|bottom" isview="0" visible="0"/>
+		<ui class="framelayout" width="16" height="16" margin="0,0,2,2"  layout_gravity="right|bottom" isview="0">
+			<imageview class="imageview" id="avatar_vip" width="16" height="16" src="vip_yellow" isview="0" layout_gravity="right|bottom" visible="0"/>
+		</ui>
+	</ui>
+</ui>
+</root>
+
+
+
+

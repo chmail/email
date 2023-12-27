@@ -1,0 +1,130 @@
+<ui class="linearlayout" height="28" id="editor_tool" layout_gravity="center|vcenter" padding="0,0,0,0" weight="1"
+    width="0">
+    <!-- type -->
+    <combobox class="combobox" color="black" font="12n" gravity="left|vcenter" height="28"
+              id="tb_editor_font_name_combo" layout_gravity="center|vcenter" margin="2,0,2,0" readonly="1"
+              width="100"/>
+    <!-- size -->
+    <combobox class="combobox" color="black" font="12n" gravity="left|vcenter" height="28"
+              id="tb_editor_font_size_combo" layout_gravity="center|vcenter" margin="2,0,4,0" readonly="1"
+              width="60"/>
+
+    <imageview class="imageview" height="fill_parent" isview="0" margin="0,8,0,8" src="line_1_2"
+               width="1"/>
+
+    <!-- b -->
+    <checkbox background="na" box="20,20" class="checkbox" height="20" icon="font_b"
+              id="tb_editor_font_b" layout_gravity="left|vcenter" margin="4,0,2,2" tooltip="Bold"
+              width="20"/>
+    <!-- i -->
+    <checkbox background="na" box="20,20" class="checkbox" height="20" icon="font_i"
+              id="tb_editor_font_i" layout_gravity="left|vcenter" margin="2,0,2,2" tooltip="Italic"
+              width="20"/>
+    <!-- u -->
+    <checkbox background="na" box="20,20" class="checkbox" height="20" icon="font_u"
+              id="tb_editor_font_u" layout_gravity="left|vcenter" margin="2,0,2,2" tooltip="Underline"
+              width="20"/>
+    <!-- s -->
+    <checkbox background="na" box="20,20" class="checkbox" height="20" icon="font_s"
+              id="tb_editor_font_s" layout_gravity="left|vcenter" margin="2,0,4,2" tooltip="Strikethrough"
+              width="20"/>
+    <!-- <imageview class="imageview" width="1" height="fill_parent" src="line_1_2" margin="0,8,0,8" isview="0"/> -->
+    <!-- color -->
+    <ui background="flat_edit_line" class="framelayout" height="26" layout_gravity="center|vcenter" margin="4,0,2,0"
+        padding="0,0,0,0" tooltip="Text Color" width="34">
+        <imageview class="imageview" height="20" isview="0" layout_gravity="left|vcenter"
+                   src="font_color" width="20"/>
+        <button background="empty" class="button" height="24" icon="menu_arrow_down_small" id="btn_fore"
+                layout_gravity="right|vcenter" margin="0,0,1,0" padding="1,10,0,10"
+                width="12"/>background="menu_arrow_down_small_bg"
+        <ui class="view" height="3" id="fore_color_view" isview="0" layout_gravity="left|bottom"
+            margin="2,0,0,2" src="line_1" width="16"/>
+    </ui>
+    <!-- bgcolor -->
+    <ui background="flat_edit_line" class="framelayout" height="26" layout_gravity="center|vcenter" margin="2,0,4,0"
+        padding="0,0,0,0" tooltip="Background Color" width="34">
+        <imageview class="imageview" height="20" isview="0" layout_gravity="left|vcenter"
+                   margin="1,0,0,0" src="font_bgcolor" width="20"/>
+        <button background="empty" class="button" height="24" icon="menu_arrow_down_small" id="btn_bg"
+                layout_gravity="right|vcenter" margin="0,0,1,0" padding="1,10,0,10"
+                width="12"/>background="menu_arrow_down_small_bg"
+        <ui class="view" height="3" id="bg_color_view" isview="0" layout_gravity="left|bottom"
+            margin="2,0,0,2" src="line_1" width="16"/>
+    </ui>
+    <imageview class="imageview" height="fill_parent" isview="0" margin="4,8,0,8" src="line_1_2"
+               width="1"/>
+
+    <!-- order -->
+    <button background="empty" class="button" height="20" icon="font_order" id="tb_editor_order"
+            layout_gravity="center|vcenter" margin="5,0,2,0" tooltip="Numbered List"
+            width="20"/>
+    <button background="empty" class="button" height="20" icon="font_order_bulleted" id="tb_editor_unorder"
+            layout_gravity="center|vcenter" margin="2,0,2,0" tooltip="Bulleted List"
+            width="20"/>
+
+    <!-- <imageview class="imageview" width="1" height="fill_parent" src="line_1_2" margin="0,8,0,8" isview="0"/> -->
+    <!-- align -->
+    <ui background="flat_edit_line" class="framelayout" height="26" layout_gravity="center|vcenter" margin="2,0,2,0"
+        width="34">
+        <imageview class="imageview" height="20" id="tb_editor_font_align_edit" layout_gravity="left|vcenter"
+                   margin="2,0,2,0" src="font_align_center2" tooltip="Align Center"
+                   width="20"/>
+        background="email_tb_bg"
+        <button background="empty" class="button" height="24" icon="menu_arrow_down_small"
+                id="tb_editor_font_align_btn" layout_gravity="right|vcenter" margin="0,0,1,0"
+                padding="1,10,0,10" width="12"/>background="menu_arrow_down_small_bg"
+    </ui>
+    <!-- <imageview class="imageview" width="1" height="fill_parent" src="line_1_2" margin="0,8,0,8" isview="0"/> -->
+    <!-- link -->
+    <button background="empty" class="button" height="20" icon="font_link" id="tb_editor_link"
+            layout_gravity="center|vcenter" margin="5,0,2,0" tooltip="Insert Link"
+            width="20"/>
+    <checkbox background="com_btn_white_box_r2_line_checked" box="20,20" class="checkbox"  height="20"
+              icon="spell_check" id="tb_editor_spellcheck" layout_gravity="center|vcenter" margin="5,0,2,0"
+              padding="0,0,0,0" tooltip="spell check" visible="0"
+              width="20"/>
+
+    <!-- !!!visible !!!visible !!!visible !!!visible -->
+    <ui class="linearlayout" height="32" layout_gravity="center|vcenter" padding="0,0,0,0" visible="0"
+        weight="1" width="0">
+        <!-- align -->
+        <imageview class="imageview" height="fill_parent" isview="0" margin="0,8,0,8" src="line_1_2"
+                   width="1"/>
+
+        <button background="email_tb_bg" class="button" height="28" icon="font_indent" id="tb_editor_indent"
+                layout_gravity="center|vcenter" margin="5,0,2,0" padding="2,2,2,2"
+                width="28"/>
+        <button background="email_tb_bg" class="button" height="28" icon="font_outdent"
+                id="tb_editor_outdent" layout_gravity="center|vcenter" margin="2,0,5,0"
+                padding="2,2,2,2" width="28"/>
+
+        <imageview class="imageview" height="fill_parent" isview="0" margin="0,8,0,8" src="line_1_2"
+                   width="1"/>
+
+        <button background="email_tb_bg" class="button" height="28" icon="font_align_left"
+                id="tb_editor_justifyleft" layout_gravity="center|vcenter" margin="5,0,2,0"
+                padding="2,2,2,2" width="28"/>
+        <button background="email_tb_bg" class="button" height="28" icon="font_align_center"
+                id="tb_editor_justifycenter" layout_gravity="center|vcenter" margin="2,0,2,0"
+                padding="2,2,2,2" width="28"/>
+        <button background="email_tb_bg" class="button" height="28" icon="font_align_right"
+                id="tb_editor_justifyright" layout_gravity="center|vcenter" margin="2,0,5,0"
+                padding="2,2,2,2" width="28"/>
+
+        <button background="email_tb_bg" class="button" height="0" icon="height_increaseline"
+                id="tb_editor_increaselineheight" layout_gravity="center|vcenter" margin="2,0,2,0"
+                padding="2,2,2,2" width="0"/>
+        <button background="email_tb_bg" class="button" height="0" icon="height_decreaseline"
+                id="tb_editor_decreaselineheight" layout_gravity="center|vcenter" margin="2,0,5,0"
+                padding="2,2,2,2" width="0"/>
+        <!-- format_painter -->
+        <button background="email_tb_bg" class="button" height="28" icon="font_format_painter"
+                id="tb_editor_stylebrush" layout_gravity="center|vcenter" margin="2,0,2,0"
+                padding="2,2,2,2" visible="0" width="28"/>
+        <ui class="view" height="0" weight="1" width="0"/>
+        <!-- callme -->
+        <button background="email_tb_bg.n" class="button" height="32" icon="callme" id="tb_editor_callme"
+                layout_gravity="right|vcenter" margin="0,0,15,0" padding="0,0,0,0"
+                visible="0" width="32"/>
+    </ui>
+</ui>

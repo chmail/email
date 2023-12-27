@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" width="600" height="400" left="center" top="center" mode="caption" resize="0">
+	<ui class="framelayout" width="fill_parent"  height="fill_parent" background="login_bg">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<!-- system button -->
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/>
+		sys_close_white
+		<!-- login -->
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" mouse_action="1">
+			<imageview class="imageview" width="120" height="120" layout_gravity="center|vcenter" src="app_icon_with_bg" isview="0" margin="0,35,0,0"/>
+			<textview class="textview"  width="wrap_content" height="20" text="Your email account has been limited of maximum number" color="blue1" font="20n"  layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,35,0,0"/>
+			<textview class="textview"  width="wrap_content" height="20" text="To continue to staying online on YoMail OR purchase member service plans, and to acquire prestigious service from YoMail." color="black" font="14n"  layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,30,0,0"/>
+<!-- 			<button class="button" id="switch_signup"  width="wrap_content" height="wrap_content" text="text_detail" color="blue1_status" font="12n_underline" layout_gravity="right|bottom" gravity="left|vcenter" background="na" margin="0,0,20,6"/> -->
+			<button class="button" id="btn_buy_vip" width="320" height="36" text="Purchase" color="white" font="14n" layout_gravity="center|vcenter" background="btn_login" margin="0,35,0,0" padding="0,0,0,0"/>
+		</ui>
+	</ui>
+</root>

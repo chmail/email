@@ -1,0 +1,3 @@
+<ui id="load_more_item" class="linearlayout" width="fill_parent" height="28">
+	<textview class="textview" text="more..." width="wrap_content" height="fill_parent" gravity="left|vcenter" layout_gravity="left|vcenter" color="bavigation_bar_menu_main_color" font="13n" isview="0" margin="45,0,0,0"/>
+</ui>

@@ -1,0 +1,6 @@
+<ui class="linearlayout" width="fill_parent" height="20" padding="0,0,0,0" margin="1,1,1,1" background="" id="oneday_cell_panel" >
+	<imageview class="imageview" id="state_icon" width="20" height="20" src="calendar_promoter"  margin="5,0,0,0" padding="0,0,0,0" isview="0"/>
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" mouse_action="1">
+		<textview class="textview" id="chat_title" width="0" weight="3" height="fill_parent" gravity="left|vcenter" margin="10,0,0,0" text="" singleline="0" color="gray1" font="12n" ellipsis_end="1" isview="0"/>
+	</ui>
+</ui>

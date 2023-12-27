@@ -1,0 +1,16 @@
+<ui class="linearlayout" width="fill_parent" height="66" layout_gravity="center|vcenter" >
+	<ui class="framelayout" width="60" height="fill_parent" layout_gravity="center|vcenter">
+		<imageview class="imageview" id="avatar" width="32" height="32" src="avatar_default" layout_gravity="center|vcenter" mask="mask_circle_32" cursor="hand" />
+		<!-- <imageview class="imageview" id="" width="16" height="16" src="online" margin="0,0,1,1" isview="0" layout_gravity="right|bottom"/>
+		-->
+	</ui>
+	<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" layout_gravity="left|vcenter" >
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,12,0,0">
+			<textview class="textview" id="name"  width="wrap_content" height="fill_parent" gravity="left|vcenter" layout_gravity="left|vcenter" text="12" color="gray" font="13n" isview="0" />
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="wrap_content">
+			<textview class="textview" id="email"  width="0" height="fill_parent" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" text="34" color="gray5" font="12n" isview="0" padding="0,0,0,0" />
+		</ui>
+	</ui>
+	<button class="button" id="btn_invite" width="90" height="28" text="Add"  color="black" font="12n" background="com_btn_white_box_r2" margin="10,0,20,0" layout_gravity="center|vcenter" />
+</ui>

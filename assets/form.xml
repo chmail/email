@@ -1,0 +1,16 @@
+<root height="fill_parent" id="main" width="100">
+    <ui class="vlinearlayout" height="fill_parent" width="fill_parent">
+        <imageview class="imageview" height="wrap_content" src="test"
+                   width="wrap_content"/>
+
+        <ui class="linearlayout" height="100" width="fill_parent">
+            <ui class="button" id="btn1" height="fill_parent" text="B-3" width="100"></ui>
+            <ui class="button" id="btn2" height="fill_parent" text="B-4" width="fill_parent"></ui>
+        </ui>
+
+        <edit class="edit" color="red" height="wrap_content" text="B-2" width="fill_parent" ></edit>
+
+        <ui bgcolor="black" class="textview" height="30" text="HELLO" width="wrap_content"></ui>
+    </ui>
+
+</root>

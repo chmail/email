@@ -1,0 +1,98 @@
+<ui class="vlinearlayout" height="wrap_content" id="config_panel" layout_gravity="center|vcenter"
+    margin="20,10,20,0" visible="0" width="fill_parent">
+    <ui class="scrollview" height="fill_parent" id="scrollPanel" weight="1" width="fill_parent">
+        <ui class="vlinearlayout" height="wrap_content" width="fill_parent">
+            <!-- IMAP -->
+            <ui class="vlinearlayout" height="wrap_content" margin="0,20,0,0" width="fill_parent">
+                <textview class="textview" color="gray5" font="16B" height="wrap_content" isview="0"
+                    layout_gravity="left|vcenter" text="IMAP Configuration" width="wrap_content" />
+                <ui class="linearlayout" height="50" margin="0,0,0,0" width="fill_parent">
+                    <!-- <textview class="textview" width="90" height="fill_parent" text="IMAP Host:" font="14n" color="gray3" layout_gravity="left|vcenter" gravity="right|vcenter" isview="0" /> -->
+                    <edit background="na" border="none" class="edit" color="black" font="13n"
+                        height="fill_parent" hint="IMAP Host:imap.domain.com" hintcolor="gray5"
+                        hintfont="13n" id="imap_addr" keepvisible="1" layout_gravity="left|vcenter"
+                        limit="50" margin="0,0,0,0" readonly="0" width="fill_parent" />
+                </ui>
+                <imageview class="imageview" height="1" isview="0" layout_gravity="center|bottom"
+                    margin="0,0,0,0" src="line_1" width="fill_parent" />
+            </ui>
+            <ui class="vlinearlayout" height="wrap_content" margin="0,6,0,0" width="fill_parent">
+                <ui class="linearlayout" height="40" width="fill_parent">
+                    <textview class="textview" color="gray5" font="16B" gravity="left|vcenter"
+                        height="fill_parent" isview="0" layout_gravity="left|vcenter" text="Port:"
+                        width="wrap_content" />
+                    <ui class="framelayout" height="fill_parent" layout_gravity="center|vcenter"
+                        margin="10,0,0,0" weight="1" width="0">
+                        <imageview class="imageview" height="20" isview="0"
+                            layout_gravity="right|vcenter" margin="0,0,10,0" src="icon_arrow_down"
+                            width="20" />
+                        <imageview class="imageview" height="1" isview="0"
+                            layout_gravity="center|bottom" margin="10,0,10,0" src="line_1"
+                            width="fill_parent" />
+                        <combobox background="na" class="combobox" color="black" font="16n"
+                            gravity="center|vcenter" height="fill_parent" id="imap_feature"
+                            itembg="bg_emenu_cell" layout_gravity="center|vcenter" readonly="1"
+                            separator="line" width="fill_parent" windowbg="bg_white" />
+                    </ui>
+                    <ui class="framelayout" height="fill_parent" layout_gravity="center|vcenter"
+                        margin="10,0,0,0" weight="1" width="0">
+                        <imageview class="imageview" height="1" isview="0"
+                            layout_gravity="center|bottom" margin="0,0,0,0" src="line_1"
+                            width="fill_parent" />
+                        <edit background="na" border="none" class="edit" color="black" font="13n"
+                            height="fill_parent" hint="993" hintcolor="gray5" hintfont="13n"
+                            id="imap_port" keepvisible="1" keyboard="number"
+                            layout_gravity="left|vcenter" limit="5" margin="5,0,5,0" readonly="0"
+                            width="fill_parent" />
+                    </ui>
+                </ui>
+            </ui>
+            <!-- SMTP -->
+            <ui class="vlinearlayout" height="wrap_content" margin="0,20,0,0" width="fill_parent">
+                <textview class="textview" color="gray5" font="16B" height="wrap_content" isview="0"
+                    layout_gravity="left|vcenter" text="SMTP Configuration" width="wrap_content" />
+                <ui class="linearlayout" height="50" margin="0,0,0,0" width="fill_parent">
+                    <!-- <textview class="textview" width="90" height="fill_parent" text="SMTP Host:" font="14n" color="gray3" layout_gravity="left|vcenter" gravity="right|vcenter" isview="0" /> -->
+                    <edit background="na" border="none" class="edit" color="black" font="13n"
+                        height="fill_parent" hint="SMTP Host:smtp.domain.com" hintcolor="gray5"
+                        hintfont="13n" id="smtp_addr" keepvisible="1" layout_gravity="left|vcenter"
+                        limit="50" margin="0,0,0,0" readonly="0" width="fill_parent" />
+                </ui>
+                <imageview class="imageview" height="1" isview="0" layout_gravity="center|bottom"
+                    margin="0,0,0,0" src="line_1" width="fill_parent" />
+            </ui>
+            <ui class="vlinearlayout" height="wrap_content" margin="0,6,0,0" width="fill_parent">
+                <ui class="linearlayout" height="40" width="fill_parent">
+                    <textview class="textview" color="gray5" font="16B" gravity="left|vcenter"
+                        height="fill_parent" isview="0" layout_gravity="left|vcenter" text="Port:"
+                        width="wrap_content" />
+
+                    <ui class="framelayout" height="fill_parent" layout_gravity="center|vcenter"
+                        margin="10,0,0,0" weight="1" width="0">
+                        <imageview class="imageview" height="20" isview="0"
+                            layout_gravity="right|vcenter" margin="0,0,10,0" src="icon_arrow_down"
+                            width="20" />
+                        <imageview class="imageview" height="1" isview="0"
+                            layout_gravity="center|bottom" margin="10,0,10,0" src="line_1"
+                            width="fill_parent" />
+                        <combobox background="na" class="combobox" color="black" font="16n"
+                            gravity="center|vcenter" height="fill_parent" id="smtp_feature"
+                            itembg="bg_emenu_cell" layout_gravity="center|vcenter" readonly="1"
+                            separator="line" width="fill_parent" windowbg="bg_white" />
+                    </ui>
+                    <ui class="framelayout" height="fill_parent" layout_gravity="center|vcenter"
+                        margin="10,0,0,0" weight="1" width="0">
+                        <imageview class="imageview" height="1" isview="0"
+                            layout_gravity="center|bottom" margin="0,0,0,0" src="line_1"
+                            width="fill_parent" />
+                        <edit background="na" border="none" class="edit" color="black" font="13n"
+                            height="fill_parent" hint="465" hintcolor="gray5" hintfont="13n"
+                            id="smtp_port" keepvisible="1" keyboard="number"
+                            layout_gravity="left|vcenter" limit="5" margin="5,0,5,0" readonly="0"
+                            width="fill_parent" />
+                    </ui>
+                </ui>
+            </ui>
+        </ui>
+    </ui>
+</ui>

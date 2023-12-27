@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray10">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" text="User setting" bgcolor="white">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="tab_back" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
+            </ui>
+            <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="User setting"/>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>	
+
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="user_setting" width="fill_parent" height="0" weight="1" item_height="44" bgcolor="gray10" separator="" margin="0,0,0,0">
+		<ui class="framelayout" width="fill_parent" height="20" isview="0" background="empty" bgcolor="gray10">
+		</ui>
+		<!-- -->
+		<ui class="framelayout" width="fill_parent" height="44" id="basic_info_box" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_user" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Userinfo" font="16n" color="black" width="wrap_content" height="wrap_content" margin="60,0,0,0" layout_gravity="left|vcenter"/>
+			<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+		</ui>
+
+		<ui class="framelayout" width="fill_parent" height="44" id="avatar_box" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_avatar" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Avatar" font="16n" color="black" id="btn_important_list" width="wrap_content" height="wrap_content" margin="60,0,0,0" layout_gravity="left|vcenter"/>
+			<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+		</ui>
+
+		<ui class="framelayout" id="email_editor_box" width="fill_parent" height="44" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_email" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Edit" font="16n" color="black" width="wrap_content" height="wrap_content" margin="60,0,0,0" layout_gravity="left|vcenter"/>
+		</ui>
+
+		<ui class="framelayout" width="fill_parent" height="20" isview="0" background="empty" bgcolor="gray10" visible="0">
+		</ui>
+
+		<ui class="linearlayout" id="btn_default" width="fill_parent" height="44" bgcolor="white" background="empty"  visible="0">
+			<textview class="textview" id="textview_default" text="Set Default" font="16n" color="black" width="wrap_content" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,0,0"/>
+			<ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+			<commoncheckbox class="commoncheckbox" id="check_default" width="38" height="23" layout_gravity="right|vcenter" margin="20,0,20,0" icon="switch" background="na"/>
+		</ui>
+
+		<ui class="framelayout" width="fill_parent" height="20" isview="0" background="empty" bgcolor="gray10">
+		</ui>
+
+		<ui class="framelayout" id="DeleteAccount" width="fill_parent" height="44" bgcolor="white" background="empty" >
+			<textview class="textview" text="Delete This Account" font="16n" color="red" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,0,0,0"/>
+		</ui>
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

@@ -1,0 +1,21 @@
+<ui class="vlinearlayout" id="im_part" height="fill_parent"  width="fill_parent" bgcolor="white" visible="0">
+    <ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" bgcolor="white">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" width="40" height="40"  id="drawer_toggle" image="icon_nav_all_btn" text="" layout_gravity="left|vcenter"/>
+                <include src="network_state_view.xml"/>
+            </ui>
+            <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                    <button background="na" class="button" color="gray5" font="17n" gravity="center|vcenter" height="40" id="btn_inbox" layout_gravity="left|vcenter" text="Inbox" width="wrap_content" /> 
+                    <button background="na" class="button" color="black" font="17n" gravity="center|vcenter" height="40" id="btn_chat" layout_gravity="right|vcenter" text="Chat notification" width="wrap_content"  /> 
+                </ui>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+    <include src="main_top_bar.xml"/>
+    <ui class="viewcontrollerhost" height="0" id="im_pages_host"  width="fill_parent" weight="1">
+        <!-- here -->
+    </ui>
+</ui>

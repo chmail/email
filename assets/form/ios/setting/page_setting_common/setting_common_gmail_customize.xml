@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="Common">
+		
+	</ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" background="na">
+	<!-- Gmail Customize -->
+	<ui id="gmail_panel" class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,10,0,0" visible="1">
+		<textview class="textview" id=" " width="fill_parent" height="wrap_content" padding="0,0,0,0" text="Gmail Boost" singleline="1" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter"/>
+		<ui id="gmail_customize_group" class="radiogroup" width="fill_parent" height="28" margin="10,0,10,0" >
+			<ui class="linearlayout" width="fill_parent" height="fill_parent">
+				<radiobox class="radiobox" id="gmail_customize" width="150" height="30" box="14,14" icon="" margin="0,0,0,0" padding="0,0,0,0" text="Enable" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" checked="1" />radiobox
+				<radiobox class="radiobox" id="gmail_origin" width="150" height="30" box="14,14" icon="" margin="0,0,0,0" padding="0,0,0,0" text="Disable" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" />radiobox
+	        </ui>
+		</ui>
+	</ui>
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+

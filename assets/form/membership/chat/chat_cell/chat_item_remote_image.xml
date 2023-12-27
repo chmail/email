@@ -1,0 +1,5 @@
+<ui class="framelayout"  width="wrap_content" height="wrap_content" bgcolor="blue1">
+	<imageview class="imageview" id="image" width="wrap_content" height="wrap_content" margin="-1,-1,-1,-1" padding="1,1,1,1" background="root_a_128" max_limit="600,-1"/>	
+	<!-- imageview_tubg  root_a_128 -->	
+	<indicator class="indicator" id="indicator" width="30" height="30" src="login_progress" gravity="top|vcenter" layout_gravity="center|vcenter" isview="0" visible="0"/>	
+</ui>

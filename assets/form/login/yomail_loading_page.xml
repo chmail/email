@@ -1,0 +1,16 @@
+<ui class="framelayout" id="loading_start_page" width="fill_parent" height="fill_parent" margin="0,0,0,0" layout_gravity="center|vcenter" visible="0" >
+
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" mouse_action="1">
+		<imageview class="imageview" width="68" height="68" layout_gravity="center|vcenter" src="app_icon_68" margin="0,40,0,0" isview="0"/>
+		<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="YoMail Login" font="24n" color="gray1" margin="0,5,0,0" layout_gravity="center|vcenter" isview="0"/>
+		<!-- <ui class="view" weight="1" width="0" height="0" /> -->
+		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="20,50,20,0">
+			<button class="button" id="btn_start" width="fill_parent" height="40" icon="" text="Create Account" color="white" font="17n" padding="0,0,0,0" margin="0,0,0,0" background="com_btn_round_shadow" visible="1" layout_gravity="center|vcenter"/>com_btn
+			<!-- <ui class="linearlayout"  width="wrap_content" height="30" layout_gravity="center|top" margin="0,10,0,0" id="login_yomail_panel"> -->
+				<!-- <textview class="textview"  width="wrap_content" height="wrap_content" text="Already have a YoMail ID?" color="gray1" font="13n" singleline="0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"/> -->
+				<!-- <button class="button" id="btn_login_yomail"  width="wrap_content" height="wrap_content" text="Sign in" color="blue1_status" font="13n_underline" layout_gravity="center|vcenter" gravity="center|vcenter" background="na" margin="10,0,0,0" /> -->
+			<button class="button" id="btn_login" width="fill_parent" height="40" icon="" text="Sign in" color="black_white_status" font="17n" padding="0,0,0,0" margin="0,10,0,0" background="com_btn_round_line" layout_gravity="center|vcenter"/>com_btn_white_box_r2
+			<!-- </ui> -->
+		</ui>
+	</ui>
+</ui>

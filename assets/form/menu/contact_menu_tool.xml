@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="1" title="Smart Filter" image="email_menu_gtd_chat" key="" selector="onWorkMenuPopup:"/>
+	<!--<item tag="999" title="" image="menu_seperator" />-->
+<!--     <item tag="2" title="create new category" image="email_menu_label" key="" selector="onWorkMenuPopup:"/> -->
+</menu>

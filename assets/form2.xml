@@ -1,0 +1,10 @@
+<root height="fill_parent" id="main" width="100">
+    <ui class="vlinearlayout" height="fill_parent" width="fill_parent">
+        <imageview class="imageview" height="180" src="app_icon_90"
+                   width="180"/>
+
+        <ui class="linearlayout" height="400" width="fill_parent">
+            <ui class="button" id="btn2" height="fill_parent" text="B-4" width="fill_parent"></ui>
+        </ui>
+    </ui>
+</root>

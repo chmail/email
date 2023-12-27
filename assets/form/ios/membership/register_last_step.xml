@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="last_step" width="screen" height="screen" rotate="none" keyboard="1">
+	<ui class="framelayout" width="fill_parent" height="fill_parent" bgcolor="white" margin="0,20,0,0" showrect="0">
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
+			<ui class="framelayout" id="form_panel" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" >
+				<ui class="vlinearlayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" >
+					<textview class="textview" width="wrap_content" height="wrap_content" text="Create your YoMail account" font="17n" color="blue2" margin="30,20,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" isview="1"/>
+
+					<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="0,20,0,0" showrect="0">
+						<ui class="framelayout" id="account" width="fill_parent" height="40" layout_gravity="left|vcenter" margin="30,0,30,0" showrect="0">
+
+							<imageview class="imageview" width="fill_parent" height="1" layout_gravity="center|bottom" src="line_1" isview="0" />
+							<textview class="textview" id="email_account" border="none" width="fill_parent" height="fill_parent" text="Choose a email account" color="black" font="17n" readonly="0" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+							<imageview class="imageview" width="20" height="20" src="icon_arrow_down" layout_gravity="right|vcenter" padding="5,0,0,0" background="na" />
+						</ui>
+
+						<ui class="framelayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="30,10,30,0" showrect="0">
+
+							<imageview class="imageview" width="fill_parent" height="1" layout_gravity="center|bottom" src="line_1" isview="0" />
+							<edit class="edit" id="password_id" border="none" width="fill_parent" height="fill_parent" hint="create password" hintcolor="gray5" hintfont="13n" color="black" font="13n" limit="50" mode="password" readonly="0" layout_gravity="center|vcenter" />
+						</ui>
+
+						<ui class="framelayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="30,10,30,0" showrect="0">
+
+							<imageview class="imageview" width="fill_parent" height="1" layout_gravity="center|bottom" src="line_1" isview="0" />
+							<edit class="edit" id="password_confirm" border="none" width="fill_parent" height="fill_parent" hint="Confirm Password" hintcolor="gray5" hintfont="13n" color="black" font="13n" limit="50" mode="password" readonly="0" layout_gravity="center|vcenter" />
+						</ui>
+
+						<ui class="framelayout" width="fill_parent" height="60" layout_gravity="center|vcenter" margin="0,10,0,0" shadowColor="blue8" shadowOffset="0,3" shadowRadius="0" shadowOpacity="0.5" showrect="0">
+							<button class="button" id="register_id" cornerRadius="20.0" btcolor="blue_btn"  width="270" height="40" text="Sign up YoMail" color="white" font="16B" layout_gravity="center|vcenter" />
+						</ui>
+
+						<ui class="linearlayout" width="wrap_content" height="22" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,5,0,0" showrect="0">
+
+							<ui class="vlinearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" showrect="0">
+								<button class="button" id="service_id" width="wrap_content" height="21" text="Terms of Service" color="gray5" font="14n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" isview="1"/>
+								<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0" margin="0,0,0,0" layout_gravity="center|bottom" showrect="0"/>
+							</ui>
+
+							<textview class="textview" width="10" height="fill_parent" text="&" font="17n" color="gray5" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" showrect="0"/>
+
+							<ui class="vlinearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" showrect="0">
+								<button class="button" id="private_id" width="wrap_content" height="21"  text="Privacy Policy" color="gray5" font="14n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" isview="1"/>
+								<imageview class="imageview" width="fill_parent" height="1" src="line_2" isview="0" margin="0,0,0,0" layout_gravity="center|bottom" showrect="0"/>
+							</ui>
+						</ui>
+
+						<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="30,40,30,30" showrect="0">
+
+							<textview class="textview" id="" width="wrap_content" height="40" text="Why Choose YoMail?" font="17n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0" showrect="0"/>
+
+							<textview class="textview" id="" width="fill_parent" height="wrap_content" text="您的YoMail账户可以时刻将您的邮箱地址、邮件消息同步到您的所有设备上。" font="14n" color="gray5" layout_gravity="center|vcenter" singleline="0" margin="0,0,0,0" showrect="0"/>
+						</ui>
+
+					</ui>
+				</ui>	
+			</ui>
+
+		</ui>
+	</ui>
+</root>

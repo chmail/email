@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu background="bg_white" bgcolor="red" windowbg="bg_white" color="blue1">
+	<item tag="1" title="Reply All"  image="email_menu_reall" key="" selector="onWorkMenuPopup:"/>
+    <item tag="2" title="Reply EMail" image="email_menu_re" key="" selector="onWorkMenuPopup:"/>
+    <item tag="3" title="Forward" image="email_menu_forward" key="" selector="onWorkMenuPopup:"/>
+    <item tag="4" title="ReEdit" image="" key="" selector="onWorkMenuPopup:"/>
+
+    <item tag="999" title="" image="menu_seperator" />
+    <item tag="10" title="Make as Read" image=""/>
+    <item tag="11" title="Make as Unread" image="email_menu_unread"/>
+    <item tag="12" title="Mark as Starred" image="email_menu_star" key="" selector="onWorkMenuPopup:"/> 
+	<item tag="13" title="Remove Starred" image="email_menu_star_remove" key="" selector="onWorkMenuPopup:"/>
+
+    <item tag="20" title="Move to Trash" image="email_menu_delete" key="" selector="onWorkMenuPopup:"/>
+    <item tag="21" title="Delete Permanent" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="22" title="Archive" key="" selector="onWorkMenuPopup:"/>
+    <item tag="23" title="This is Junk" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="24" title="This is not Junk" image="" key="" selector="onWorkMenuPopup:"/>
+        <!-- not gmail -->
+    <item title="Move To" tag="25">
+        <menu>
+
+        </menu>
+    </item>
+    <item tag="999" title="" image="menu_seperator" />
+    <!-- <item tag="88" title="Reply With Chat" image="email_menu_chat" key="" selector="onWorkMenuPopup:"/> -->
+	<!-- <item tag="999" title="" image="menu_seperator" /> -->
+    <!-- item tag="30" title="View Source" image="" key="" selector="onWorkMenuPopup:"/-->
+    <!-- item tag="50" title="Print" image="email_menu_print" key="" selector="onWorkMenuPopup:"/ -->
+    <!-- item tag="62" title="Re Download" image="email_menu_download_all" key="" selector="onWorkMenuPopup:"/ -->
+</menu>

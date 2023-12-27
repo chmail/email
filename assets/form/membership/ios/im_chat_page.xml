@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="chat" width="660" height="560" limit="620,500" left="center" top="center" resize="1" padding="0,0,0,0" margin="0,0,0,0" background="">root_0
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="1,1,1,1">
+    <include src="network_state_view.xml"/>
+	<include src="im_chat_panel.xml"/>
+</ui>
+</root>

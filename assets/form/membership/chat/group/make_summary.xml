@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="archive_form" width="450" height="450" mode="caption" resize="0" padding="1,1,1,1" limit="450,450" background="root_0">
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0"  padding="0,0,0,0">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="30" >
+			<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+			<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+				<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+				<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Make summary title" font="14n" color="black" gravity="center|vcenter" padding="0,0,0,0"/>
+			</ui>
+			<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+				<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1" layout_gravity="bottom" margin="0,0,0,0" isview="0"/>
+
+		<ui class="vlinearlayout" width="fill_parent" height="0" weight="1"  margin="50,20,50,0">
+			<textview class="textview"  width="fill_parent" height="26" text="summary_text_1" font="16B" color="black" gravity="left|vcenter" margin="0,5,0,5" />
+			<textview class="textview" width="fill_parent" height="wrap_content" singleline="0" text="summary_text_2" color="gray2" font="14n"  layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0"/>
+		</ui>
+		<ui class="vlinearlayout" width="fill_parent" height="200"  margin="50,0,50,15">
+			<ui class="linearlayout" width="wrap_content" height="26" layout_gravity="left|vcenter" margin="0,0,0,0" isview="0" >
+				<textview class="textview"  width="wrap_content" height="fill_parent" text="Discussion result" font="14n" color="gray2" gravity="center|vcenter"/>
+				<textview class="textview"  width="wrap_content" height="fill_parent" text="summary_text_3" font="14n" color="gray5" gravity="center|vcenter" margin="5,0,0,0"/>
+			</ui>
+			<ui class="framelayout" width="fill_parent" height="fill_parent"  background="editview">
+				<richedit class="richedit" id="text"  rich="0" width="fill_parent" height="fill_parent" background="na" singleline="0" color="blue1" font="14n" limit="2500" margin="2,2,2,2" wantreturn="1"/>
+			</ui>
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="50"  margin="50,0,50,0" padding="0,0,0,0" layout_gravity="right|bottom" >
+			<ui class="view" height="0" width="0" weight="1" />
+			<button class="button" id="btn_cancel" width="75" height="24" layout_gravity="center|vcenter" text="Cancel" color="gray1_disabled" font="12n" margin="0,0,30,0" background="com_btn_white_box_r2"/>
+			<button class="button" id="btn_ok" width="75" height="24" layout_gravity="center|vcenter" text="summary_ok" color="white" font="12n" margin="0,0,0,0" background="com_btn"/>
+		</ui>
+	</ui>
+</root>

@@ -1,0 +1,21 @@
+<ui class="framelayout" id="cancel_signup_warning" width="fill_parent" height="fill_parent" margin="0,0,0,0" layout_gravity="center|vcenter" visible="0" >
+	<ui class="vlinearlayout" width="400" height="fill_parent" mouse_action="1" layout_gravity="center|vcenter" margin="0,0,0,0">
+		<imageview class="imageview" width="80" height="80" layout_gravity="center|vcenter" src="app_icon_80" margin="0,50,0,0" isview="0"/>
+		<textview class="textview"  width="wrap_content" height="wrap_content" text="YoMail Login" font="24n" color="gray2" margin="0,10,0,0" layout_gravity="center|vcenter" isview="0"/>
+		<textview class="textview"  width="wrap_content" height="20" text="Warm Tip" color="black" font="16n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,10,0,0" visible="0"/>
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,10,0,0" >
+			<textview class="textview"  width="fill_parent" height="wrap_content" singleline="0" text="sign tip content" color="black" font="16n"  layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0"/>
+		</ui>
+		<ui class="view" weight="1" width="fill_parent" height="0" view="0" />
+		<!-- <textview class="textview"  width="fill_parent" height="30" id="btn_back" text="Back to signup" background="com_btn" color="white" font="14n"  layout_gravity="center|vcenter" gravity="center|vcenter"/> -->
+		<button class="button" id="btn_back" width="300" height="40" icon="" text="Back to signup" color="white" font="14n" padding="0,0,0,0" margin="0,0,0,0" background="btn_login" visible="1" layout_gravity="center|vcenter"/>
+		
+		<ui class="linearlayout" width="fill_parent" height="60" margin="0,0,0,10" >
+			<ui class="view" weight="1" width="0" height="wrap_content" view="0" />
+			<textview class="textview"  width="wrap_content" height="22" id="btn_login" text="Login YoMail"  color="blue1_status" font="12n_underline"  background="na" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			<textview class="textview"  width="wrap_content" height="22" id="" text="Or"  color="gray1_disabled" font="12n_underline"  background="na" layout_gravity="center|vcenter" gravity="center|vcenter" margin="5,0,5,0"/>
+			<textview class="textview"  width="wrap_content" height="22" id="btn_skip" text="Still Skip"  color="blue1_status" font="12n_underline"  background="na" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			<ui class="view" weight="1" width="0" height="wrap_content" view="0" />
+		</ui>
+	</ui>
+</ui>

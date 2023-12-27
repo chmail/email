@@ -1,0 +1,5 @@
+<ui class="linearlayout" width="fill_parent" height="20">
+	<!-- <ui class="textview"  width="60" height="20" color="black" font="12n" layout_gravity="center|vcenter"/> -->
+	<imageview class="imageview" id="title" width="20" height="20" src="icon_statusbar_send" layout_gravity="center|vcenter" margin="8,0,8,0" isview="0"/>
+	<ui class="progressbar" id="bar" width="fill_parent" height="3" layout_gravity="vcenter" layout_gravity="center|vcenter" margin="0,0,8,0"/>
+</ui>

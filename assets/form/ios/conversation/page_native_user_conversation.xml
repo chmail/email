@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root width="screen" height="screen" bgcolor="gray11">
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" bgcolor="white">
+    	<ui class="framelayout" height="fill_parent" width="fill_parent" >
+    		<ui class="linearlayout" height="fill_parent" width="fill_parent">
+    			<ui class="navigateitem" id="tb_close" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
+        	</ui>
+        	<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+	<tableview class="tableview" id="emails_tv"
+			   width="fill_parent" height="fill_parent"
+			   itembg="hlinearlayout" edit="yes" margin="0,56,0,0"/>
+</root>

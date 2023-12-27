@@ -1,0 +1,23 @@
+<ui class="framelayout" id="xxxx_panel" width="fill_parent" height="48" layout_gravity="center|vcenter" background="hlinearlayout" bgcolor="white">
+	<ui class="linearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" layout_gravity="left|vcenter"> 
+		<ui class="framelayout" width="40" height="40" layout_gravity="center|vcenter" margin="10,0,10,0"> 
+			<imageview class="imageview" id="account_avatar" width="40" height="40" src="avatar_default" layout_gravity="center|vcenter"/> 
+		</ui>
+		<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" layout_gravity="center|vcenter" >
+			<ui class="linearlayout" width="fill_parent" height="0" weight="1" layout_gravity="left|vcenter">
+				<textview class="textview" id="lab_name" width="wrap_content" height="wrap_content" text="Name" singleline="1" ellipsis_end="1" color="blcak" font="16n" layout_gravity="left|vcenter" /> 
+				<textview class="textview" id="default_account" width="0" height="0" text="Default" color="white" font="16n" background="captionbar_bg2" layout_gravity="right|vcenter" visible="0"/>
+			</ui>
+			<!-- status -->
+			<ui class="framelayout" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" margin="0,0,0,0" visible="0">
+				<!-- <checkbox class="checkbox" width="140" height="fill_parent" icon="attachment_hidden" box="140,20" padding="0,0,0,0" visible="0" /> -->
+				<textview class="textview" id="status_msg" width="fill_parent" height="fill_parent" padding="2,0,0,0" text="" color="gray5" font="12n" layout_gravity="left|vcenter"/> 
+			</ui>
+		</ui>
+		<ui class="framelayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,20,0" visible="0">
+			<button class="button" id="more_account" width="40" height="40" icon="icon_setting_setting" gravity="center|vcenter" layout_gravity="center|vcenter" background="empty" />
+		</ui>
+
+		<commoncheckbox class="commoncheckbox" id="account_hidden" width="40" height="40" box="40,40" icon="icon_setting_visible" gravity="center|vcenter" layout_gravity="right|vcenter" margin="0,0,10,0" background="na"/>
+	</ui>
+</ui>

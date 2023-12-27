@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="1" title="Open In Window" image="email_menu_fullwindow" key="" selector="onWorkMenuPopup:"/>
+    <item tag="1" title="Reply" image="email_menu_chat" key="" selector="onWorkMenuPopup:"/>
+    <item tag="1" title="Reply With EMail" image="email_menu_re" key="" selector="onWorkMenuPopup:"/>
+    <item tag="1" title="Reply All" image="email_menu_reall" key="" selector="onWorkMenuPopup:"/>
+    <item tag="1" title="Forward" image="email_menu_forward" key="" selector="onWorkMenuPopup:"/>
+    <item tag="999" title="" image="menu_seperator" />
+    <item tag="1" title="Copy" image="email_menu_copy" key="" selector="onWorkMenuPopup:"/>
+    <item tag="2" title="Select All" image="" key="" selector="onWorkMenuPopup:"/>
+    <item tag="999" title="" image="menu_seperator" />
+    <item tag="1" title="Delete" image="email_menu_delete" key="" selector="onWorkMenuPopup:"/>
+</menu>

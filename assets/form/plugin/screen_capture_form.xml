@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="screen_capture" width="800" height="800" left="0" top="0"  resize="0" >
+<ui class="framelayout" width="fill_parent" height="fill_parent">
+	<imageview class="imageview" id="image_edit" width="fill_parent" height="fill_parent" />
+	<ui class="cropandbound" id="cropandbound" width="fill_parent" height="fill_parent" />
+</ui>
+</root>

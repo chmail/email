@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="screen_capture" width="600" height="400" left="center" top="center" margin="0,0,0,0" resize="0" >
+<ui class="framelayout" width="fill_parent" height="fill_parent">
+	<ui class="htmlview" id="ie_page" width="fill_parent" height="fill_parent"/>
+</ui>
+</root>

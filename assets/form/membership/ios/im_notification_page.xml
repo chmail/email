@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="im_notification_page" width="fill_parent" height="fill_parent">
+    <tableview class="tableview" id="notification_list" width="fill_parent" height="fill_parent"/>
+</root>
+	
+	
+	

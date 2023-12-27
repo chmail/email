@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector n1:height="@dimen/ucrop_progress_size" n1:width="@dimen/ucrop_progress_size" n1:viewportWidth="192.0" n1:viewportHeight="192.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <group n1:name="circleGroup" n1:pivotX="96.0" n1:pivotY="96.0" n1:rotation="0.0">
+        <path n1:name="circlePath" n1:pathData="M96,5.56405C145.946,5.56405 186.436,46.0536 186.436,96C186.436,145.946 145.946,186.436 96,186.436C46.0536,186.436 5.56405,145.946 5.56405,96C5.56405,46.0536 46.0536,5.56405 96,5.56405Z" n1:strokeColor="@color/ucrop_color_toolbar_widget" n1:strokeWidth="13.0" n1:trimPathEnd="0.7" n1:strokeAlpha="1.0" />
+    </group>
+</vector>

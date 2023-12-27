@@ -1,0 +1,19 @@
+<ui class="vlinearlayout" id="user_panel" width="fill_parent" height="wrap_content" >
+	<ui class="linearlayout" width="fill_parent" height="wrap_content" >
+		<ui class="framelayout" width="30" height="30" layout_gravity="center|vcenter" margin="20,10,0,10">
+			<imageview class="imageview" id="avatar" width="30" height="30" src="avatar_default" layout_gravity="center|vcenter" cornerRadius="15" cursor="hand"/>
+			<!-- <imageview class="imageview" id="" width="16" height="16" src="online" margin="0,0,1,1" isview="0" layout_gravity="right|bottom"/> -->
+		</ui>
+		<ui class="linearlayout" width="wrap_content" weight="1" height="wrap_content" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0" >
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0" >
+				<textview class="textview" id="name" text="{{name}}" width="wrap_content" height="wrap_content" gravity="left|vcenter" layout_gravity="left|vcenter" font="14n" isview="0" color="black"/> showrect="1"
+				<!-- <textview class="textview" id="num" width="wrap_content" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" text="00:00:00" color="gray5" font="12n" isview="0"/> -->
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="wrap_content">
+				<textview class="textview" id="email" text="{{email}}" width="0" height="wrap_content" weight="1" gravity="left|vcenter" layout_gravity="left|vcenter" font="14n"  isview="0" padding="0,0,0,0"  color="black"/>
+				<!-- <textview class="textview" id="badge" width="wrap_content" height="18" gravity="center|vcenter" layout_gravity="center|vcenter" color="white" font="12n" text="12" background="budge" padding="6,0,6,0" margin="0,0,10,0" isview="0"  visible="1"/> -->
+			</ui>
+		</ui>
+	</ui>
+	<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" layout_gravity="right|bottom" margin="15,0,0,0"/>
+</ui>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root width="140" height="86" resize="0" padding="1,1,1,1" background="root.menu">root_0
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0">
+		<ui class="framelayout" id="panel_in_email" width="fill_parent" height="28" padding="0,0,0,0" layout_gravity="center|vcenter">
+			<button class="button" id="btn_in_email" width="fill_parent" height="26" text="JoinConditionInEmails" color="gray1_disabled" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" background="button_top2" padding="35,2,2,2" margin="0,0,0,0"/>
+			<imageview class="imageview" id="tick_in_email" width="20" height="20" src="icon_hook2" layout_gravity="left|vcenter" padding="0,0,0,0" margin="3,0,0,0" visible="2"/>
+		</ui>
+		<ui class="framelayout" id="panel_free" width="fill_parent" height="28" padding="0,0,0,0" layout_gravity="center|vcenter">
+			<button class="button" id="btn_free" width="fill_parent" height="26" text="JoinConditionFree" color="gray1_disabled" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" background="button_top2" padding="35,2,2,2" margin="0,0,0,0"/>
+			<imageview class="imageview" id="tick_free" width="20" height="20" src="icon_hook2" layout_gravity="left|vcenter" padding="0,0,0,0" margin="3,0,0,0" visible="2"/>
+		</ui>
+		<ui class="framelayout" id="panel_yomail" width="fill_parent" height="28" padding="0,0,0,0" layout_gravity="center|vcenter">
+			<button class="button" id="btn_yomail" width="fill_parent" height="26" text="JoinConditionYoMail" color="gray1_disabled" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" background="button_top2" padding="35,2,2,2" margin="0,0,0,0"/>
+			<imageview class="imageview" id="tick_yomail" width="20" height="20" src="icon_hook2" layout_gravity="left|vcenter" padding="0,0,0,0" margin="3,0,0,0" visible="2"/>
+		</ui>
+	</ui>
+</root>

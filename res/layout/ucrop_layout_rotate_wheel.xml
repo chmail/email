@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/text_view_rotate" n1:text="100°" style="@style/ucrop_TextViewWidgetText" />
+    <com.yalantis.ucrop.view.widget.HorizontalProgressWheelView n1:id="@id/rotate_scroll_wheel" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/wrapper_rotate_by_angle" n1:layout_toRightOf="@id/wrapper_reset_rotate" n1:layout_below="@id/text_view_rotate" n1:layout_toStartOf="@id/wrapper_rotate_by_angle" n1:layout_toEndOf="@id/wrapper_reset_rotate" />
+    <FrameLayout n1:id="@id/wrapper_reset_rotate" n1:layout_centerVertical="true" style="@style/ucrop_WrapperRotateButton">
+        <ImageView n1:src="@drawable/ucrop_ic_reset" style="@style/ucrop_ImageViewWidgetIcon" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/wrapper_rotate_by_angle" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/ucrop_WrapperRotateButton">
+        <ImageView n1:src="@drawable/ucrop_ic_angle" style="@style/ucrop_ImageViewWidgetIcon" />
+    </FrameLayout>
+</RelativeLayout>

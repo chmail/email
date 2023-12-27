@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="2" title="Open Email" image=""/>
+    <item tag="4" title="Send to" image=""/>
+</menu>

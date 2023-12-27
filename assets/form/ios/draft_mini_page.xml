@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="tray" width="300" height="360" weight="1" > 
+<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="left|bottom" showrect="0">
+    <ui class="button" id="btn_close" width="fill_parent" height="fill_parent"/>
+    <ui class="vlinearlayout" id="draft_panel" width="fill_parent" height="wrap_content" margin="0,0,0,0"  id="pop_menu_form" showrect="0" layout_gravity="center|bottom" gravity="center|bottom" >
+        <ui id="draft_draft_row_0" class="linearlayout" width="fill_parent" height="110" margin="0,5,0,5" background="bg_menu_round_10"  visible="0">
+            <include src="draft_cell.xml"/>
+        </ui>
+
+        <ui id="draft_draft_row_1" class="linearlayout" width="fill_parent" height="110" margin="0,5,0,5" background="bg_menu_round_10" visible="0">
+            <include src="draft_cell.xml"/>
+        </ui>
+
+        <ui id="draft_draft_row_2" class="linearlayout" width="fill_parent" height="110" margin="0,5,0,5" background="bg_menu_round_10" visible="0">
+            <include src="draft_cell.xml"/>
+        </ui>
+    </ui>
+</ui>
+</root>
+
+
+
+

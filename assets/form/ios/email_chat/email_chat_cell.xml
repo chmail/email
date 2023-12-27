@@ -1,0 +1,35 @@
+<ui class="linearlayout" height="60" id="address_item" width="fill_parent" background="hlinearlayout" bgcolor="white">
+    <!-- avatar -->
+    <ui class="framelayout" height="60" layout_gravity="center|vcenter" margin="0,0,0,0" width="80">
+        <ui class="framelayout" height="42" layout_gravity="center|vcenter" margin="0,0,0,0"
+            width="42">
+            <imageview class="imageview" cornerRadius="20" height="40" id="avatar"
+                layout_gravity="center|vcenter" src="email_frame" width="40" />
+            <!-- unread number -->
+            <ui class="framelayout" height="16" layout_gravity="right|bottom" margin="0,0,0,0"
+                width="16">
+                <imageview class="imageview" height="16" id="user_vip" isview="0"
+                    layout_gravity="right|bottom" src="vip_yellow" visible="1" width="16" />
+            </ui>
+        </ui>
+    </ui>
+    <ui class="vlinearlayout" height="fill_parent" width="fill_parent"  >
+        <ui class="linearlayout" height="34" margin="0,4,0,0" min_limit="-1,28" width="fill_parent" >
+            <!-- email from/email details -->
+            <textview class="textview" color="black" ellipsis_end="1" font="16n"
+                gravity="left|vcenter" height="wrap_content" id="email_lab"
+                layout_gravity="left|vcenter" margin="0,0,0,0"  width="0" weight="1" />
+            <textview class="textview" color="gray5" font="12n" gravity="center|vcenter" height="wrap_content"
+                id="email_time"  layout_gravity="center|vcenter" margin="5,0,10,0"
+                width="wrap_content" />
+        </ui>
+        <!-- subject/budge -->
+        <ui class="linearlayout" height="24" isview="0" width="fill_parent">
+            <textview class="textview" color="gray5" font="14n" gravity="left|vcenter"
+                height="wrap_content" id="subject"  width="0" weight="1" isview="0" singleline="1" maxLines="1"/>
+            <textview background="budge" class="textview" color="white" font="12n"
+                gravity="center|vcenter" height="18" id="badge" layout_gravity="center|vcenter"
+                visible="0" width="wrap_content" isview="0" margin="5,0,10,0" padding="6,0,6,0" />
+        </ui>
+    </ui>
+</ui>

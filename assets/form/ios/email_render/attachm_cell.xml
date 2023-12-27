@@ -1,0 +1,15 @@
+<ui class="linearlayout" width="fill_parent" height="60" onclick="{#on_cell_click}">
+	<ui class="linearlayout" width="fill_parent" height="60" background="hlinearlayout" >
+		<ui class="framelayout" width="70" height="70" margin="4,0,0,0" layout_gravity="center|vcenter" >
+			<imageview class="imageview" id="file_icon" width="32" height="32" layout_gravity="center|vcenter"
+					   src="{{file_icon}}"  />
+		</ui>
+		<ui class="vlinearlayout" width="0" weight="2" height="wrap_content" layout_gravity="left|vcenter" margin="0,0,10,0" isview="0">
+			<textview class="textview" id="file_name" width="fill_parent" height="24" text="{{file_name}}" color="black" font="14n" singleline="1" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0" />
+			<textview class="textview" id="file_size" width="wrap_content" height="wrap_content" text="{{file_size}}" color="gray5" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+		</ui>
+		<ui class="framelayout" width="24" height="fill_parent" layout_gravity="right|vcenter" margin="0,0,20,0" isview="0" >
+			<imageview class="imageview" id="attachment_flag2" width="24" height="24" src="combined_shape" layout_gravity="center|vcenter" margin="0,0,0,0"/>
+		</ui>
+	</ui>
+</ui>

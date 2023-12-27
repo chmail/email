@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/fixed_bottom_navigation_container" n1:background="?selectableItemBackgroundBorderless" n1:paddingLeft="@dimen/fixed_width_padding" n1:paddingTop="@dimen/fixed_height_top_padding_inactive" n1:paddingRight="@dimen/fixed_width_padding" n1:paddingBottom="@dimen/fixed_height_bottom_padding" n1:layout_width="fill_parent" n1:layout_height="@dimen/fixed_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_gravity="center|top" n1:id="@id/fixed_bottom_navigation_icon_container" n1:layout_width="@dimen/fixed_icon_badge_grid_width" n1:layout_height="@dimen/fixed_icon_badge_grid_height">
+        <ImageView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/fixed_bottom_navigation_icon" n1:layout_width="@dimen/fixed_icon_grid" n1:layout_height="@dimen/fixed_icon_grid" n1:scaleType="fitXY" n1:contentDescription="@string/icon" />
+        <com.ashokvarma.bottomnavigation.BadgeTextView n1:gravity="center" n1:layout_gravity="end|center|top" n1:id="@id/fixed_bottom_navigation_badge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/BadgeText" />
+    </FrameLayout>
+    <TextView n1:textSize="@dimen/fixed_label_active" n1:gravity="center" n1:layout_gravity="bottom|center" n1:id="@id/fixed_bottom_navigation_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lines="1" n1:includeFontPadding="false" n1:scaleX="@dimen/fixed_label_active_to_inactive_ratio" n1:scaleY="@dimen/fixed_label_active_to_inactive_ratio" />
+</FrameLayout>

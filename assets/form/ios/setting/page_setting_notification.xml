@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray9">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="Notification">
+		
+	</ui>
+
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" bgcolor="gray9" separator="line"> 
+		<!-- -->
+		<ui class="framelayout" width="fill_parent" height="30" bgcolor="gray9">
+			<textview class="textview" text="Category Notify" id="" width="fill_parent" height="fill_parent" font="14n" color="gray5" margin="20,0,0,0" layout_gravity="left|vcenter" isview="0"/>
+		</ui>
+		
+		<ui class="framelayout" width="fill_parent" height="60" id="email_tab" bgcolor="white">
+			<ui class="checkbox" id="plugin_notification_sound" width="26" height="26" layout_gravity="right|vcenter" margin="0,0,30,0" />
+			<textview class="textview" text="Do not disturb" font="16n" color="black" width="fill_parent" height="fill_parent" margin="20,0,0,0"/>
+		</ui>
+
+
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

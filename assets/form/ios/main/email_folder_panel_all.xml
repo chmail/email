@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simplelistbox class="simplelistbox" id="email_folder_list_all" width="fill_parent" height="0" weight="1" item_height="60"> bgcolor="alpha" separator="line"
+	<!-- inbox -->
+	<ui class="framelayout" width="fill_parent" height="56" id="email_tab" background="bg_leftbar_cell">
+		<imageview class="imageview" width="26" height="26" src="icon_leftbar_inbox" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+		<textview class="textview" text="Inbox_menu" font="16n" color="white" width="wrap_content"
+			height="wrap_content" layout_gravity="left|vcenter" margin="50,0,0,0"/>
+	</ui>
+
+	<!-- star -->
+	<ui class="framelayout" width="fill_parent" height="56" id="star_tab" background="bg_leftbar_cell" visible="0">
+		<imageview class="imageview" width="26" height="26" src="icon_leftbar_bigstar" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+		<textview class="textview" text="Stared_menu" font="16n" color="white" id="star" width="wrap_content"
+			height="wrap_content" layout_gravity="left|vcenter" margin="50,0,0,0"/>
+	</ui>
+
+	<!-- sent -->
+	<ui class="framelayout" id="sent" width="fill_parent" height="56" background="bg_leftbar_cell">
+		<imageview class="imageview" width="26" height="26" src="icon_leftbar_sent" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+		<textview class="textview" text="Sent_menu" font="16n" color="white" width="wrap_content"
+			height="wrap_content" layout_gravity="left|vcenter" margin="50,0,0,0"/>
+	</ui>
+	
+	<!-- Delete -->
+	<ui class="framelayout" id="trash_tab" width="fill_parent" height="56" background="bg_leftbar_cell">
+		<imageview class="imageview" width="26" height="26" src="icon_leftbar_trash" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+		<textview class="textview" text="Delete_menu" font="16n" color="white" width="wrap_content"
+			layout_gravity="left|vcenter" height="wrap_content" margin="50,0,0,0"/>
+	</ui>
+	
+	<!-- spam -->
+	<ui class="framelayout" id="spam_tab" width="fill_parent" height="56" background="bg_leftbar_cell">
+		<imageview class="imageview" width="26" height="26" src="icon_leftbar_spam" layout_gravity="left|vcenter" margin="10,0,0,0" isview="0"/>
+		<textview class="textview" text="Junk_menu" font="16n" color="white" width="wrap_content"  layout_gravity="left|vcenter" height="wrap_content" margin="50,0,0,0"/>
+	</ui>
+</simplelistbox>

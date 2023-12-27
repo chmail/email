@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen" bgcolor="gray9">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="User setting">
+		
+	</ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" bgcolor="gray9" separator="line">
+		<!-- -->
+		<ui class="framelayout" width="fill_parent" height="60" id="basic_info_box" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_user" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Userinfo" font="16n" color="black" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
+		</ui>
+
+		<ui class="framelayout" width="fill_parent" height="60" id="avatar_box" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_avatar" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Avatar" font="16n" color="black" id="btn_important_list" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
+		</ui>
+
+		<ui class="framelayout" id="email_editor_box" width="fill_parent" height="60" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_email" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Email Edit" font="16n" color="black" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
+		</ui>
+
+		<ui class="framelayout" id="email_filter_box" width="fill_parent" height="60" bgcolor="white">
+			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
+			<imageview class="imageview" width="32" height="32" src="setting_filter" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
+			<textview class="textview" text="Filter" font="16n" color="black" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
+		</ui>
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+	
+	
+	

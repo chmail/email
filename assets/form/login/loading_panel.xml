@@ -1,0 +1,7 @@
+<ui class="vlinearlayout" id="loading_panel" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" visible="0" >
+	<textview class="textview" id="text_yomail_login" width="wrap_content" height="wrap_content" text="YoMail Login" font="24n" color="gray2" margin="0,80,0,0" layout_gravity="center|vcenter" isview="0"/>
+	<ui class="vlinearlayout" width="120" height="140" layout_gravity="center|vcenter" margin="0,50,0,0">
+		<indicator class="indicator" id="indicator" width="30" height="30" src="login_progress" layout_gravity="center|vcenter" margin="0,0,0,0"/>
+		<button class="button" id="btn_cancel" width="120" height="40" margin="0,0,0,0" text="cancel" color="white" font="14B" layout_gravity="center|vcenter" background="btn_login" visible="0"/>
+	</ui>
+</ui>

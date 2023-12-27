@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="sign_up_tip" width="540" height="350" left="center" top="center" mode="caption" resize="0">
+	<ui class="framelayout" width="fill_parent"  height="fill_parent" background="login_bg">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<!-- system button -->
+		<!-- <sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/> -->
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" mouse_action="1" margin="20,40,10,0">
+			<textview class="textview"  width="wrap_content" height="20" text="Warm Tip" color="black" font="20n"  layout_gravity="left|vcenter" gravity="center|vcenter" margin="0,0,0,0"/>
+			<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,15,0,0" >
+				<textview class="textview"  width="fill_parent" height="wrap_content" singleline="0" text="sign tip content" color="black" font="16n"  layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0"/>
+			</ui>
+			<ui class="view" weight="1" width="fill_parent" height="0" view="0" />
+			<ui class="linearlayout" width="fill_parent" height="60" margin="0,0,0,30" >
+				<ui class="view" weight="1" width="0" height="wrap_content" view="0" />
+				<textview class="textview"  width="140" height="30" id="btn_skip" text="Still Skip"  color="gray1_disabled" font="14n_underline"  background="com_btn_white_box_r2" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,20,0"/>
+				<textview class="textview"  width="140" height="30" id="btn_back" text="Back to signup"  background="com_btn" color="white" font="14n"  layout_gravity="center|vcenter" gravity="center|vcenter"/>
+			</ui>
+		</ui>
+	</ui>
+</root>

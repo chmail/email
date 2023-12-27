@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="logout" width="400" height="150" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+	<ui class="framelayout" id="captionbar" width="fill_parent" height="fill_parent">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<ui class="vlinearlayout" id="form_panel" width="fill_parent" height="fill_parent" margin="0,0,0,0" mouse_action="1">
+			<ui class="framelayout" id="captionbar" width="fill_parent" height="40" isview="0">
+				<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Tips" font="16B" color="black" layout_gravity="left|vcenter" gravity="center|vcenter" margin="30,0,0,0" visible="0"/>
+			</ui>
+			<ui class="linearlayout" id="content_panel" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" margin="0,10,0,0" padding="0,0,0,0"  isview="0">
+				<!-- <imageview class="imageview" id="type_icon" width="60" height="60" src="icon_failed" margin="20,0,20,0" layout_gravity="left"/>
+				-->
+				<textview class="textview" id="msg" text="Logout YoMail Will logout eamil acount at the same time" width="fill_parent" height="fill_parent" singleline="0" color="black" font="14n" margin="30,0,10,0" layout_gravity="left" />
+			</ui>
+			<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,0,0"/>
+			<ui class="linearlayout" width="fill_parent" height="40" background="root_1" mouse_action="1">
+				<button class="button" id="cancel" width="70" height="24" text="Cancel" color="gray1_disabled" font="12n" layout_gravity="center|vcenter" background="com_btn_white_box_r2" margin="20,0,10,0" />
+				<ui class="view"  width="0" height="0" weight="1" isview="0"/>
+				<button class="button" id="ok" width="70" height="24" text="Ok" color="white" font="12n" layout_gravity="center|vcenter" background="com_btn" margin="0,0,20,0"/>
+			</ui>
+		</ui>
+		<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+			<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+		</ui>
+	</ui>
+</root>

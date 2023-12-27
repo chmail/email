@@ -1,0 +1,7 @@
+<ui id="addressa_ac_label_cell" class="framelayout" width="fill_parent" height="30" bgcolor="gray11">
+	 
+	<ui class="linearlayout" width="fill_parent" height="24" layout_gravity="center|vcenter" margin="20,0,20,0" isview="0">
+		<textview class="textview" id="label" width="wrap_content" height="wrap_content" text="..." color="gray5" font="12n" layout_gravity="center|vcenter" gravity="left|vcenter"/>
+	</ui>
+	<imageview class="imageview" width="fill_parent" height="1" src="line_1" layout_gravity="center|bottom" isview="0"/>
+</ui>

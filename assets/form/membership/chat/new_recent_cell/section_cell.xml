@@ -1,0 +1,8 @@
+<ui id="section_cell" class="framelayout" width="fill_parent" height="wrap_content" padding="0,0,0,0" >
+	<checkbox class="checkbox" id="arrow" width="fill_parent" height="fill_parent" icon="icon_arrow_down" box="16,16" padding="0,0,0,0" margin="2,0,0,0" layout_gravity="left|vcenter" checked="0" background=""/>day_cell_bg
+	<ui class="framelayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" margin="24,0,0,0"  mouse_action="1">
+		<textview class="textview" id="title" width="wrap_content" height="wrap_content" text="Discussion" color="black" font="17n" padding="0,0,0,0" gravity="left|vcenter" layout_gravity="left|vcenter" isview="0"/>
+		<button class="button" id="btn_add" width="20" height="20" background="adduser" layout_gravity="right|vcenter" padding="2,2,2,2" margin="0,0,10,0" tooltip="Create Group" background="na"/>
+		<!-- <button class="button" id="btn_add" width="18" height="18" icon="popup_email_add_black" box="16,16" layout_gravity="right|vcenter" margin="0,0,5,0" background="com_btn_white_box_r2" /> -->
+	</ui>
+</ui>

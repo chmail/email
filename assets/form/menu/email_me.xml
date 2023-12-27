@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="13" title="Reply With Chat" image="email_menu_gtd_chat" key="" selector="onWorkMenuPopup:"/>
+	<item tag="999" title="" image="menu_seperator" />
+    <item tag="22" title="Memo" image="email_menu_gtd_memo" key="" selector="onWorkMenuPopup:"/> icon="memo_memo"
+	<item tag="21" title="To Do" image="email_menu_gtd_todo" key="" selector="onWorkMenuPopup:"/> icon="todo_memo"
+    <item tag="20" title="Done" image="email_menu_gtd_done" key="" selector="onWorkMenuPopup:"/> icon="done_memo"
+</menu>

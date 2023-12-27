@@ -1,0 +1,10 @@
+<ui id="all_folder_wrapper" class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" >
+	<ui class="vlinearlayout" width="fill_parent" height="20" isview="0">
+	</ui>
+
+	<textview class="textview" id="" text="All Accounts" width="fill_parent"
+		height="wrap_content" gravity="left|vcenter" layout_gravity="left|vcenter"
+		color="white" font="16n" isview="0" margin="20,10,0,10"/>
+	<!-- account box-->
+	<include src="email_folder_panel_all.xml"/>
+</ui>

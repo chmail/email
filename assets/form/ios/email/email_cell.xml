@@ -1,0 +1,60 @@
+<!-- <ui class="linearlayout" width="fill_parent" height="90" layout_gravity="center|vcenter" > -->
+<ui id="email_item" class="vlinearlayout" width="fill_parent" height="wrap_content" bgcolor="white" focus="blocks">
+	<ui class="vlinearlayout" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" margin="0,0,10,0">
+		<ui id="email_header" class="linearlayout" width="fill_parent" height="36" layout_gravity="center|top" showrect="0">
+			<ui class="framelayout" width="16" height="16" margin="4,0,0,0"  isview="0" layout_gravity="left|vcenter">
+				<imageview class="imageview" id="email_flag" width="16" height="16" src="icon_email_unread" isview="0"/>
+			</ui>
+			<ui id="user_avatar_form" class="framelayout" width="24" height="24" layout_gravity="left|vcenter" margin="4,0,0,0" >
+				<imageview class="imageview" id="user_avatar" width="24" height="24" src="email_frame"  layout_gravity="center|vcenter" cornerRadius="12"/>
+				<ui class="framelayout" width="10" height="10" layout_gravity="right|bottom" isview="0">
+					<imageview class="imageview" id="avatar_vip" width="10" height="10" src="vip_yellow" isview="0" layout_gravity="right|bottom"/>
+				</ui>
+			</ui>
+
+			<ui class="framelayout" width="0" weight="1" height="fill_parent" margin="6,0,0,0" isview="0">
+				<!-- Textview to checkbox -->
+				<textview class="textview" id="email_from" width="fill_parent" height="fill_parent" box="0,0" icon="na" text="" color="black" font="14n" margin="0,6,0,0" background="na" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0" singleline="1" maxLines="1"/>14n
+			</ui>
+
+			<ui class="framelayout" width="wrap_content" height="fill_parent" id="menu_panel">
+				<ui class="linearlayout" width="wrap_content" id="time_bound" height="fill_parent" layout_gravity="center|vcenter" isview="0">width="75"
+					<ui class="framelayout" width="20" height="20" layout_gravity="left|vcenter" margin="0,8,0,0" isview="0">
+						<imageview class="imageview" id="attachment_flag" width="20" height="20" src="icon_email_attachment" layout_gravity="left|vcenter" margin="0,0,0,0" isview="0" visible="0"/>
+					</ui>
+					<ui class="framelayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,6,0,0" isview="0" >
+						<textview class="textview" id="email_time" width="wrap_content" height="wrap_content" text="20:22:33" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" color="gray5" font="12n" isview="0" />
+					</ui>
+				</ui>
+				<ui class="linearlayout" id="menu_panel_btns" width="56" height="30" layout_gravity="right|vcenter" padding="0,2,0,0"  visible="0" >
+					<button class="button" id="btn_reply_all" width="26" height="26" icon="icon_email_info_re2" padding="3,3,3,3"  background="menu_all_bg"/>
+					<button class="button" id="menu_all" width="26" height="26" icon="menu_all" padding="3,3,3,3" margin="4,0,0,0" background="menu_all_bg"/>
+				</ui>
+			</ui>
+		</ui>
+		<ui id="email_body" class="linearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" showrect="0">
+			<ui class="framelayout" width="16" height="16" margin="4,0,0,0" layout_gravity="left|vcenter" >
+				<commoncheckbox id="email_star" class="commoncheckbox" width="16" height="16" src="icon_email_star" icon="icon_email_star" box="16,16"  background="na" isview="0"/>
+			</ui>
+			<textview class="textview" id="email_title" width="0" weight="1" height="wrap_content"  text="" color="black" font="16B" margin="4,0,0,0"  background="na" layout_gravity="left|vcenter" gravity="left|vcenter" maxLines="1"/>12n
+			<ui class="framelayout" width="50" height="fill_parent" margin="0,0,0,0" isview="0">
+				<textview class="textview" id="budge" width="wrap_content" height="wrap_content" margin="0,0,5,0" gravity="center|vcenter" layout_gravity="right|vcenter" background="budge.gray" color="white" font="12n" padding="6,0,6,0" />12n
+			</ui>
+		</ui>
+
+		<ui id="email_tail" class="linearlayout" width="fill_parent" height="44" layout_gravity="center|vcenter" showrect="0">
+			<ui class="framelayout" width="0" height="0" layout_gravity="left|vcenter" isview="0">
+				<imageview class="imageview" id="ical_flag" width="0" height="0" src="calendar_tips_small"  visible="0"/>
+			</ui>
+
+			<textview class="textview" id="email_contactgroup" width="wrap_content" height="fill_parent" margin="0,0,5,0" isview="0" singleline="1" color="white" font="13n" gravity="center|vcenter" background="com_btn_flat" visible="0"/>12n
+
+			<!-- summray -->
+			<textview class="textview" id="email_summary"   margin="24,0,8,0" width="wrap_content" height="wrap_content"
+				isview="0" maxLines="2" singleline="0" color="gray5" font="14n" layout_gravity="left|vcenter" gravity="left|vcenter"/>
+			<ui class="view" id="label_color" width="24" height="20" margin="0,5,5,0" isview="0" visible="0"/>
+		</ui>
+
+	</ui>
+	</ui>
+	<!-- </ui> -->

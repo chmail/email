@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="discussion_info" width="680" height="500" left="center" top="center" mode="caption" background="root_0" resize="0" >
+<ui class="framelayout" width="fill_parent" height="fill_parent" margin="1,1,1,1">
+<ui class="linearlayout"  width="fill_parent" height="fill_parent" >
+	<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" background="root_a_245">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="30">
+			<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+			<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+				<!-- <imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+				-->
+				<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Discussion Info" font="14n" color="gray" gravity="center|vcenter" padding="0,0,0,0" isview="0"/>
+			</ui>
+		</ui>
+		<!-- avatar -->
+		<ui class="framelayout" width="72" height="72" layout_gravity="center|vcenter" margin="0,50,0,0" >
+			<imageview class="imageview" id="" width="72" height="72" mask="roundrect_mask" src="root_a_230" layout_gravity="center|vcenter" />
+			<imageview class="imageview" id="avatar" width="60" height="60" mask="roundrect_mask" background="root_white" layout_gravity="center|vcenter" />
+		</ui>
+		<!-- group name -->
+		<!-- <ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="0,30,0,0">-->
+		<!-- <ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,0,0,0">
+		<edit class="edit" id="name" width="wrap_content" height="wrap_content" singleline="1" color="gray" font="14B" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,0,0" padding="0,0,0,0" background="na" ellipsis_end="1" readonly="1" max_limit="260,-1"/>
+		<button class="button" id="btn_ok" width="wrap_content" height="22" text="OK" color="white" font="12n" padding="10,0,10,0" margin="5,0,0,0" background="com_btn" layout_gravity="right|vcenter" />
+		</ui> -->
+		<ui class="linearlayout" id="group_name_panel" width="fill_parent" height="26" layout_gravity="center|vcenter" margin="0,20,0,0">
+			<!-- <textview class="textview" id="" width="100" height="20" text="Group name" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"  showrect="1"/> -->
+			<ui class="framelayout" width="fill_parent" height="fill_parent" margin="0,0,0,0">
+				<ui class="linearlayout" id="inner_edit_panel" width="wrap_content" height="26" layout_gravity="center|vcenter" mouse_action="1" >
+					<edit class="edit" id="inner_info_edit" width="0" weight="1" height="26" text="" color="gray" font="14B" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="left|vcenter" readonly="0" min_limit="200,-1" max_limit="300,-1" ellipsis_end="1" background=""/>
+					<button class="button" id="inner_btn_save" cursor="hand" width="30" height="24" box="26,26" text="Save" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,10,0" background="com_btn" /> calendar_accepted
+					<button class="button" id="inner_btn_cancel" cursor="hand" width="wrap_content" height="24" box="26,26" text="Cancel" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="com_btn"  />
+
+				</ui>
+				<ui class="linearlayout" id="inner_display_panel" width="wrap_content" height="26" layout_gravity="center|vcenter"  mouse_action="1">
+					<edit class="edit" id="inner_info_display" width="wrap_content" height="20" text="123" color="gray" font="14B" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="1" background="na"  ellipsis_end="1" max_limit="250,-1"/>
+					<button class="button" id="inner_btn_edit" cursor="hand" width="26" height="26" box="26,26" text="Edit" font="12n_underline" color="blue1_status" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="na" visible="1" />
+					<button class="button" id="inner_btn_cancel" cursor="hand" width="wrap_content" height="24" box="26,26" text="Cancel" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="com_btn"  />
+
+				</ui>
+			</ui>
+		</ui>
+		<!-- <textview class="textview" id="" width="fill_parent" height="wrap_content" color="gray3" font="12n" layout_gravity="left|vcenter" margin="0,0,0,0" padding="10,0,10,0" text="test@eamail.com" visible="0"/> -->
+		
+		
+		<ui class="view" width="fill_parent" weight="1" height="0" isview="0" />
+		<ui class="framelayout" width="220" height="30" margin="0,40,0,30" layout_gravity="center|vcenter">
+			<button class="button" id="btn_share" width="fill_parent" height="fill_parent" icon="" text="" color="gray1_disabled" font="12n" margin="0,0,0,0" background="com_btn_white_box_r2" />
+			<ui class="linearlayout" width="80" height="20" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0">
+				<imageview class="imageview" width="20" height="20" src="email_menu_share" layout_gravity="left|vcenter" padding="0,0,0,0" isview="0"/>
+				<textview class="textview" id="" width="60" height="20" text="Share" color="gray" font="12n" padding="10,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+			</ui>
+		</ui>
+
+		<ui class="framelayout" width="220" height="30" margin="0,10,0,30" layout_gravity="center|vcenter" visible="0">gray1_disabled
+			<button class="button" id="btn_leave" width="fill_parent" height="fill_parent" icon="" text="Leave" color="white" font="12n" margin="0,0,0,0" background="com_btn" />com_btn_white_box_r2
+		</ui>
+	</ui>
+	<!-- button -->
+	<!-- <ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" padding="0,10,0,10" margin="0,0,0,0" >
+	<button class="button" id="btn_save" width="80" height="24" layout_gravity="center|vcenter" margin="0,0,0,5" background="com_btn_disabled" text="rename" color="white" font="12n" visible="1"/>
+	<button class="button" id="memo" width="80" height="24" layout_gravity="center|vcenter" margin="0,0,0,0" background="com_btn" text="memo" color="white" font="12n" visible="0"/>
+	</ui>-->
+	<!-- <ui class="view" width="0" height="0" weight="1" />-->
+	<!-- listview -->
+	<!-- <ui class="vlinearlayout" width="fill_parent" height="0" weight="1" padding="0,0,0,0" background="root_white">
+	<tableview class="tableview" id="member_list" width="fill_parent" height="fill_parent" background="na" margin="0,0,0,0" padding="0,0,0,0"/>
+	</ui> -->
+	<ui class="vlinearlayout" width="0"  weight="1" height="fill_parent" background="root_white">
+		<!-- group id -->
+		<ui class="linearlayout" width="fill_parent" height="20" layout_gravity="center|vcenter" margin="20,60,0,0">
+			<textview class="textview"  width="100" height="20" text="Group id" color="gray" font="12n"  layout_gravity="left|vcenter" gravity="right|vcenter" isview="0"  margin="0,0,20,0"/>
+			<edit class="edit" id="group_id" width="wrap_content" height="20" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" background="na"/>
+		</ui>
+		<!-- nickname -->
+		<ui class="linearlayout" id="nickname_panel" width="fill_parent" height="26" margin="20,15,0,8">
+			<textview class="textview" id="" width="100" height="fill_parent" text="Group NickName" color="gray" font="12n"  gravity="right|vcenter" isview="0" margin="0,0,20,0"/>
+			<ui class="linearlayout" id="inner_edit_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" visible="0" >
+				<edit class="edit" id="inner_info_edit" width="0" weight="1" height="20" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="0" background=""/>
+				<button class="button" id="inner_btn_save" cursor="hand" width="30" height="24" box="26,26" text="Save" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,30,0" background="com_btn"  />
+			</ui>
+			<ui class="linearlayout" id="inner_display_panel" width="0" weight="1" height="26" layout_gravity="left|vcenter" margin="6,0,0,0" mouse_action="1" >
+				<edit class="edit" id="inner_info_display" width="wrap_content" height="20" text="" color="gray" font="12n"  margin="0,0,8,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" background="na"/>
+				<button class="button" id="inner_btn_edit" cursor="hand" width="26" height="26" box="26,26" text="Edit" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,30,0" background="na"  />
+			</ui>
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="20" layout_gravity="center|vcenter" margin="20,20,0,0">
+			<textview class="textview"  width="100" height="20" text="Is Permant" color="gray" font="12n"  layout_gravity="left|vcenter" gravity="right|vcenter" isview="0"  margin="0,0,20,0"/>
+			<checkbox class="checkbox" id="permant_text" width="18" height="18" icon="checkbox" box="14,14" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" showrect="0"/>
+		</ui>
+	</ui>
+</ui>
+	<ui class="framelayout" width="fill_parent" height="30">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<ui class="linearlayout" width="30" height="30" margin="0,0,0,0" layout_gravity="right|top" >
+			<!-- system -->
+			<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/>
+		</ui>
+	</ui>
+</ui>
+</root>

@@ -1,0 +1,19 @@
+<ui class="framelayout" width="fill_parent" height="fill_parent" id="history_panel" >
+	<tableview class="tableview" id="history_list" width="fill_parent" height="fill_parent" padding="0,0,5,0" margin="0,0,0,0" background="na"/>
+	<ui class="linearlayout" width="wrap_content" id="more_new_message_panel" height="36" layout_gravity="right|top" background="bg_email_tips" visible="0" >
+		<textview class="textview" id="text_more_message" width="wrap_content" height="fill_parent" text="" color="blue1" font="14n" padding="0,0,0,0" margin="15,4,0,0" layout_gravity="left|top" gravity="left|top" />
+		<imageview class="imageview" width="1" height="fill_parent" src="line_2" margin="4,4,0,10" isview="0"/>
+		<button class="button" id="btn_close_more_message" width="24" height="24" background="na" icon="sys_close3" layout_gravity="left|top" padding="2,2,2,2" margin="0,4,0,0" tooltip="Close Window"/>
+	</ui>
+	<ui class="linearlayout" width="wrap_content" id="new_message_panel" height="36" layout_gravity="right|bottom" background="bg_email_tips" >
+		<textview class="textview" id="text_new_message" width="wrap_content" height="fill_parent" text="" color="blue1" font="14n" padding="0,0,0,0" margin="15,4,0,0" layout_gravity="left|top" gravity="left|top" />
+		<imageview class="imageview" width="1" height="fill_parent" src="line_2" margin="4,4,0,10" isview="0"/>
+		<button class="button" id="btn_close_message" width="24" height="24" background="na" icon="sys_close3" layout_gravity="left|top" padding="2,2,2,2" margin="0,4,0,0" tooltip="Close Window"/>button_top_close
+	</ui>
+	<ui class="linearlayout" id="onOtherWays" width="wrap_content" height="50" layout_gravity="bottom|left" margin="0,0,0,0" visible="0">showrect="1"
+		<textview class="textview" id="canElse" width="wrap_content" height="30" margin="30,10,0,0" text="canElse" gravity="center|vcenter" color="gray5" />showrect="1"
+		<button class="button" id="talkToOfficial" width="80" height="30" text="talkToOfficial" margin="0,10,0,0" gravity="vcenter|center"  background="na" />showrect="1"
+		<button class="button" id="mailToOfficial" width="80" height="30" text="emailToOfficial" margin="0,10,0,0" gravity="vcenter|center" background="na" />showrect="1"
+	</ui>
+
+</ui>

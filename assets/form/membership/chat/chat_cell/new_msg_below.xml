@@ -1,0 +1,3 @@
+<ui class="framelayout" width="wrap_content" height="wrap_content" isview="0" >
+	<textview class="textview" id="text" width="wrap_content" text="below is new message" height="wrap_content" text="40,0,40" color="gray3" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" padding="10,0,10,0" background="root_white" />
+</ui>

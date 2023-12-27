@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="" width="screen" height="screen" bgcolor="white"> 
+	 <ui class="navigatebar" height="56" id="navigatebar" width="fill_parent">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="tb_close" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close" />
+                
+                <ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+                <ui class="navigateitem" id="tab_menu" image="icon_navbar_more" layout_gravity="right|vcenter" type="right" width="40" height="40" visible="0"/>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="addrbook_right" margin="0,56,0,0">
+	<ui class="scrollview" width="fill_parent" height="fill_parent">
+
+		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0"> 
+			<ui class="linearlayout" width="fill_parent" height="80" layout_gravity="left|vcenter" margin="20,0,0,0">
+				<!-- avatar -->
+				<ui class="framelayout" width="64" height="64" layout_gravity="center|vcenter" margin="20,0,0,0" >
+					<imageview class="imageview" id="avatar" width="60" height="60" layout_gravity="center|vcenter" src="avatar_default" cornerRadius="30"/>
+					<imageview class="imageview" id="avatar_vip" width="20" height="20" src="vip_yellow" margin="0,0,0,0" isview="0" layout_gravity="right|bottom" visible="0"/>
+				</ui>
+
+				<ui class="vlinearlayout" width="wrap_content" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,0,0" >
+					<!-- normal -->
+					<ui class="linearlayout" id="person_normal_panel" width="fill_parent" height="26" visible="1">
+						<textview id="email_display_name" class="textview" width="wrap_content" height="wrap_content" text="" ellipsize="middle" font="17n" color="black" layout_gravity="left|vcenter" gravity="left|vcenter"  isview="0"/>
+					</ui>
+					<textview class="textview" id="default_email_txt" width="fill_parent" height="wrap_content" text="soulzx2010@gmail.com" color="gray5" font="13n" layout_gravity="left|vcenter" gravity="left|vcenter"  />
+				</ui>
+
+				<!-- <ui class="view" width="fill_parent" height="20" isview="0"/> -->
+			!!!!<ui class="vlinearlayout" id="plugin_list_panel" width="fill_parent" height="80" showrect="0" visible="0">
+					<textview class="textview" id="" width="fill_parent" height="wrap_content" color="black" font="13n" layout_gravity="left|vcenter" margin="0,4,0,4"  text="plugin info"/>
+					<ui class="vlinearlayout" width="fill_parent"  height="0" weight="1">
+						<gridview class="gridview" id="plugin_list_gridview" width="fill_parent" height="fill_parent" margin="-1,-1,-1,-1"  gravity="vcenter" itemsize="160,48" min_limit="160,56" showrect="0"/>
+					</ui>
+					 
+				</ui>
+			</ui>
+			<button class="button" id="btn_send" width="fill_parent" height="40" text="Compose" color="black" font="13n" layout_gravity="center|vcenter" margin="40,10,40,0" background="com_btn_white_box_r2"/>
+			<button class="button" id="btn_edit" width="fill_parent" height="40" text="Edit Appointment" color="white" font="13n" layout_gravity="center|vcenter" margin="40,10,40,10" background="com_btn"/>
+			<button class="button" id="btn_delete" width="fill_parent" height="40" text="Edit Appointment" color="white" font="13n" layout_gravity="center|vcenter" margin="40,10,40,10" background="com_btn" visible="0"/>
+			
+			<!--Option-->
+			<simplelistbox class="simplelistbox" id="contact_info_card" width="fill_parent" height="wrap_content" item_height="40" separator="" bgcolor="white">
+				<!-- <ui class="view" width="fill_parent" height="20" isview="0"/> -->
+
+				<ui id="detail_info_row_0" class="linearlayout" width="fill_parent" height="40"   visible="0" >
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				
+				<ui id="detail_info_row_1" class="linearlayout" width="fill_parent" height="40"  visible="0" bgcolor="white" >
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				
+				<ui id="detail_info_row_2" class="linearlayout" width="fill_parent" height="40"  visible="0" bgcolor="white" >
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				
+				<ui id="detail_info_row_3" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				
+				<ui id="detail_info_row_4" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_5" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_6" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_7" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_8" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_9" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_10" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_11" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_12" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_13" class="linearlayout" width="fill_parent" height="40"  visible="0">
+					<include src="cell/contact_info_card_form_cell.xml"/>
+				</ui>
+				<ui id="detail_info_row_address" class="linearlayout" width="fill_parent" height="40" visible="0">
+					<textview class="textview" id="info_textview_address" width="wrap_content" height="wrap_content" color="black" font="13n" layout_gravity="left|vcenter" margin="20,0,0,0" text=""/>
+					<button id="redirect_map" class="button" width="28" height="28" icon="icon_postion" padding="2,2,2,2" layout_gravity="left|vcenter" background="tool_btn_hover"/>
+				</ui>
+				<ui id="detail_info_row_note" class="linearlayout" width="fill_parent" height="60"  visible="0">
+					<textview class="textview" id="info_textview_note" width="fill_parent" height="wrap_content" color="black" font="13n" layout_gravity="left|top" margin="20,0,0,0" text=""/>
+				</ui>
+
+			</simplelistbox>
+		</ui>
+	</ui>
+</ui>
+</root>

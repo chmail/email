@@ -1,0 +1,5 @@
+<ui class="framelayout" width="60" height="60" margin="0,0,0,0" layout_gravity="center|vcenter">
+	<ui class="framelayout" width="60" height="60" margin="0,0,0,0" layout_gravity="center|vcenter" >
+		<imageview class="imageview" id="theme_custom_preview" width="fill_parent" height="fill_parent" margin="4,4,4,4"/>
+	</ui>
+</ui>

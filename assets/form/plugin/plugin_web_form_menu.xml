@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<item tag="1" title="Open in browser" image="" key="" selector="onWorkMenuPopup:"/>
+	<item tag="2" title="Copy url" image="" key="" selector="onWorkMenuPopup:"/>
+	<item tag="3" title="refresh" image="" key="" selector="onWorkMenuPopup:"/>
+</menu>

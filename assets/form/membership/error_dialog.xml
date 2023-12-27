@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="error" width="400" height="200" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+<ui class="framelayout" id="captionbar" width="fill_parent" height="fill_parent" background="root_1">
+	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" mouse_action="1">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="50" isview="0">
+			<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Error message" font="16B" color="black" layout_gravity="left|vcenter" gravity="center|vcenter" margin="30,0,0,0" visible="0"/>
+			<textview class="textview" id="error_title" width="wrap_content" height="wrap_content" text="Error message :" font="16B" color="black" layout_gravity="left|vcenter" gravity="center|vcenter" margin="30,0,0,0"/> 
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" margin="0,0,0,0" background="">
+			<imageview class="imageview" width="60" height="60" src="icon_tips" margin="20,0,20,0"/>
+			<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,20,20">
+				<!-- <textview class="textview" id="error_title" width="fill_parent" height="24" text="Error message :" font="12n" color="gray1" gravity="left|vcenter" margin="0,4,0,0" padding="0,0,0,0" />  -->
+				<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" background="editview" padding="0,0,0,0" margin="0,0,0,0">
+					<textview class="textview" id="error_msg" text="This is wrong way,please chaeck!" width="204" height="wrap_content" background="na" singleline="0" color="gray1" font="12n" padding="3,3,3,3" />
+				</ui>
+			</ui>
+			<ui class="vlinearlayout" width="0" height="0" margin="0,0,0,0" layout_gravity="center|vcenter">
+				<ui class="view"  width="0" height="0" weight="1"/>
+				<!-- <button class="button" id="copy" width="78" height="25" text="copy" color="gray2" font="12n" background="tool_btn" margin="0,0,0,18"/>margin="0,0,0,10" -->
+				<button class="button" id="solution" width="78" height="25" text="solution" color="gray2" font="12n" background="tool_btn" margin="0,0,0,0" visible="0"/>	
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1" margin="0,0,0,0"/>
+		<ui class="linearlayout" width="fill_parent" height="40" background="root_2">
+			<textview class="textview" id="tview_help" width="wrap_content" height="24" text="Get Help" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" margin="10,0,0,0" />
+			<textview class="textview" id="online_support" width="wrap_content" height="24" text="Online Support" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" margin="10,0,0,0" />
+			<textview class="textview" id="copy" width="wrap_content" height="24" text="copy" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" background="na" margin="10,0,0,0"/>
+			<ui class="view"  width="0" height="0" weight="1" isview="0"/>
+			<button class="button" id="ok" width="wrap_content" height="24" text="Close Window" color="white" font="12n" layout_gravity="left|vcenter" background="com_btn" padding="10,0,10,0" margin="0,0,10,0"/>
+		</ui>
+	</ui>
+	<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+</ui>
+</root>
+
+
+
+
+<!-- <root id="error" width="400" height="200" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+<ui class="framelayout" id="captionbar" width="fill_parent" height="fill_parent">
+	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="30" background="captionbar">
+			<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter">
+				<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+				<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+					<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+					<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Error message" font="14n" color="gray3" gravity="center|vcenter" padding="0,0,0,0" /> 
+				</ui>
+			</ui>
+		</ui>
+		<ui class="framelayout" id="captionbar" width="fill_parent" height="50" isview="0">
+			<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Tips" font="16B" color="black" layout_gravity="left|vcenter" gravity="center|vcenter" margin="30,0,0,0" /> 
+		</ui>
+		<ui class="linearlayout" width="fill_parent" height="128" margin="0,0,0,0" padding="0,0,0,8" background="root_1">
+			<imageview class="imageview" width="60" height="60" src="icon_tips" margin="12,18,12,0"/>
+			<ui class="vlinearlayout" width="210" height="fill_parent" margin="0,0,12,18">
+				<textview class="textview" id="error_title" width="fill_parent" height="26" text="Error message :" font="12n" color="gray1" gravity="left|vcenter" margin="0,4,0,0" padding="0,0,0,0" /> 
+				<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" background="editview" padding="0,0,0,0" margin="0,4,0,0">
+					<textview class="textview" id="error_msg" text="This is wrong way,please chaeck!" width="204" height="wrap_content" background="na" singleline="0" color="gray1" font="12n" padding="3,3,3,3" />
+				</ui>
+			</ui>
+			<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,0,0,0" layout_gravity="center|right">
+				<ui class="view"  width="0" height="0" weight="1"/>
+				<button class="button" id="copy" width="78" height="25" text="copy" color="gray2" font="13n" background="tool_btn" margin="0,0,0,18"/>margin="0,0,0,10"
+				<button class="button" id="solution" width="78" height="25" text="solution" color="gray2" font="13n" background="tool_btn" margin="0,0,0,0" visible="0"/>	
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1" margin="0,0,0,0"/>
+		<ui class="linearlayout" width="fill_parent" height="fill_parent" layout_gravity="right|vcenter" margin="0,0,0,0" padding="0,8,0,0" background="root_2">
+			<textview class="textview" id="tview_help" width="wrap_content" height="25" text="Get Help" color="blue1_status" font="14n" margin="0,0,0,0" padding="12,0,0,0" gravity="center|vcenter" cursor="hand"/>
+			<textview class="textview" id="online_support" width="wrap_content" height="25" text="Online Support" color="blue1_status" font="14n" margin="0,0,0,0" padding="12,0,0,0" gravity="center|vcenter" cursor="hand"/>
+			<ui class="view"  width="0" height="0" weight="1"/>
+			<button class="button" id="ok" width="60" height="25" text="Close Window" color="white" font="12n" background="com_btn" margin="0,0,14,0"/>
+		</ui>
+	</ui>
+	<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+</ui>
+</root> -->

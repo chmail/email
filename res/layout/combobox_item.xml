@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imageView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:srcCompat="@mipmap/icon_app" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textColor="#ff000000" n1:id="@id/textView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="TextView" />
+</LinearLayout>

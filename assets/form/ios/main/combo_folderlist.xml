@@ -1,0 +1,17 @@
+<combobox class="combobox" height="fill_parent" id="folder_list" layout_gravity="center|vcenter" width="wrap_content" font="17n">
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter" margin="15,0,0,0" src="comb_mail" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title" layout_gravity="left|vcenter" text="Inbox" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter" margin="15,0,0,0" src="tab_unread2" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title" layout_gravity="left|vcenter" text="Unread email" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter" margin="15,0,0,0" src="comb_star" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title" layout_gravity="left|vcenter" text="EMailBoxTypeStarred" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+</combobox>

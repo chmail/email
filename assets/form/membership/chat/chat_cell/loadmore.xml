@@ -1,0 +1,6 @@
+<ui class="framelayout" width="fill_parent" height="30" padding="0,0,0,0">
+	<ui class="linearlayout" width="wrap_content" height="wrap_content" padding="0,0,0,0" layout_gravity="center|vcenter" isview="0">
+		<imageview class="imageview" width="16" height="16" src="host_times_more_msg" layout_gravity="left|vcenter" cursor="hand" isview="0"/>
+		<textview class="textview" id="btn_load_more" width="wrap_content" height="wrap_content" text="Load More" font="12n_underline" color="blue1_status" margin="5,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+	</ui>
+</ui>

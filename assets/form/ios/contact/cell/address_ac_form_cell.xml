@@ -1,0 +1,11 @@
+<ui id="address_item" class="vlinearlayout" width="fill_parent" height="42" background="hlinearlayout" bgcolor="white" focus="blocks">
+	<ui id="address_item" class="vlinearlayout" width="fill_parent" height="42" background="hlinearlayout" bgcolor="white">
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" isview="0" margin="20,0,20,0">
+			<imageview class="imageview" id="avatar" width="24" height="24" src="avatar_default" layout_gravity="center|vcenter" isview="0" cornerRadius="12"/>
+			<textview class="textview" id="email_lab" width="wrap_content" height="wrap_content" text="email...." layout_gravity="center|vcenter" gravity="left|vcenter" isview="0" margin="10,0,0,0" color="black" font="12n"/>
+			<textview class="textview" id="email" width="0" weight="1" height="wrap_content" text="email...." layout_gravity="center|vcenter" gravity="left|vcenter" isview="0" margin="10,0,0,0" color="gray5" font="12n"  ellipsis_end="1"/>
+			<button class="button" id="delete" width="0" height="0" icon="search_btn_close" layout_gravity="right|vcenter" margin="0,0,0,0" background="na" visible="0"/>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1"  isview="0"/>
+	</ui>
+</ui>

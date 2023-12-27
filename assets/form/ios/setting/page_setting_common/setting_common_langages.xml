@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" padding="0,0,0,0" width="screen" height="screen">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" >
+	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
+	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="Common">
+		
+	</ui>
+	<!--Option-->
+	<simplelistbox class="simplelistbox" id="system_setting" width="fill_parent" height="0" weight="1" item_height="60" background="na">
+		<ui id="language_group" class="radiogroup" width="fill_parent" height="28" margin="10,0,10,0" >
+			<ui class="linearlayout" width="fill_parent" height="fill_parent">
+				<radiobox class="radiobox" id="lang_cn" width="150" height="30" box="14,14" icon="" margin="0,0,0,0" padding="0,0,0,0" text="Chinese Simplified" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" checked="1" />radiobox
+				<radiobox class="radiobox" id="lang_en" width="150" height="30" box="14,14" icon="" margin="0,0,0,0" padding="0,0,0,0" text="English" color="black" font="12n" gravity="left|vcenter" layout_gravity="left|vcenter" background="na" />radiobox
+	        </ui>
+		</ui>
+		<!-- more langages -->
+		<ui class="linearlayout" width="fill_parent" height="28" margin="10,0,10,0" padding="0,0,0,0" visible="0">
+			<textview class="textview" width="wrap_content" height="24" text="more langages" singleline="1" color="black" font="12n" layout_gravity="left|vcenter" gravity="left|vcenter" />
+			<ui class="framelayout" width="160" height="26" layout_gravity="center|vcenter" margin="10,0,0,0" background="">
+	            <ui class="popupbutton" id="st_time" width="fill_parent" height="fill_parent" color="gray1" font="12n" gravity="left|vcenter" background="email_edit_box" readonly="0" tooltip="" arrow="menu_arrow_down" itembg="hlinearlayout"/>  
+	        </ui>
+		</ui>
+	</simplelistbox>
+	<!-- end-->
+</ui>
+</root>
+

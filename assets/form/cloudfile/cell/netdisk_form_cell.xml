@@ -1,0 +1,24 @@
+<ui class="framelayout"  width="fill_parent" height="60" focus="blocks"	>
+	<ui class="framelayout" id="cloudfile_item" width="fill_parent" height="60" background="hlinearlayout" bgcolor="white" >
+		
+		<ui class="linearlayout" width="fill_parent" height="fill_parent" margin="10,0,10,0">
+			<imageview class="imageview" id="file_icon" width="40" height="40" gravity="left|vcenter" layout_gravity="center|vcenter" src="email_frame" isview="0" />
+			<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" margin="10,0,0,0">
+				<textview class="textview" id="file_name" width="wrap_content" height="wrap_content" color="black" font="16n" gravity="left|vcenter" layout_gravity="left|vcenter" text="file_name" ellipsis_end="1" tooltip="file_name"/>
+				<textview visible="0" class="textview" id="file_type" width="wrap_content" height="wrap_content" color="black" font="16n" gravity="left|vcenter" layout_gravity="left|vcenter" text="file_name" ellipsis_end="1" tooltip="file_name"/>
+				<ui class="framelayout" width="fill_parent" height="wrap_content" >
+					<ui class="linearlayout" id="normal_panel"  width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" >
+						<textview class="textview" id="file_size" width="0" weight="1" height="wrap_content" text="file_size" color="gray5" font="13n" layout_gravity="left|vcenter" isview="0"/>
+						<textview class="textview" id="create_date" width="wrap_content" height="wrap_content" text="create_date" color="gray5" font="12n" layout_gravity="left|vcenter" isview="0"/>
+					</ui>
+					<ui class="linearlayout" width="fill_parent" id="panel_reupload" height="wrap_content" layout_gravity="left|vcenter" bgcolor="white" visible="0" >
+						<textview class="textview" width="0" weight="1" height="wrap_content" text="Upload failed" font="14n" color="red" layout_gravity="right|vcenter" />
+						<button class="button" id="btn_reupload" width="wrap_content" height="wrap_content" text="Try Again" color="blue1" font="14n" layout_gravity="right|vcenter" margin="10,0,0,0" cursor="hand"/>
+						<button class="button" id="btn_send_file" width="wrap_content" height="wrap_content" text="Try Again" color="blue1" font="14n" layout_gravity="right|vcenter" margin="10,0,0,0" cursor="hand"/>
+					</ui>
+				</ui>
+			</ui>
+		</ui>
+		<progressbar class="progressbar" id="progress_bar" width="fill_parent" height="2" empty="" full="progress_bar_concent" pos="0" range="0,100" background=""  visible="1" isview="0" style="bar"/>
+	</ui>
+</ui>

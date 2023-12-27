@@ -1,0 +1,323 @@
+<ui bgcolor="gray11" class="framelayout" height="wrap_content" margin="0,0,0,0" width="fill_parent">
+    <ui class="vlinearlayout" height="wrap_content" id="email_item" margin="8,0,8,0" showrect="0"
+        width="fill_parent">
+
+        <!-- first_email_panel -->
+        <ui bgcolor="gray11" class="linearlayout" height="wrap_content" id="first_email_panel"
+            layout_gravity="center|top" visible="0" width="fill_parent">
+            <ui bgcolor="" class="framelayout" height="20" layout_gravity="left|top"
+                margin="12,0,0,0" width="20">
+                <imageview class="imageview" height="10" id="image_single" layout_gravity="center|vcenter"
+                           src="host_times_node_all" width="10"/>
+                <imageview class="imageview" height="5" layout_gravity="center|bottom" src="host_times_node_line"
+                           width="2"/>
+            </ui>
+            <textview class="textview" color="gray5" font="12n" gravity="left|vcenter"
+                      height="wrap_content" id="email_short_time" layout_gravity="left|vcenter" margin="10,0,0,0"
+                      text="2017.01.01" weight="1" width="0"/>
+        </ui>
+
+        <!-- centre_email_panel -->
+        <ui bgcolor="gray11" class="linearlayout" height="wrap_content" id="centre_email_panel"
+            layout_gravity="center|top" width="fill_parent">
+            <ui bgcolor="" class="framelayout" height="20" layout_gravity="left|top"
+                margin="12,0,0,0" width="20">
+                <imageview class="imageview" height="5" layout_gravity="center|top" src="host_times_node_line"
+                           width="2"/>
+                <imageview class="imageview" height="10" id="image_single" layout_gravity="center|vcenter"
+                           src="host_times_node_single" width="10"/>
+                <imageview class="imageview" height="5" layout_gravity="center|bottom" src="host_times_node_line"
+                           width="2"/>
+            </ui>
+            <textview class="textview" color="gray5" font="12n" gravity="left|vcenter"
+                      height="wrap_content" id="email_short_time2" layout_gravity="left|vcenter" margin="10,0,0,0"
+                      text="2017.01.01" weight="1" width="0"/>
+        </ui>
+
+        <ui bgcolor="white" borderColor="gray9" borderWidth="1" class="vlinearlayout" cornerRadius="5.0"
+            height="wrap_content" id="body_email_panel" showrect="0" visible="1"
+            width="fill_parent">
+  
+            <!-- detail_head_Panel -->
+            <ui class="framelayout" height="18" id="detail_head_Panel" isview="0"
+                layout_gravity="center|vcenter" visible="0" width="fill_parent">
+                <ui bgcolor="white" class="framelayout" height="fill_parent"
+                    isview="0" layout_gravity="left|top" width="fill_parent"/>
+                <ui bgcolor="" class="framelayout" height="fill_parent" isview="0"
+                    layout_gravity="left|top" margin="12,0,0,0" width="20">
+                    <imageview class="imageview" height="10" id="image_single" isview="0"
+                               layout_gravity="center|vcenter" src="host_times_node_in" width="10"/>
+                </ui>
+            </ui>
+
+            <ui class="linearlayout" height="wrap_content" id="brief" layout_gravity="center|vcenter"
+                width="fill_parent">
+                <ui class="framelayout" height="fill_parent" layout_gravity="center|vcenter"
+                    width="80">
+                    <ui class="framelayout" height="16" layout_gravity="right|vcenter" margin="2,10,0,0"
+                        width="16">
+                        <imageview class="imageview" height="16" id="email_flag" src="icon_email_unread"
+                                   width="16"/>
+                    </ui>
+                    <ui class="framelayout" height="16" layout_gravity="right|top" margin="2,10,0,0"
+                        width="16">
+                        <commoncheckbox background="na" box="16,16" class="commoncheckbox"
+                                        height="16" icon="icon_email_star" id="email_star"
+                                        isview="0" src="icon_email_star" width="16" />
+                    </ui>
+                    <ui class="framelayout" height="40" id="user_avatar_form" layout_gravity="center|vcenter"
+                        margin="4,0,0,0" width="40">
+                        <imageview class="imageview" cornerRadius="18" height="36" id="user_avatar"
+                                   layout_gravity="center|vcenter" src="email_frame"
+                                   width="36"/>
+                        <ui class="framelayout" height="16" layout_gravity="right|bottom"
+                            width="16">
+                            <imageview class="imageview" height="16" id="avatar_vip" layout_gravity="right|bottom"
+                                       src="vip_yellow" width="16"/>
+                        </ui>
+                    </ui>
+                </ui>
+                <!-- body -->
+                <ui class="vlinearlayout" gravity="left|vcenter" height="wrap_content"
+                    layout_gravity="left|vcenter" margin="0,5,10,5" visible="1"
+                    width="fill_parent">
+                    <!-- name -->
+                    <ui class="linearlayout" height="wrap_content" layout_gravity="left|vcenter"
+                        margin="0,0,0,0" width="fill_parent">
+                        <ui class="linearlayout" height="wrap_content" weight="1" width="0">
+                            <textview box="0,0" class="textview" color="black"
+                                      font="14n" gravity="left|vcenter" height="wrap_content" icon="na" id="email_from"
+                                      layout_gravity="left|vcenter" text=""
+                                      width="wrap_content" singleline="1" maxLines="1"/>
+                            <ui class="framelayout" height="20" layout_gravity="left|vcenter"
+                                width="20">
+                                <imageview class="imageview" height="20" id="attachment_flag"
+                                           layout_gravity="left|vcenter" src="icon_email_attachment"
+                                           visible="1" width="20"/>
+                            </ui>
+                        </ui>
+                        <ui class="linearlayout" height="wrap_content" id="time_bound"
+                            layout_gravity="center|vcenter" width="wrap_content">
+                            <textview class="textview" color="gray5" font="12n"
+                                      gravity="center|vcenter" height="wrap_content"
+                                      id="email_time" layout_gravity="left|vcenter"
+                                      text="20:22:33" width="wrap_content"/>
+                        </ui>
+                    </ui>
+                    <!-- summray -->
+                    <ui class="linearlayout" height="wrap_content" layout_gravity="left|vcenter"
+                        width="fill_parent" margin="0,5,10,5">
+                        <textview class="textview" color="gray5" font="14n"
+                                  gravity="left|vcenter" height="wrap_content" id="email_summary" layout_gravity="left|vcenter"
+                                  margin="0,5,0,5" singleline="1" width="wrap_content" maxLines="1"/>
+                        <ui class="view" height="20" id="label_color" margin="0,5,5,0" visible="0"
+                            width="24"/>
+                    </ui>
+                </ui>
+            </ui>
+
+            <!-- detail -->
+            <ui class="vlinearlayout" height="wrap_content" id="detail" layout_gravity="center|vcenter" showrect="0"
+                visible="0"  width="fill_parent">
+                <ui class="framelayout" height="wrap_content" layout_gravity="center|vcenter"
+                    width="fill_parent">
+                    <ui class="vlinearlayout" height="wrap_content" layout_gravity="center|vcenter"
+                        width="fill_parent">
+                        <!-- title -->
+                        <ui class="linearlayout" height="wrap_content" layout_gravity="center|vcenter"
+                            visible="1" width="fill_parent">
+
+                            <ui class="framelayout" height="wrap_content" layout_gravity="left|vcenter" margin="0,0,0,0"
+                                weight="1" width="0">
+                                <button background="na" class="imagebutton" height="fill_parent" icon="na" id="detail_head"
+                                        layout_gravity="center|vcenter" width="fill_parent"/>
+
+                                <ui class="linearlayout" height="wrap_content" isview="0"
+                                    layout_gravity="center|vcenter" width="fill_parent" margin="60,5,0,5">
+                                    <textview class="textview" color="black" font="14n"
+                                              gravity="left|bottom" height="wrap_content" id="email_from2" layout_gravity="left|vcenter"
+                                              showrect="0"
+                                              text="" width="wrap_content"/>
+                                    <ui class="framelayout" height="20" layout_gravity="right|vcenter"
+                                        margin="8,0,0,0" width="20">
+                                        <imageview class="imageview" height="20"
+                                                   id="attachment_flag2" layout_gravity="right|vcenter"
+                                                   margin="0,0,0,0"
+                                                   src="icon_email_attachment" visible="0"
+                                                   width="20"/>
+                                    </ui>
+                                </ui>
+                            </ui>
+                            <!-- </ui> -->
+                            <button background="na" class="imagebutton" height="40" icon="icon_email_group"
+                                    id="btn_group" layout_gravity="right|vcenter"
+                                    padding="2,2,2,2" visible="0" width="40"/>
+                            <textview class="textview" color="gray5" font="12n" gravity="left|vcenter"
+                                      height="40" id="budge"
+                                      layout_gravity="right|vcenter" margin="0,0,5,0" padding="0,0,0,0"
+                                      visible="0" width="wrap_content"/>12n
+                            <button background="na" class="imagebutton" height="40" icon="icon_email_re"
+                                    id="btn_reply_all" layout_gravity="right|vcenter"
+                                    padding="2,2,2,2" width="40"/>
+                            <button background="na" class="imagebutton" height="40" icon="icon_email_more"
+                                    id="menu_all" layout_gravity="right|vcenter"
+                                    margin="0,0,10,0" padding="2,2,2,2"
+                                    width="40"/>
+
+                        </ui>
+                        <!-- detail_panel -->
+                        <ui class="linearlayout" height="wrap_content" id="simple_panel" layout_gravity="center|vcenter"
+                            margin="0,0,0,0" visible="1" width="fill_parent">
+                            <textview class="textview" color="gray5" font="12n" gravity="left|vcenter"
+                                      height="wrap_content" id="email_time2" layout_gravity="left|vcenter" margin="80,0,0,0"
+                                      text="20:22:33" weight="1"
+                                      width="0" />
+                            <button background="na" class="button" color="blue1"
+                                    font="14n" gravity="center|vcenter" height="wrap_content"
+                                    id="show_detail" layout_gravity="left|vcenter"
+                                    text="detail" width="wrap_content" margin="0,0,0,0"  padding="0,0,0,0"/>
+                        </ui>
+
+
+                        <!-- show less_panel -->
+                        <ui class="vlinearlayout" height="wrap_content" id="more_panel"
+                            layout_gravity="left|vcenter" margin="0,20,0,0" visible="0"
+                            width="fill_parent">
+                            <!-- Subject -->
+                            <ui class="linearlayout" height="wrap_content" layout_gravity="left|vcenter"
+                                visible="1" width="fill_parent"  margin="0,0,0,5">
+                                <ui class="framelayout" height="wrap_content" layout_gravity="left|vcenter" width="70">
+                                  <textview class="textview" color="black" font="13n" gravity="right|vcenter"
+                                          height="wrap_content" layout_gravity="right|vcenter"
+                                          margin="0,0,0,0" text="Subject: " width="wrap_content"/>
+                                </ui>
+                                <textview class="textview" color="black" font="13n"
+                                          gravity="left|vcenter" height="wrap_content"
+                                          id="email_title" layout_gravity="left|vcenter"
+                                          margin="0,0,0,0" text="email subject" width="wrap_content" singleline="1" maxLines="1"/>
+                            </ui>
+                            <!-- sender -->
+                            <ui class="linearlayout" height="wrap_content" id="sender_panel"
+                                layout_gravity="left|vcenter" visible="1" width="fill_parent"  margin="0,0,0,5">
+                                <ui class="framelayout" height="wrap_content" layout_gravity="left|vcenter" width="70">
+                                  <textview class="textview" color="black" font="13n" gravity="right|vcenter"
+                                          height="wrap_content" layout_gravity="right|vcenter"
+                                          margin="0,0,0,0" text="From: " width="wrap_content"/>
+                                </ui>
+                                <button class="button" color="gray5" font="13n"
+                                        gravity="left|vcenter" height="wrap_content" id="email_from_full"
+                                        layout_gravity="left|vcenter" margin="0,0,0,0" text="email"
+                                        width="wrap_content" icon="" padding="0,0,0,0" background="na"/>
+                            </ui>
+                            <!-- to -->
+                            <ui class="linearlayout" height="wrap_content" id="to_panel"
+                                layout_gravity="left|vcenter" visible="1" width="fill_parent"  margin="0,0,0,5">
+                                <ui class="framelayout" height="wrap_content" layout_gravity="left|top" width="70">
+                                  <textview class="textview" color="black" font="13n" gravity="right|vcenter"
+                                          height="wrap_content" layout_gravity="right|vcenter"
+                                          margin="0,0,0,0" text="To: " width="wrap_content"/>
+                                </ui>
+                                <simplelistbox bounces="0" class="simplelistbox"
+                                               height="wrap_content" id="to_list" item_height="24"
+                                               itembg="hlinearlayout" margin="0,0,0,0"
+                                               min_limit="-1,24" width="fill_parent"/>
+                            </ui>
+                            <!-- cc -->
+                            <ui class="linearlayout" height="wrap_content" id="cc_panel"
+                                layout_gravity="left|vcenter" visible="1" width="fill_parent" margin="0,0,0,5">
+                                <ui class="framelayout" height="wrap_content" layout_gravity="left|top" width="70">
+                                  <textview class="textview" color="black" font="13n" gravity="right|vcenter"
+                                          height="wrap_content" layout_gravity="right|vcenter"
+                                          margin="0,0,0,0" text="Cc: " width="wrap_content"/>
+                                </ui>
+                                <simplelistbox bounces="0" class="simplelistbox"
+                                               height="wrap_content" id="cc_list" item_height="24"
+                                               itembg="hlinearlayout" margin="0,0,0,0"
+                                               min_limit="-1,24" width="fill_parent"/>
+                            </ui>
+
+                            <ui class="linearlayout" height="wrap_content" width="fill_parent"  margin="0,0,0,5">
+                                <ui class="framelayout" height="wrap_content" layout_gravity="left|vcenter" width="70">
+                                  <textview class="textview" color="black" font="13n" gravity="right|vcenter"
+                                          height="wrap_content" layout_gravity="right|vcenter"
+                                          margin="0,0,0,0" text="Time: " width="wrap_content"/>
+                                </ui>
+                                <ui class="linearlayout" height="wrap_content" weight="1" width="0" layout_gravity="left|vcenter">
+                                    <textview class="textview" color="gray5" font="13n"
+                                              gravity="left|vcenter" height="wrap_content"
+                                              id="email_time3" layout_gravity="left|vcenter"
+                                              margin="0,0,0,0" text="20:22:33" width="wrap_content"/>
+                                </ui>
+                                <button background="na" class="button" color="blue1"
+                                        font="14n" gravity="left|vcenter" height="wrap_content" id="show_less"
+                                        layout_gravity="left|vcenter" text="show less"
+                                        width="wrap_content"/>
+                            </ui>
+                        </ui>
+                    </ui>
+                    <!-- AVATAR -->
+                    <ui class="framelayout" height="40" layout_gravity="left|top" margin="0,15,0,0"
+                        width="80">
+                        <ui class="framelayout" height="16" layout_gravity="right|vcenter" margin="2,0,0,0"
+                            width="16">
+                            <imageview class="imageview" height="16" id="email_flag2" src="icon_email_unread"
+                                       width="16"/>
+                        </ui>
+                        <ui class="framelayout" height="16" layout_gravity="right|top" margin="2,0,0,0"
+                            width="16">
+                            <commoncheckbox background="na" box="16,16" class="commoncheckbox"
+                                            height="16" icon="icon_email_star" id="email_star2"
+                                            isview="0" src="icon_email_star" width="16" />
+                        </ui>
+                        <ui class="framelayout" height="40" id="user_avatar_form2" layout_gravity="center|vcenter"
+                            margin="4,0,0,0" width="40">
+                            <imageview class="imageview" cornerRadius="18" height="36" id="user_avatar2"
+                                       layout_gravity="center|vcenter" src="email_frame"
+                                       width="36"/>
+                            <ui class="framelayout" height="16" layout_gravity="right|bottom"
+                                width="16">
+                                <imageview class="imageview" height="16" id="avatar_vip2" layout_gravity="right|bottom"
+                                           src="vip_yellow" width="16"/>
+                            </ui>
+                        </ui>
+
+                    </ui>
+                </ui>
+
+
+                <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" margin="0,0,0,0"/>
+
+                <!-- email content -->
+                <ui bgcolor="white" class="framelayout" height="wrap_content" id="chrome_wrapper"
+                    layout_gravity="left|top"  width="fill_parent" margin="0,5,0,5">
+                </ui>
+                <!-- attachment -->
+                <!-- <imageview class="imageview" width="fill_parent" height="1" src="line_1" layout_gravity="center|vcenter" /> -->
+
+                <textview class="textview" color="black" font="13n" gravity="left|vcenter"
+                          height="20" id="attachment_count"
+                          layout_gravity="center|vcenter" margin="20,0,0,0" text="5 attachments" visible="0"
+                          width="fill_parent"/>
+
+                <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray9" margin="0,0,0,0"/>
+
+                <simplelistbox bounces="0" class="simplelistbox" height="wrap_content"
+                               id="attach_list" item_height="60" itembg="hlinearlayout"
+                               min_limit="-1,30" separator="line" visible="1" width="fill_parent">
+                </simplelistbox>
+            </ui>
+        </ui>
+
+        <!-- last_email_panel -->
+        <ui bgcolor="gray11" class="linearlayout" height="20" width="fill_parent" id="last_email_panel"
+            layout_gravity="center|top" showrect="0" visible="0" >
+            <ui bgcolor="" class="framelayout" height="20" layout_gravity="left|top"
+                margin="12,0,0,0" width="20">
+                <imageview class="imageview" height="5" layout_gravity="center|top" src="host_times_node_line"
+                           width="2"/>
+                <imageview class="imageview" height="10" id="image_single" layout_gravity="center|vcenter"
+                           src="host_times_node_end" width="10"/>
+            </ui>
+        </ui>
+    </ui>
+</ui>

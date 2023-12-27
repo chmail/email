@@ -1,0 +1,9 @@
+<ui class="framelayout" id="account_panel_cell" width="fill_parent" height="48" background="bg_leftbar_navi" showrect="0">
+	<ui class="framelayout" width="48" height="48" layout_gravity="center|vcenter" >
+		<imageview class="imageview" id="account_avatar" width="32" height="32" src="avatar_all" cornerRadius="21" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"  borderWidth="2" borderColor="white"/>
+	</ui>
+	<textview class="textview" id="badge" width="wrap_content" height="wrap_content" text="1" color="white" font="12n" background="budge" padding="6,0,6,0" margin="0,0,0,0" gravity="center|vcenter" layout_gravity="right|top" isview="0" visible="1" />
+	
+
+	<!-- icon_hook  bg_leftbar_navi_cell -->
+</ui>

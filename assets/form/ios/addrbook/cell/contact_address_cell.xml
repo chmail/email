@@ -1,0 +1,19 @@
+<ui class="linearlayout" width="fill_parent" height="60" bgcolor="white" >
+	<ui id="address_item" class="linearlayout" width="fill_parent" height="60" background="hlinearlayout">
+		<ui class="framelayout" width="80" height="40" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+			<ui class="framelayout" width="42" height="42" layout_gravity="center|vcenter" >
+				<imageview class="imageview" id="avatar" width="40" height="40" src="default_avatar" cornerRadius="20" layout_gravity="center|vcenter"/> 
+				<imageview class="imageview" id="avatar_vip" width="16" height="16" src="vip_yellow" margin="0,0,0,0" isview="0" layout_gravity="right|bottom" visible="0"/>
+			</ui>
+		</ui>
+		<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" >
+			<ui  class="vlinearlayout" width="fill_parent" height="wrap_content" isview="0" layout_gravity="left|vcenter" >
+				<textview class="textview" id="title" width="fill_parent" height="wrap_content" padding="0,0,10,0" gravity="left|vcenter" color="black" font="16n" /> 
+				<textview class="textview" id="email" width="fill_parent" height="wrap_content" padding="0,0,10,0" gravity="left|vcenter" color="gray5" font="14n"/>
+			</ui>
+			<ui class="linearlayout" id="plugin_list_panel" width="0" height="0" margin="0,0,0,0" layout_gravity="right|bottom" background="" visible="0" > 
+				<gridview class="gridview" id="plugin_list_gridview" width="fill_parent" height="fill_parent" margin="-1,-1,-1,-1" gravity="center|vcenter" layout_gravity="center|vcenter" itemsize="32,28" min_limit="28,28" background="" bgcolor="white"/>
+			</ui>
+		</ui>
+	</ui>
+</ui>

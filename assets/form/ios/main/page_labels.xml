@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="page_email_list"  width="screen" height="screen" style="navigate">
+<ui class="navigatebar" id="navigatebar" width="fill_parent" height="48" >text=""
+	<ui class="navigateitem" width="30" id="tab_menu" type="right" image="icon_navbar_more" text=""/>
+</ui>
+
+<tableview class="tableview" id="folder_listbox" width="fill_parent" height="fill_parent"  margin="0,0,0,0" padding="0,0,0,0" itembg="menubar_special_cell_bg_theme2"/>
+
+</root>
+
+
+
+	<!-- <imageview class="imageview" width="fill_parent" height="10" src="line_1" isview="0"/> -->
+	<!-- <ui class="linearlayout" width="wrap_content" height="60" isview="0" layout_gravity="center|vcenter" >
+		<button class="button" width="100" height="wrap_content" layout_gravity="center|vcenter" text="contacts" color="black" font="14n" /> 
+		<button class="button" width="100" height="wrap_content" layout_gravity="center|vcenter" text="vip" color="black" font="14n" />
+		<button class="button" width="100" height="wrap_content" layout_gravity="center|vcenter" text="group" color="black" font="14n" />
+	</ui> -->

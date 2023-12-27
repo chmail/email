@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="user_info" width="680" height="500" left="center" top="center" mode="caption" resize="0" padding="0,0,0,0" background="root_0">
+<ui class="framelayout" width="fill_parent" height="fill_parent">
+	<!-- avatar_tab -->
+	<ui class="framelayout" id="avatar_tab" width="fill_parent" height="fill_parent" margin="1,1,1,1" background="root_a_245" visible="0" >
+		<ui class="framelayout" width="fill_parent" height="30">
+			<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Avatar" font="14n" color="black" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" isview="0"/>
+		</ui>
+		<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,50,0,0" >showrect="1"
+			<ui class="framelayout" width="fill_parent" height="26" >
+				<button class="button" id="avatar_btn_cancel" width="90" height="26" layout_gravity="left|vcenter" text="Back" color="black" font="12n" background="com_btn_white_box_r2" margin="20,0,0,0"/>
+				<ui class="radiogroup" id="avatar_tabs" width="wrap_content" height="fill_parent" margin="0,0,20,0" layout_gravity="right|vcenter">
+					<ui class="linearlayout" width="fill_parent" height="fill_parent">
+						<radiobox class="radiobox" width="110" height="26" box="1,1" margin="20,0,0,0" padding="20,0,0,0" text="Default avatar" color="gray1" font="12n" gravity="center|vcenter" background="com_btn_white_box_r2_checked" id="box_avatar_default"/>	menubar_special_cell_bg	        
+						<radiobox class="radiobox" width="110" height="26" box="1,1" margin="20,0,0,0" padding="20,0,0,0" text="Customise avatar" color="gray1" font="12n" gravity="center|vcenter" background="com_btn_white_box_r2_checked"  id="box_avatar_customise"/> menubar_special_cell_bg        
+					</ui>
+				</ui>
+			</ui>
+			<ui class="linearlayout" width="fill_parent" height="0" weight="1" margin="0,40,0,0">
+				<ui class="vlinearlayout" width="0" weight="1" height="fill_parent">
+					<ui class="vlinearlayout" width="90" height="70" margin="0,40,0,0" layout_gravity="center|vcenter">
+						<ui class="framelayout" width="36" height="36" margin="0,0,0,0" layout_gravity="center|vcenter" background="avatar_frame">
+							<imageview class="imageview" src="avatar_frame" width="36" height="36" isview="0"/>	
+							<imageview class="imageview" id="preview32" width="32" height="32" layout_gravity="center|vcenter" mask="mask_circle_32" isview="0"/>	
+						</ui>
+						<textview class="textview" width="fill_parent" height="20" text="32*32" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" color="gray1" font="12n" isview="0"/>	
+					</ui>
+					<ui class="vlinearlayout" width="90" height="90" margin="0,20,0,0" layout_gravity="center|vcenter">
+						<ui class="framelayout" width="66" height="66" margin="0,0,0,0" layout_gravity="center|vcenter" background="avatar_frame">
+							<imageview class="imageview" src="avatar_frame" width="66" height="66" isview="0"/>	
+							<imageview class="imageview" id="preview" width="60" height="60" layout_gravity="center|vcenter" mask="mask_circle_60" isview="0"/>	
+						</ui>
+						<textview class="textview" width="fill_parent" height="20" text="60*60" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" color="gray1" font="12n" isview="0"/>	
+					</ui>
+				</ui>
+				<ui class="pagecontainer" id="avatar_pages" width="0" weight="2" height="fill_parent" >width="450"
+					<ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="customise_page" margin="0,0,20,0"> showrect="1"
+						<ui class="framelayout" width="fill_parent" height="0" weight="1" id="editor" padding="0,0,0,0" margin="0,0,0,0" background="img_setting_avatarbg">
+							<ui class="framelayout" id="area" width="0" height="0" layout_gravity="center|vcenter" padding="2,2,2,2">
+								<imageview id="image_slot" class="imageview" width="fill_parent" height="fill_parent" isview="0" padding="0,0,0,0"/>		
+								<ui class="crop" id="crop_rect" width="fill_parent" height="fill_parent" padding="0,0,0,0" isview="0"/>		
+								<ui class="crop_bound" id="crop_b" width="100" height="100" padding="0,0,0,0" />		
+							</ui>
+						</ui>
+						<ui class="linearlayout" width="wrap_content" height="30" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" >
+							<!-- <textview class="textview" id="change_lab" width="wrap_content" height="20" text="Change Avatar" color="gray2" font="13n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" isview="0"/>	 -->	
+							<button  class="button" id="change" width="80" height="24" text="Browse" color="gray1" font="12n" background="com_btn_white_box_r2" padding="10,0,10,0" margin="0,0,0,0" layout_gravity="center|vcenter"/>		
+						</ui>
+					</ui>
+					<ui class="framelayout" width="fill_parent" height="fill_parent" id="default_avatar_page" margin="0,0,20,0" padding="0,0,0,0" background="root_0" > showrect="1"
+						<gridview class="gridview" id="default_avatar_panel" width="fill_parent" height="fill_parent" margin="2,2,2,30" itemsize="60,60" itembg="" /> showrect="1"		
+					</ui>
+				</ui>	
+			</ui>
+			<ui class="framelayout" width="fill_parent" height="50" >
+				<button  class="button" id="avatar_btn_ok" width="90" height="28" layout_gravity="right|bottom" text="Save" color="white" font="12n" background="com_btn" margin="0,0,10,10"/>
+			</ui>
+		</ui>
+	</ui>
+	
+	<!-- summary_tab -->
+	<ui class="framelayout" id="summary_tab" width="fill_parent" height="fill_parent" visible="1">
+		<ui class="linearlayout"  width="fill_parent" height="fill_parent" >
+			<!-- left -->
+			<ui class="framelayout" width="0" weight="1" height="fill_parent" background="root_a_245" margin="1,1,1,1">
+				<ui class="framelayout" width="fill_parent" height="30">
+					<textview class="textview" id="caption_tex" width="wrap_content" height="wrap_content" text="Personal Information" font="14n" color="black" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" isview="0"/>
+				</ui>
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="center|vcenter" margin="5,0,0,0" >
+					<!-- avatar -->
+					<ui class="framelayout" width="66" height="68" layout_gravity="center|vcenter" margin="0,0,0,0" >
+						<imageview class="imageview" id="avatar" width="60" height="60" src="avatar_default" mask="mask_circle_60" gravity="center|vcenter" cursor="hand" />isview="0" 
+						<button class="button" id="editav" cursor="hand" width="26" height="26" box="26,26" icon="icon_editor" layout_gravity="right|bottom" margin="0,0,0,0" background="na"  />isview="0"
+					</ui>
+					<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,16,0,0">
+						<ui class="framelayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" >
+							<textview class="textview" id="name" width="wrap_content" height="wrap_content" color="gray" font="14B" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" padding="0,0,0,0" background="na" readonly="1" ellipsis_end="1"/>
+							<edit class="edit" id="name_edit" width="wrap_content" height="wrap_content" color="gray" font="14B" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,0,0,0" padding="0,0,0,0" background="na" ellipsis_end="1"/>
+						</ui>
+					</ui>
+					<!-- Signature -->
+					<textview class="textview" id="user_signature_edit" width="200" height="26" text="Default Signature" hintcolor="gray5" hintfont="12n" color="gray3" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="0" background="na" isview="0" visible="0"/>
+					<!-- Info -->
+					<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" margin="0,16,0,0" visible='0'>
+						<ui class="vlinearlayout" width="80" height="54" layout_gravity="center|vcenter" margin="0,0,0,0" mouse_action="1" >
+							<textview class="textview" id="" width="100" height="30" text="Age" color="yellow" font="16n" padding="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"/>
+							<edit class="edit" id="age" width="100" height="20" text="Default Age" color="gray" font="12n" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="1" background="na" isview="0"/>
+						</ui>
+						<ui class="vlinearlayout" width="80" height="54" layout_gravity="center|vcenter" margin="0,0,0,0" mouse_action="1" >
+							<textview class="textview" id="" width="100" height="30" text="Gender" color="yellow" font="16n" padding="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"/>
+							<edit class="edit" id="gender" width="100" height="20" text="Default Gender" color="gray" font="12n" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="1" background="na" isview="0"/>
+						</ui>
+						<ui class="vlinearlayout" width="80" height="54" layout_gravity="center|vcenter" margin="0,0,0,0" mouse_action="1" >
+							<textview class="textview" id="" width="100" height="30" text="Location" color="yellow" font="16n" padding="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" isview="0"/>
+							<edit class="edit" id="location" width="100" height="20" text="Default Location" color="gray" font="12n" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" gravity="center|vcenter" readonly="1" background="na" isview="0"/>
+						</ui>
+						
+					</ui>
+					<button class="button" id="moresetting" cursor="hand" width="220" height="30" box="26,26" text="More Settings" font="12n" color="gray" layout_gravity="center|vcenter" gravity="center|vcenter" margin="0,50,0,0" background="com_btn_white_box_r2"   visible='0'/>
+				</ui><!-- font="12n_underline" color="blue1_status" -->
+			</ui>
+			<!-- right -->
+			<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" margin="0,30,0,0" >
+				<ui class="radiogroup" id="tabs" width="fill_parent" height="30" padding="0,0,0,0" margin="0,0,0,0" layout_gravity="center|vcenter" showrect="0">
+					<ui class="linearlayout" width="fill_parent" height="fill_parent" id="radio_groups" margin="20,0,0,0" >
+						<radiobox class="radiobox" width="100" height="fill_parent" box="1,1" margin="0,0,0,0" padding="0,0,0,0" color="gray" font="16n" gravity="left|vcenter" background="tb_selected" text="Basic Info" id="basic_pager" checked="1"/>
+						<radiobox class="radiobox" width="100" height="fill_parent" box="1,1" margin="0,0,0,0" padding="0,0,0,0" color="gray" font="16n" gravity="left|vcenter" background="tb_selected" text="Binding Emails" id="emails_pager" visible="0"/>
+					</ui>
+				</ui>
+				<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="20,4,20,0" padding="0,0,0,0" isview="0" />
+				<ui class="pagecontainer" id="pages" width="fill_parent" height="fill_parent" margin="20,10,20,10">
+					<ui class="vlinearlayout" id="basic_pager" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" visible="1">
+						<!-- nickname -->
+						<ui class="framelayout" width="fill_parent" height="26" margin="0,0,0,0">
+							<textview class="textview" id="" width="100" height="20" text="NickName" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+							<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="left|vcenter" margin="100,0,0,0" mouse_action="1" >
+								<edit class="edit" id="user_nick_edit" width="0" weight="1" height="26" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="0" background="" visible="0"/>
+								<button class="button" id="saveinfo" cursor="hand" width="30" height="24" box="26,26" text="Save" color="white" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter" margin="10,0,20,0" background="com_btn" visible="0" />calendar_accepted
+							</ui>
+							<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="left|vcenter" margin="100,0,0,0" mouse_action="1" >showrect="1"
+								<edit class="edit" id="user_nick_display" width="wrap_content" height="20" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" background="na"/>
+								<button class="button" id="editinfo" cursor="hand" width="26" height="26" box="26,26" text="Edit" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" margin="10,0,20,0" background="na"  />
+							</ui>
+						</ui>
+						<!-- EMail -->
+						<ui class="linearlayout" width="fill_parent" height="20" margin="0,10,0,0">
+							<textview class="textview" id="" width="100" height="20" text="Main Account" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>text="EMail Address"
+							<edit class="edit" id="email" width="fill_parent" height="20" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" background="na" readonly="1"/>
+						</ui>
+						<!-- MM ID -->
+						<ui class="linearlayout" width="fill_parent" height="20" margin="0,10,0,0">
+							<textview class="textview" id="" width="100" height="20" text="YoMail ID" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+							<edit class="edit" id="user_id" width="fill_parent" height="20" text="" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" background="na"/>
+						</ui>
+						<!-- CellPhone -->
+						<ui class="linearlayout" width="fill_parent" height="20" margin="0,10,0,0" visible='0'>
+							<textview class="textview" width="100" height="20" text="Cellphone" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+							<edit class="edit" id="cellphone" width="100" height="20" text="Default Cellphone" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" readonly="1" background="na"/>
+							<button class="button" id="changebinding" cursor="hand" width="120" height="26" box="26,26" text="Goto Binding" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0" background="na"  />
+						</ui>
+						
+						<!-- current level -->
+						<ui class="framelayout" width="fill_parent" height="26" margin="0,10,0,0">
+							<textview class="textview" id="" width="100" height="20" text="Current Level" color="gray" font="12n" padding="20,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" isview="0"/>
+							<ui class="linearlayout" id="membership_panel" width="wrap_content" height="20" layout_gravity="left|vcenter" margin="100,0,0,0" >
+								<imageview class="imageview" id="membership_icon" src="membership_icon" width="23" height="13" layout_gravity="left|vcenter" isview="0" margin="6,0,0,0"/>				
+								<ui class="linearlayout" id="membership_lv_panel" width="wrap_content" height="14" layout_gravity="left|vcenter"  isview="0"> visible="1"
+									<imageview class="imageview" src="membership_lv" width="12" height="9" layout_gravity="center|vcenter" isview="0" margin="3,0,0,0"/>				
+									<imageview class="imageview" id="membership_lv_num1" src="membership_lv_0" width="8" height="9" layout_gravity="center|vcenter" isview="0" margin="-1,0,0,0" visible="0"/>				
+									<imageview class="imageview" id="membership_lv_num2" src="membership_lv_0" width="8" height="9" layout_gravity="center|vcenter" isview="0" margin="-1,0,3,0"/>				
+								</ui>
+								<button class="button" id="renew" cursor="hand" width="40" height="26" box="26,26" text="Renew" font="12n_underline" color="blue1_status" layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,0" background="na"  />
+								<textview class="textview" id="timeleft" width="150" height="20" text="Time Left" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" background="na" readonly="1"/>
+							</ui>
+							
+							<ui class="linearlayout" width="fill_parent" height="26" layout_gravity="left|vcenter" margin="100,0,0,0" mouse_action="1"  visible="0">
+								<edit class="edit" id="level" width="30" height="20" text="LV" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" background="na" readonly="1"/>
+								<edit class="edit" id="vip" width="40" height="20" text="VIP2" color="gray" font="12n" padding="5,0,0,0" margin="0,0,0,0" layout_gravity="left|vcenter" gravity="left|vcenter" background="na" readonly="1" />
+							</ui>
+						</ui>
+						
+						<textview class="textview" width="wrap_content" height="wrap_content" margin="0,130,0,0" text="Update Info Hint" singleline="1" color="gray5"  font="16n" layout_gravity="center|vcenter" visible='0'/>
+						
+						<textview class="textview" width="wrap_content" height="wrap_content" margin="0,0,0,0" text="Press Update Hint" singleline="1" color="gray5" font="12n" layout_gravity="center|vcenter" visible='0'/>
+					</ui>
+					<ui class="vlinearlayout" id="emails_pager" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" visible="0">
+					</ui>
+				</ui>
+				
+			</ui>
+		</ui>
+	</ui>
+	<ui class="framelayout" width="fill_parent" height="30">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<ui class="linearlayout" width="30" height="30" margin="0,0,0,0" layout_gravity="right|top" >
+			<!-- system -->
+			<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5"/>
+		</ui>
+	</ui>
+	
+	
+	
+	<!-- unless info ui -->
+	<ui class="vlinearlayout" width="0" height="0" padding="0,0,0,0" margin="0,0,0,0" visible="0">
+		<!-- Signature -->
+		<ui class="linearlayout" width="fill_parent" height="0" margin="0,0,0,0">
+			<textview class="textview" id="signature_lab" width="100" height="fill_parent" padding="0,0,0,0" text="Signature" singleline="1" color="gray3" font="13n" gravity="left|vcenter"/>
+			<textview class="textview" width="5" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" text=":" singleline="1" color="gray3" font="14n" gravity="vcenter"/>
+			<edit class="edit" readonly="1" id="signature" width="fill_parent" height="fill_parent" text="4" singleline="1" color="gray1" font="12n" padding="0,0,0,0" limit="50" margin="0,0,0,0" background="na" hint="[ User haven't status message ]" hintfont="14n" hintcolor="gray4"/>
+		</ui>
+	</ui>
+</ui>
+</root>

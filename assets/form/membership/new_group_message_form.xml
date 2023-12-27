@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="new_group_message" width="400" height="200" padding="1,1,1,1" resize="0" left="center" top="center" background="root_0">
+<ui class="framelayout" id="captionbar" width="fill_parent" height="fill_parent" background="root_1">
+	<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" mouse_action="1">
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" margin="0,0,0,0" background="">
+			<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="20,30,20,20" isview="0">
+				<ui class="framelayout" width="fill_parent" height="fill_parent" layout_gravity="center|vcenter" background="editview" padding="0,0,0,0" margin="0,0,0,0">
+					<edit class="textview" id="message" text="" width="fill_parent" height="wrap_content" background="na" singleline="0" color="gray1" font="12n" padding="3,3,3,3" />
+				</ui>
+			</ui>
+			<ui class="vlinearlayout" width="0" height="0" margin="0,0,0,0" layout_gravity="center|vcenter">
+				<ui class="view"  width="0" height="0" weight="1"/>
+				<!-- <button class="button" id="copy" width="78" height="25" text="copy" color="gray2" font="12n" background="tool_btn" margin="0,0,0,18"/>margin="0,0,0,10" -->
+				<button class="button" id="solution" width="78" height="25" text="solution" color="gray2" font="12n" background="tool_btn" margin="0,0,0,0" visible="0"/>	
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_1" margin="0,0,0,0"/>
+		<ui class="linearlayout" width="fill_parent" height="40" background="root_2">
+			<textview class="textview" id="copy" width="wrap_content" height="24" text="Copy url" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" background="na" margin="10,0,0,0"/>
+			<textview class="textview" id="open_group" width="wrap_content" height="24" text="Open chat group" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" margin="10,0,0,0" />
+			<textview class="textview" id="open_url" width="wrap_content" height="24" text="Open The Link" color="blue1_status" font="12n_underline" layout_gravity="left|vcenter" gravity="center|vcenter" margin="10,0,0,0" />
+			<ui class="view"  width="0" height="0" weight="1" isview="0"/>
+			<button class="button" id="ok" width="wrap_content" height="24" text="Close Window" color="white" font="12n" layout_gravity="left|vcenter" background="com_btn" padding="10,0,10,0" margin="0,0,10,0"/>
+		</ui>
+	</ui>
+	<ui class="linearlayout" width="30" height="30" padding="0,0,0,0" layout_gravity="right|top">
+		<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+	</ui>
+</ui>
+</root>

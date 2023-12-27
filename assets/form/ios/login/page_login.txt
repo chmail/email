@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="main" width="1" height="1" keyboard="1" style="navigate" rotate="none">
+    <ui class="navigatebar" height="56" id="navigatebar" width="fill_parent" text="Add account">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui id="btn_close" class="navigateitem" width="40" height="40"  image="icon_navigatebar_close" text="" action="close" layout_gravity="left|vcenter"/>
+            </ui>
+            <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+                <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="Add account"/>
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+
+    <ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" >
+        
+    </ui>
+    <ui class="framelayout" width="fill_parent" height="fill_parent" bgcolor="white" id="email_login_panel" margin="0,56,0,0"> 
+        <ui class="scrollview" id="scrollPanel" width="fill_parent" height="fill_parent" weight="1" >
+            <ui class="framelayout" width="fill_parent" height="100%">
+                <!-- login -->
+                <ui class="framelayout" width="fill_parent" height="fill_parent" mouse_action="1" margin="0,56,0,0">
+                    <include src="login/login_panel.xml" />
+                    <!-- end -->
+                </ui>
+            </ui>
+        </ui>
+        <ui class="keyboard" width="0" height="0" />
+    </ui>
+</root>

@@ -1,0 +1,18 @@
+<ui class="framelayout" width="fill_parent" height="40"  id="archive_group_cell">
+	<!-- <imageview class="imageview" id="" width="11" height="11" src="host_times_node_single" margin="6,0,0,0" layout_gravity="left|vcenter" /> -->
+	<ui class="vlinearlayout" width="fill_parent" height="fill_parent" id="notifyform_item_panel" margin="10,0,50,0" isview="0">
+		<ui class="linearlayout" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" padding="0,0,0,0" margin="20,0,0,0">
+			<ui class="vlinearlayout" width="fill_parent" height="30" layout_gravity="center|vcenter">
+				<ui class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0">
+					<checkbox class="checkbox" id="title" width="wrap_content" height="fill_parent" text="Added %1%" color="gray1" font="14B_email_unread" padding="0,0,0,0" ellipsis_end="1" layout_gravity="center|vcenter" gravity="left|vcenter" isview="0" />
+					<ui class="view" isview="0" weight="1" width="0" height="fill_parent" />
+					<textview class="textview" id="time" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,3,0"  color="gray3" font="12n" isview="0" />
+					<textview class="textview" width="wrap_content" height="fill_parent" text="by" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,3,0"  color="gray3" font="12n" isview="0" />
+					<textview class="textview" id="user" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,3,0"  color="blue1" font="12n" isview="0" />
+					<textview class="textview"  width="wrap_content" height="fill_parent" text="group_archive" layout_gravity="center|vcenter" gravity="left|vcenter" margin="0,0,0,0"  color="gray1" font="12n" isview="0" />
+				</ui>
+			</ui>
+		</ui>
+		<imageview class="imageview" width="fill_parent" height="1" src="line_2" margin="0,0,30,0"/>
+	</ui>
+</ui>

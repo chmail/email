@@ -1,0 +1,49 @@
+<combobox class="combobox" height="fill_parent" id="filetype_list" layout_gravity="center|vcenter"
+          width="wrap_content">
+    <ui  class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_folder" width="24" id="icon"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="All files" width="wrap_content" margin="10,0,40,0" />
+    </ui>
+    <ui  class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_draft" width="24" visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="Documents" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+            margin="15,0,0,0" src="comb_image" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+            layout_gravity="left|vcenter" text="Pictures" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_rar" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="Zip files" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_media" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="MultiMedia" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_chengxu" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="Program" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+
+    <ui class="linearlayout" height="48" width="fill_parent">
+        <imageview class="imageview" height="24" isview="0" layout_gravity="left|vcenter"
+                   margin="15,0,0,0" src="comb_more" width="24"  visible="1"/>
+        <textview class="textview" color="black" font="16n" height="wrap_content" id="title"
+                  layout_gravity="left|vcenter" text="Other" width="wrap_content" margin="10,0,40,0"/>
+    </ui>
+</combobox>

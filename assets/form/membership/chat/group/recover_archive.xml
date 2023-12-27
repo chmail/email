@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root  width="500" height="500" resize="0" padding="1,1,1,1" background="root_0">
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0">
+	<ui class="framelayout" id="captionbar" width="fill_parent" height="30">
+		<caption class="captionbar" id="caption" width="fill_parent" height="fill_parent" resize="0"/>
+		<ui class="linearlayout" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
+			<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="0,0,5,0" isview="0"/>
+			<textview class="textview" id="caption_tex" width="wrap_content" height="fill_parent" text="Recover Discussion" font="14n" color="gray1" gravity="center|vcenter" padding="0,0,0,0" isview="0"/>
+		</ui>
+		<ui class="linearlayout" width="30" height="30" margin="0,0,0,0" layout_gravity="right|top" >
+			<sysbutton class="sysbutton" id="sys_close" width="30" height="30" background="button_top_close" icon="sys_close" layout_gravity="right|top" padding="5,5,5,5" margin="0,0,0,0"/>
+		</ui>
+	</ui>
+	
+	<textview class="textview" width="wrap_content" height="wrap_content"  margin="50,5,50,5" padding="0,5,0,5" text="Recover discussion mean things not complete, need to continue" font="16B" color="black" gravity="left|vcenter" singleline="0" padding="0,0,0,0" isview="0"/>
+	
+	<textview class="textview" width="wrap_content" height="wrap_content"  margin="50,5,50,5" padding="0,5,0,5" text="Set auto archive time" font="14B" color="black" gravity="left|vcenter" singleline="0" padding="0,0,0,0" isview="0"/>
+	
+	<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="50,5,50,5">
+		<textview class="textview" width="wrap_content" height="wrap_content" text="archieve after: " singleline="1" color="black" font="14n" layout_gravity="left|vcenter" gravity="center|vcenter"/>		
+		<ui class="framelayout"  id="" width="60" height="24" layout_gravity="center|vcenter" margin="10,0,10,0" background="editview" >
+			<combobox class="combobox" id="popup_sync_cycle" width="fill_parent" height="fill_parent" color="gray1" font="14n" gravity="left|vcenter" background="na" padding="2,2,2,2" readonly="1" tooltip="" arrow="menu_arrow_down" itembg="hlinearlayout"/>		
+		</ui>
+		<textview class="textview" width="wrap_content" height="wrap_content" margin="0,0,0,0" text="hours not active will auto archieve" singleline="1" color="black" font="14n" layout_gravity="left|vcenter"/>		
+	</ui>
+
+	<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="50,5,50,5">
+		<textview class="textview"  width="wrap_content" height="20" text="Recover reason" color="black" font="14B"  layout_gravity="left|vcenter" gravity="left|vcenter" />
+		<textview class="textview"  width="wrap_content" height="20" text="Notify all member why discussion been recovered" margin="10,0,0,0" color="black" font="13n"  layout_gravity="left|vcenter" gravity="left|vcenter" />
+	</ui>
+	<ui class="framelayout" width="fill_parent" height="100" weight="1" margin="50,10,50,10" padding="0,0,0,0" background="root_0" > 
+		<richedit class="richedit"  width="fill_parent" wantreturn="1" id="text" height="fill_parent" text="" margin="10,5,10,5" padding="5,5,5,5" color="black" font="14n"  layout_gravity="left|vcenter" gravity="left|vcenter" hint="For Example: we need to discuss the last progression"  hintcolor="gray5" hintfont="14n"/>
+	</ui>
+	
+	<ui class="linearlayout" width="fill_parent" height="50"  margin="50,0,50,0" padding="0,0,0,0" layout_gravity="right|bottom" >
+		<ui class="view" height="0" width="0" weight="1" />
+		<button class="button" id="btn_cancel" width="75" height="24" layout_gravity="center|vcenter" text="Cancel" color="gray1_disabled" font="12n" margin="0,0,30,0" background="com_btn_white_box_r2"/>
+		<button class="button" id="btn_recover_archive" width="75" height="24" layout_gravity="center|vcenter" text="Recover" color="white" font="12n" margin="0,0,0,0" background="com_btn"/>
+	</ui>
+</ui>
+</root>

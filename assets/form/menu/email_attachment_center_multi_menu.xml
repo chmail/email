@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item tag="1" title="Open Attachment" image=""/>
+    <item tag="3" title="Save As" image=""/>
+    <item tag="4" title="Send to" image=""/>
+</menu>

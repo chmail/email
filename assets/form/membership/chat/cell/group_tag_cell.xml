@@ -1,0 +1,4 @@
+<ui id="tag_smart" class="linearlayout" width="wrap_content" height="22" background="smart_address" padding="0,0,0,0" margin="0,0,1,0" layout_gravity="center|vcenter">
+	<textview class="textview" id="title" width="wrap_content" text="" height="fill_parent" color="gray2" font="12n" gravity="left|vcenter" padding="4,0,4,0" drag="site"/>
+	<button class="button" id="btn_close" width="22" height="fill_parent" gravity="center|vcenter" layout_gravity="center|vcenter" icon="com_btn_close_p1" background="com_btn_close_bg_r2" padding="3,3,3,3" />
+</ui>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui class="vlinearlayout"  id="create_topic"  width="fill_parent" height="fill_parent" padding="0,0,0,0" margin="0,0,0,0" showrect="0" resize="0" visible="0">
+	<ui class="linearlayout" width="fill_parent" height="40" mouse_action="1" margin="0,20,0,0">
+		<textview class="textview"  width="wrap_content" height="20" text="Create Topic" color="black" font="14n" margin="20,0,0,0"  layout_gravity="left|vcenter" gravity="center|vcenter" />
+		<textview class="textview"  width="wrap_content" height="20" text="Create Topic Hint" color="gray3" font="14n" margin="10,0,0,0" layout_gravity="left|vcenter" gravity="center|vcenter" />
+		<ui class="view" width="0" height="fill_parent" weight="1" isview="0" />
+		<button class="button" id="close_invite"  width="40" height="40"  icon="sys_close3" backgrounsd="white" font="14n" color="gray1" layout_gravity="center|vcenter" gravity="center|vcenter" visible="0" />
+	</ui>
+
+	<ui class="vlinearlayout" width="fill_parent" height="0" weight="1" mouse_action="1" margin="100,50,100,50">
+		<textview class="textview"  width="wrap_content" height="20" text="Please set auto archieve time" color="black" font="16B"  layout_gravity="left|vcenter" gravity="center|vcenter"  />
+
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,10,0,0">
+			<textview class="textview" width="wrap_content" height="wrap_content" text="archieve after: " singleline="1" color="black" font="14n" layout_gravity="left|vcenter" gravity="center|vcenter"/>		
+			<ui class="framelayout"  id="" width="60" height="24" layout_gravity="center|vcenter" margin="10,0,10,0" background="editview" >
+				<combobox class="combobox" id="popup_sync_cycle" width="fill_parent" height="fill_parent" color="gray1" font="14n" gravity="left|vcenter" background="na" padding="2,2,2,2" readonly="1" tooltip="" arrow="menu_arrow_down" itembg="hlinearlayout"/>		
+			</ui>
+			<textview class="textview" width="wrap_content" height="wrap_content" margin="0,0,0,0" text="hours not active will auto archieve, you can search or view it in archieve list" singleline="1" color="black" font="14n" layout_gravity="left|vcenter"/>		
+		</ui>
+		
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,20,0,0">
+			<textview class="textview"  width="wrap_content" height="20" text="Topic Name" color="black" font="16B"  layout_gravity="left|vcenter" gravity="left|vcenter" />
+			<textview class="textview"  width="wrap_content" height="20" text="required field" margin="10,0,0,0" color="red" font="14n"  layout_gravity="left|vcenter" gravity="left|vcenter" />
+		</ui>
+		<edit class="edit"  width="fill_parent"  id="topic_name" height="28" text="" margin="0,10,0,0" padding="5,5,5,5" color="black" font="14n"  layout_gravity="left|vcenter" limit="40" gravity="left|vcenter" hint="what you want talk"  hintcolor="gray5" hintfont="14n"/>
+
+		
+		<ui class="linearlayout" width="fill_parent" height="wrap_content" margin="0,20,0,0">
+			<textview class="textview"  width="wrap_content" height="20" text="Description" color="black" font="16B"  layout_gravity="left|vcenter" gravity="center|vcenter" />
+			<textview class="textview"  width="wrap_content" height="20" text="Notify all member when update" color="black" font="14n" layout_gravity="left|vcenter" gravity="left|vcenter" margin="10,0,0,0"  />
+		</ui>
+		<ui class="framelayout" width="fill_parent" height="0" weight="1" margin="0,10,0,0" padding="5,5,5,5" background="root_0" > 
+			<richedit class="richedit" id="topic_desc"  width="fill_parent"  height="fill_parent" background="na" singleline="0" layout_gravity="center|vcenter" color="black" font="14n"  padding="0,5,0,5" margin="0,5,0,5"  hint="default topic description"  hintcolor="gray5"  hintfont="14n" limit="400" wantreturn="1"/>	
+		</ui>
+		
+
+		<textview class="textview"  width="wrap_content" height="20" text="Invite Member" margin="0,20,0,0" color="black" font="16B"  layout_gravity="left|vcenter" gravity="center|vcenter" />
+		<edit class="edit" id="invite"  width="wrap_content" height="28" margin="0,10,0,0" padding="15,5,15,8" text="Click to start invite" color="white" font="14n" layout_gravity="left|vcenter" gravity="left|vcenter" background="com_btn"/>
+		
+		<ui class="framelayout" width="fill_parent" height="200" weight="1" margin="0,20,0,0" padding="0,0,0,0" background="root_0" > 
+			<gridview class="gridview" id="default_avatar_panel" width="fill_parent" height="fill_parent" margin="2,2,2,0" itemsize="60,60" itembg="" /> 		
+		</ui>
+		
+		<ui class="linearlayout" width="fill_parent" height="50"  margin="0,0,0,0" padding="0,0,0,0" layout_gravity="right|bottom" >
+			<ui class="view" height="0" width="0" weight="1" />
+			<button class="button" id="cancel" width="90" height="28" layout_gravity="center|vcenter" text="Cancel" color="gray1_disabled" font="14n" margin="0,0,30,0" padding="10,5,10,6" background="com_btn_white_box_r2"/>
+			<button class="button" id="ceate_topic" width="wrap_content" height="28" layout_gravity="center|vcenter" text="Create Group" color="white" font="14n" margin="0,0,0,0"  padding="10,5,10,6" background="com_btn" disabled="1"/>
+		</ui>
+	</ui>
+</ui>

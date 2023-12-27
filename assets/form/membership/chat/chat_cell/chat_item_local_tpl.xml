@@ -1,0 +1,17 @@
+<ui class="linearlayout" id="chat_item_cell" width="wrap_content" height="wrap_content" >
+	<checkbox class="checkbox" id="prefix_checkbox" width="32" height="32" icon="checkbox" box="14,14" padding="0,0,0,0" visible="0" showrect="0"/>
+	<ui class="linearlayout" width="0" height="fill_parent" weight="1" isview="0"/>
+	<ui id="chat_item" class="vlinearlayout" width="0" weight="5" height="wrap_content"  margin="0,0,0,0" padding="0,8,0,8"  mouse_action="1">
+		<ui class="linearlayout" width="wrap_content" height="wrap_content" layout_gravity="right|bottom" margin="0,0,0,6" padding="0,0,0,0" mouse_action="1">
+			<imageview class="imageview" id="state_icon" width="32" height="14" margin="0,0,4,2" padding="0,0,0,0" layout_gravity="right|vcenter" visible="0" showrect="0" isview="0"/>
+			<textview class="textview" id="lab_time" width="wrap_content" height="wrap_content" color="gray5" margin="0,0,0,0" font="12n" gravity="center|vcenter" layout_gravity="right|vcenter"/>
+			<textview class="textview" id="name" width="wrap_content" height="20" color="black" font="13n" text="me"  layout_gravity="right|vcenter" margin="10,0,10,0" />
+		</ui>
+		<ui class="framelayout" id="content_panel" width="wrap_content" height="wrap_content" background="right_bubble"  layout_gravity="right|vcenter" padding="10,10,16,10" min_limit="-1,36">
+			<!-- content -->
+			<!-- range (140+30,24) -->
+			<!-- end -->
+		</ui>
+	</ui>
+	<imageview class="imageview" id="user_avatar" width="24" height="24" src="avatar_default" layout_gravity="right|top" cornerRadius="12"  margin="3,8,5,0" cursor="hand"/>
+</ui>

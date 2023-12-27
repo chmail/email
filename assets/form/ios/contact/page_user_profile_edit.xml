@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="page_email_list"  width="screen" height="screen" bgcolor="white" keyboard="1">
+	<ui class="navigatebar" height="56" id="navigatebar" width="fill_parent">
+        <ui class="framelayout" height="fill_parent" width="fill_parent" >
+            <ui class="linearlayout" height="fill_parent" width="fill_parent">
+                <ui class="navigateitem" id="tb_close" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close" />
+
+                <ui class="view" width="0" height="fill_parent" weight="1" view="0" />
+                <button background="na" class="button" color="blue1" font="17n" gravity="center|vcenter" height="40" id="btn_save" layout_gravity="right|vcenter" text="Save" width="wrap_content" />
+            </ui>
+            <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        </ui>
+    </ui>
+
+<ui class="vlinearlayout" width="fill_parent" height="fill_parent" margin="0,56,0,0">
+	<ui class="scrollview" width="fill_parent" height="0" weight="1">	
+		<ui class="vlinearlayout" width="fill_parent" height="100%" margin="0,0,0,0">	
+			<ui class="linearlayout" width="fill_parent" height="80" >
+				<ui class="framelayout" width="64" height="64" layout_gravity="center|vcenter" margin="20,0,0,0">
+					<imageview class="imageview" id="avatar" width="80" height="60" src="avatar_default" cornerRadius="30" layout_gravity="center|vcenter" gravity="center|vcenter"/>
+				</ui>
+				<ui class="vlinearlayout" width="fill_parent" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,0,0" >
+					<textview class="textview" id="person_display_name" width="fill_parent" height="wrap_content" text="" color="black" font="17n" layout_gravity="left|vcenter" gravity="left|vcenter" margin="0,0,0,4"  isview="0"/>
+					<textview class="textview" id="default_email_txt" width="fill_parent" height="wrap_content" text="" color="gray5" font="13n" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+				</ui>
+
+			!!!!<ui class="vlinearlayout" id="plugin_list_panel" width="0" height="0" margin="10,0,0,0">
+					<textview class="textview" id="" width="fill_parent" height="wrap_content" color="black" font="13n" layout_gravity="left|vcenter" margin="0,4,0,4"  text="plugin info" />
+					<ui class="vlinearlayout" width="fill_parent" height="fill_parent">
+						<gridview class="gridview" id="plugin_list_gridview" width="fill_parent" height="fill_parent" margin="-1,-1,-1,-1"  gravity="vcenter" itemsize="50,28" min_limit="160,56"/>
+					</ui>
+				</ui>
+			</ui>
+
+			<ui class="vlinearlayout" id="detail_info_panel" width="fill_parent" height="fill_parent" item_height="60" bgcolor="" separator="line">white
+
+				<!-- Person Name -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter">
+					<textview id="name_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,10,0"  text="Person Name" singleline="1" color="gray5" font="13n" gravity="left|vcenter" ellipsis_end="1"/>
+					<edit class="edit" id="name_input" width="270" height="wrap_content" hint="Add name" ellipsize="middle" border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  limit="28" layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keepvisible="1"/>
+				</ui>
+
+				<!-- nick name -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">
+					<textview id="nickname_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,10,0"  text="Memo" singleline="1" color="gray5" font="13n" gravity="left|vcenter"/>
+					<edit class="edit" id="nickname_input" width="270" height="wrap_content" hint="memoxx" ellipsize="middle" border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  limit="28" layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keepvisible="1"/>
+				</ui>
+
+				<!-- display name -->
+				<!--<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">-->
+					<!--<textview class="textview" width="100" height="40" margin="0,0,10,0"  text="Display As" singleline="1" color="gray5" font="13n" gravity="left|vcenter"/>-->
+					<!--<ui class="framelayout" width="150" height="24" layout_gravity="center|top" background="na" >-->
+						<!--<combobox class="combobox" id="displayName_input" width="fill_parent" height="fill_parent" font="13n" color="black"  layout_gravity="center|vcenter"  gravity="left|vcenter"  padding="1,2,1,2" readonly="1" arrow="menu_arrow_down" itembg="hlinearlayout" background=""/>-->
+					<!--</ui>-->
+				<!--</ui>-->
+
+				<!-- gender -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0" visible="0">
+					<textview id="gender_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,10,0"  text="Person Gender" singleline="1" color="gray5" font="13n" gravity="left|vcenter"/>
+					<ui class="framelayout" width="80" height="24" layout_gravity="center|top" background="na" >
+						<combobox class="combobox" id="gender_input" width="fill_parent" height="fill_parent" font="13n" color="black" layout_gravity="center|vcenter"  gravity="left|vcenter"  padding="1,1,1,1" readonly="1" arrow="menu_arrow_down" itembg="hlinearlayout" background="na" keepvisible="1"/>
+					</ui>
+				</ui>
+				<!-- birthday -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">
+					<textview id="birthday_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter" margin="20,0,10,0"  text="Person Birthday" singleline="1" color="gray5" font="13n" gravity="left|vcenter"/>
+					<edit class="edit" id="birthday_input" width="270" height="wrap_content" color="black" font="13n"  padding="4,0,0,0" hint="1970-01-01"  border="none" hintcolor="gray5" layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keyboard="numbernpunc" keepvisible="1"  keyboard="numbernpunc"/>contacts_info_edit_box
+				</ui>
+				<!-- company -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">
+					<textview id="company_name_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter"  margin="20,0,10,0" text="Company" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>
+					<edit class="edit" id="company_name_input" width="fill_parent" height="wrap_content" hint="Add company name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keepvisible="1"/>
+				</ui>
+				<!-- department -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">
+					<textview id="depart_name_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter"  margin="20,0,10,0" text="Department" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>
+					<edit class="edit" id="depart_name_input" width="fill_parent" height="wrap_content" hint="Add department name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keepvisible="1"/>
+				</ui>
+				<!-- title -->
+				<ui class="linearlayout" width="fill_parent" height="40" layout_gravity="center|vcenter" margin="0,2,0,0">
+					<textview id="title_name_input_txt" class="textview" width="80" height="wrap_content" layout_gravity="left|vcenter"  margin="20,0,10,0" text="Title" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>
+					<edit class="edit" id="title_name_input" width="fill_parent" height="wrap_content" hint="Add title name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keepvisible="1" />
+				</ui>
+
+				<!-- email -->
+				<ui id="email_addr_panel0" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">
+					<ui id="email_addr_dropdown_0" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="email_addr_dropdown_text_0" singleline="1"  width="0" weight="1" ellipsis_end="1" height="wrap_content"  text="EMail" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0"/>
+						<imageview class="imageview" id="email_addr_dropdown_text_default_0" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0" />
+					</ui>
+					<edit class="edit" id="email_address_input0" width="fill_parent" height="wrap_content" hint="Add email address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="left|vcenter" gravity="left|vcenter" background="na" keyboard="email" keepvisible="1"/>
+				</ui>
+				<ui id="email_addr_panel1" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui  id="email_addr_dropdown_1" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="email_addr_dropdown_text_1" singleline="1"  width="0" weight="1" ellipsis_end="1" height="wrap_content"  text="EMail" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="email_addr_dropdown_text_default_1" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="email_address_input1"  width="fill_parent" height="wrap_content" hint="Add email address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="left|vcenter" gravity="left|vcenter" background="na" keyboard="email" keepvisible="1"/>
+				</ui>
+				<ui id="email_addr_panel2" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui  id="email_addr_dropdown_2" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="email_addr_dropdown_text_2" singleline="1" width="0" weight="1"   ellipsis_end="1"  height="wrap_content" text="EMail" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="email_addr_dropdown_text_default_2" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="email_address_input2"  width="fill_parent" height="wrap_content" hint="Add email address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="left|vcenter" gravity="left|vcenter" background="na" keyboard="email" keepvisible="1"/>
+				</ui>
+				<ui id="email_addr_panel3" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui  id="email_addr_dropdown_3" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="email_addr_dropdown_text_3" singleline="1" width="0" weight="1"  ellipsis_end="1"  height="wrap_content" text="EMail" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="email_addr_dropdown_text_default_3" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="email_address_input3"  width="fill_parent" height="wrap_content" hint="Add email address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="left|vcenter" gravity="left|vcenter" background="na" keyboard="email" keepvisible="1"/>
+				</ui>
+
+				<!-- telphone -->
+				<ui id="tel_phone_panel0" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">
+					<ui id="telephone_dropdown_0" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="telephone_dropdown_text_0" singleline="1"  width="0" weight="1" ellipsis_end="1" height="wrap_content" text="Person Telephone number" font="13n" color="gray5" layout_gravity="center|vcenter" gravity="left|vcenter"   isview="0" showrect="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="left|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="telephone_dropdown_text_default_0" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="telephone_input0" width="fill_parent" height="wrap_content" hint="Add telephone number"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keyboard="number" keepvisible="1" keyboard="number"/>
+				</ui>
+				<ui id="tel_phone_panel1" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui id="telephone_dropdown_1" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="telephone_dropdown_text_1" singleline="1"  width="0" weight="1" ellipsis_end="1" height="wrap_content" text="Person Telephone number" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="telephone_dropdown_text_default_1" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="telephone_input1" width="fill_parent" height="wrap_content" hint="Add telephone number"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keyboard="number" keepvisible="1" keyboard="number"/>
+				</ui>
+				<ui id="tel_phone_panel2" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui id="telephone_dropdown_2" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="telephone_dropdown_text_2" singleline="1"  width="0" weight="1" ellipsis_end="1"  height="wrap_content" text="Person Telephone number" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="telephone_dropdown_text_default_2" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="telephone_input2" width="fill_parent" height="wrap_content" hint="Add telephone number"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keyboard="number" keepvisible="1" keyboard="number"/>
+				</ui>
+				<ui id="tel_phone_panel3" class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0" visible="0">
+					<ui id="telephone_dropdown_3" class="linearlayout" width="80" height="40" margin="20,0,10,0"  layout_gravity="center|vcenter" background="com_btn_white_box_r2_line_hover" isview="0">flat_edit_line
+						<textview class="textview" id="telephone_dropdown_text_3" singleline="1" width="0" weight="1" ellipsis_end="1" height="wrap_content" text="Person Telephone number" font="13n" color="gray5" layout_gravity="left|vcenter" gravity="left|vcenter"   isview="0"/>
+						<button class="button" id="" width="11" height="10" icon="menu_arrow_down_small" layout_gravity="right|vcenter" background="xxxx"  margin="2,0,2,0" isview="0" visible="0" />background="menu_arrow_down_small_bg"
+						<imageview class="imageview" id="telephone_dropdown_text_default_3" width="0" height="20" layout_gravity="center|vcenter" src="icon_hook" margin="2,0,2,0" isview="0" visible="0"/>
+					</ui>
+					<edit class="edit" id="telephone_input3" width="fill_parent" height="wrap_content" hint="Add telephone number"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" keyboard="number" keepvisible="1" keyboard="number"/>
+				</ui>
+
+				<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">
+					<textview id="address_input_txt" class="textview"  width="80" height="wrap_content" layout_gravity="left|vcenter"  margin="20,0,10,0" text="Person Address" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>
+					<edit class="edit" id="address_input" width="fill_parent" height="wrap_content" hint="Add contact address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na"  keepvisible="1"/>
+				</ui>
+
+				<!--<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">-->
+					<!--<textview id="country_input_txt" visible="2" class="textview"  width="100" height="fill_parent"  margin="20,0,10,0" text="Country/Region" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>-->
+					<!--<edit class="edit" id="country_input" width="fill_parent" height="20" hint="Add country name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" />-->
+				<!--</ui>-->
+				<!--<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">-->
+					<!--<textview id="province_input_txt" visible="2" class="textview"  width="100" height="fill_parent"  margin="20,0,10,0" text="Province/State" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>-->
+					<!--<edit class="edit" id="province_input" width="fill_parent" height="20" hint="Add province name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" />-->
+				<!--</ui>-->
+				<!--<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">-->
+					<!--<textview id="city_input_txt" class="textview" visible="2"  width="100" height="fill_parent"  margin="20,0,10,0" text="City/Post Code" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>-->
+					<!--<edit class="edit" id="city_input" width="fill_parent" height="20" hint="Add city name"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" />-->
+				<!--</ui>-->
+				<!--<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">-->
+					<!--<textview id="postcode_input_txt" class="textview" visible="2"  width="100" height="fill_parent"  margin="20,0,10,0" text="City/Post Code" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>-->
+					<!--<edit class="edit" id="postcode_input" width="fill_parent" height="20" hint="Add post code"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" />-->
+				<!--</ui>-->
+				<!--<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,0">-->
+					<!--<textview id="street_input_txt" visible="2" class="textview"  width="100" height="fill_parent"  margin="20,0,10,0" text="Person Street" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>-->
+					<!--<edit class="edit" id="street_input" width="fill_parent" height="20" hint="Add street address"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na" />-->
+				<!--</ui>-->
+
+				<ui class="linearlayout" width="fill_parent" height="40" margin="0,2,0,10">
+					<textview id="note_input_txt" class="textview"  width="80" height="wrap_content" layout_gravity="left|vcenter"  margin="20,0,10,0" text="Person Note" singleline="1" color="gray5" font="13n" gravity="left|vcenter"  ellipsis_end="1"/>
+					<edit class="edit" id="note_input" width="fill_parent" height="wrap_content" hint="Add Note"  border="none" hintcolor="gray5" hintfont="13n" color="black" font="13n" padding="4,1,10,1"  layout_gravity="center|vcenter" gravity="left|vcenter" background="na"  keepvisible="1"/>
+				</ui>
+				<!-- </ui> -->
+				<ui class="linearlayout" width="fill_parent" height="24" margin="0,0,10,10" visible="0">
+					<ui class="linearlayout" width="0" weight="1" height="fill_parent"/>
+					<button class="button" id="btn_cancel" width="70" height="fill_parent" gravity="center|vcenter" background="com_btn_white_box_r2" text="cancel" color="black" font="13n" margin="0,0,10,0"/>
+					<!-- <button class="button" id="btn_save" width="70" height="fill_parent" gravity="center|vcenter" background="com_btn" text="save" color="white" font="13n" /> -->
+				</ui>
+			</ui>
+			
+		</ui>
+	</ui>
+	<ui class="keyboard" width="0" height="0" margin="0,-49,0,0"/>
+</ui>
+</root>
