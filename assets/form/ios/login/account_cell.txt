@@ -2,15 +2,15 @@
 	<ui class="linearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" layout_gravity="left|vcenter" isview="0">
 		<ui class="framelayout" width="40" height="40" layout_gravity="center|vcenter" margin="20,0,10,0" isview="0">
 			<imageview class="imageview" id="account_avatar" cornerRadius="16" width="32" height="32" src="avatar_default" layout_gravity="center|vcenter" isview="0"/>
-		</ui>  
+		</ui>
 
 		<ui class="vlinearlayout" width="0" weight="1" height="fill_parent" layout_gravity="center|vcenter" isview="0">
 			<ui class="linearlayout" width="fill_parent" height="0" weight="1" layout_gravity="center|vcenter" isview="0">
 				<textview class="textview" id="email_name" width="wrap_content" height="wrap_content" gravity="center|vcenter" text="Name" singleline="1" ellipsis_end="1" color="black" font="16n" layout_gravity="left|vcenter" isview="0"/> 
-			</ui>  
-		</ui>  
+			</ui>
+		</ui>
 
 		<commoncheckbox class="commoncheckbox" id="account_hidden" width="40" height="40" box="40,40" icon="icon_setting_visible" gravity="center|vcenter" layout_gravity="right|vcenter" margin="0,0,10,0" background="na" visible="0"/>
 
-	</ui>  
-</ui>  
+	</ui>
+</ui>

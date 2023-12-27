@@ -7,8 +7,8 @@
 		<include src="main/main_right_page.xml"/>
 		<include src="main/main_left_account.xml"/>
 
-	</ui>  
-</ui>  
+	</ui>
+</ui>
 </root>
 	
 	

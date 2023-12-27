@@ -4,14 +4,14 @@
 	<ui class="statusbar" id="statusbar" width="fill_parent" height="0"/>
 	<ui class="navigatebar" id="navigatebar" width="fill_parent" height="0" text="email report">
 		<ui class="navigateitem" width="60"  height="fill_parent" text="Close" action="close"/>
-	</ui>  
+	</ui>
 	<ui class="linearlayout" width="wrap_content" height="60" layout_gravity="center|vcenter" margin="0,0,0,0" isview="0" >
 		<imageview class="imageview" width="16" height="16" src="app_caption_icon_small" layout_gravity="center|vcenter" padding="0,0,0,0" margin="5,0,5,0" isview="0"/>
 		<textview class="textview" width="wrap_content" height="wrap_content" text="email report" font="14n" color="ccccccc" layout_gravity="center|vcenter" padding="0,0,0,0" isview="0"/> color="white"  id="caption_tex" 
 		<!-- <ui class="view" width="0" weight="1" height="fill_parent" isview="0" /> -->
 		<textview class="textview" id="account_info" width="wrap_content" height="wrap_content" text="ccccccs" font="12n" color="gray" gravity="center|vcenter" layout_gravity="right|vcenter" margin="0,0,10,0" padding="0,0,0,0" isview="0" visible="0"/>
-	</ui>  
+	</ui>
 	<!-- <ui class="statusbar" id="statusbar" width="fill_parent" height="20"/> -->
 	<ui class="chromeview" id="email_statistic" width="fill_parent" height="0" weight="1" margin="0,0,0,0"/>
-</ui>  
+</ui>
 </root>
