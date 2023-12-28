@@ -6,11 +6,11 @@
                 <ui class="navigateitem" id="tb_close" image="icon_navigatebar_close" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" />
                 <combobox class="combobox" height="fill_parent" id="btn_email_account" layout_gravity="center|vcenter" weight="1" width="0" />
                 <ui class="navigateitem" id="tb_send" image="icon_navbar_send" layout_gravity="right|vcenter" type="right" width="40" height="40" />
-            </ui>  
+            </ui>   
 
             <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom"/>
-        </ui>  
-    </ui>  
+        </ui>   
+    </ui>   
 
     <ui class="vlinearlayout" height="fill_parent" id="full_editor_id" margin="0,56,0,0"
         width="fill_parent">
@@ -38,20 +38,20 @@
                                             color="gray5" font="14n" height="wrap_content"
                                             layout_gravity="right|vcenter" text="To_formac"
                                             width="wrap_content"  showrect="1"/>
-                                    </ui>  
+                                    </ui>   
                                     <ui class="vlinearlayout" height="wrap_content"
                                         layout_gravity="left|vcenter" width="fill_parent">
                                         <include id="to_list_host"
                                             src="editor/email_smart_address.xml" />
-                                    </ui>  
-                                </ui>  
+                                    </ui>   
+                                </ui>   
 
                                 <button background="na" class="imagebutton" height="30" icon="email_tb_contact_add"
                                     id="to" layout_gravity="right|vcenter" margin="0,4,4,0"
                                     padding="5,5,5,5" width="30" />
-                            </ui>  
+                            </ui>   
                             <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0"/>
-                        </ui>  
+                        </ui>   
                         
                         <!-- cc -->
                         <ui class="framelayout" height="wrap_content" id="cc_panel"
@@ -62,24 +62,24 @@
                                     <textview background="na" class="textview" color="gray5"
                                         font="14n" height="wrap_content" id=""
                                         layout_gravity="right|vcenter" text="Cc_formac" width="wrap_content" />
-                                </ui>  
+                                </ui>   
                                 <ui class="vlinearlayout" height="wrap_content" layout_gravity="left|vcenter"
                                     width="fill_parent">
                                     <include id="cc_list_host"
                                         src="editor/email_smart_address.xml" />
-                                </ui>  
-                            </ui>  
+                                </ui>   
+                            </ui>   
                             <ui class="framelayout" height="0" visible="0" width="0">
                                 <commoncheckbox background="na" box="20,20" class="commoncheckbox"
                                     height="24" icon="icon_arrow_right_down" id="folder_bccc"
                                     layout_gravity="left|top" margin="10,8,0,0" visible="0"
                                     width="30" />
-                            </ui>  
+                            </ui>   
                             <button background="na" class="imagebutton" height="30" icon="email_tb_contact_add" id="cc"
                                 layout_gravity="right|vcenter" margin="0,4,4,0" padding="5,5,5,5"
                                 width="30" />
                             <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" layout_gravity="center|bottom"/>
-                        </ui>  
+                        </ui>   
                         <!-- bcc -->
                         <ui class="framelayout" height="wrap_content" id="bcc_panel"
                             visible="0" width="fill_parent">
@@ -89,18 +89,18 @@
                                     <textview background="na" class="textview" color="gray5"
                                         font="14n" height="wrap_content" id=""
                                         layout_gravity="right|vcenter" text="Bcc_formac" width="wrap_content" />
-                                </ui>  
+                                </ui>   
                                 <ui class="vlinearlayout" height="wrap_content" layout_gravity="left|vcenter"
                                     width="fill_parent">
                                     <include id="bcc_list_host"
                                         src="editor/email_smart_address.xml" />
-                                </ui>  
-                            </ui>  
+                                </ui>   
+                            </ui>   
                             <button background="na" class="imagebutton" height="30" icon="email_tb_contact_add" id="bcc"
                                 layout_gravity="right|vcenter" margin="0,4,4,0" padding="5,5,5,5"
                                 width="30" />
                             <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" layout_gravity="center|bottom"/>
-                        </ui>  
+                        </ui>   
                         <!-- subject -->
                         <ui class="linearlayout" height="wrap_content" width="fill_parent" margin="0,0,40,0">
                             <ui class="framelayout" height="44" margin="0,0,0,0" width="80">
@@ -108,14 +108,14 @@
                                     height="wrap_content" id="subject_lab" isview="0"
                                     layout_gravity="right|vcenter" text="Subject_formac" width="wrap_content" 
                                      singleline="1" maxLines="1"/>
-                            </ui>  
+                            </ui>   
                             <ui class="framelayout" height="wrap_content" weight="1" width="fill_parent">
                                 <edit border="none" class="edit" color="black" font="14n"
                                     height="wrap_content" hintcolor="gray5"
                                     hintfont="12n" id="subject" layout_gravity="left|vcenter"
                                     margin="2,0,0,0" width="fill_parent" background="na"  maxLines="1"/>
-                            </ui>  
-                        </ui>  
+                            </ui>   
+                        </ui>   
                         <ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" />
                         <!-- link email panel -->
                         <ui class="framelayout" height="wrap_content" id="email_panel"
@@ -133,17 +133,17 @@
                                         cursor="hand" font="" gravity="center|vcenter" height="18"
                                         id="email_subject" layout_gravity="left|vcenter" padding="10,0,10,0"
                                         text="" width="wrap_content" />
-                                </ui>  
-                            </ui>  
+                                </ui>   
+                            </ui>   
                             <imageview class="imageview" height="1" isview="0" layout_gravity="center|vcenter"
                                 src="line_1" width="fill_parent" />
-                        </ui>  
+                        </ui>   
                         <!-- calendar panel -->
                         <ui class="linearlayout" height="wrap_content" id="panel_cal"
                             visible="0" width="fill_parent">
                             <!-- <include src="email_editor_calendar.xml"/> -->
-                        </ui>  
-                    </ui>  
+                        </ui>   
+                    </ui>   
                     <ui class="vlinearlayout" height="wrap_content" width="fill_parent">
                         <!-- tool bar -->
                         <ui background="root_1" class="linearlayout" height="0" layout_gravity="center|vcenter"
@@ -157,15 +157,15 @@
                                     gravity="right|vcenter" height="wrap_content" id="" isview="0"
                                     layout_gravity="center|vcenter" text="Options"
                                     width="fill_parent" />
-                            </ui>  
+                            </ui>   
                             <!-- save -->
                             <ui class="framelayout" height="20" id="save_draft_panel" layout_gravity="center|vcenter"
                                 margin="5,0,10,0" width="20">
                                 <button background="empty" class="button" height="20" icon="email_tb_save_draft"
                                     id="tab_save_draft" layout_gravity="center|vcenter"
                                     width="20" />
-                            </ui>  
-                        </ui>  
+                            </ui>   
+                        </ui>   
                         <!-- <imageview class="imageview" width="fill_parent" height="1" src="line_1" isview="0"/> -->
                         <ui class="framelayout" height="wrap_content" id="chrome_wrapper"
                             width="fill_parent">
@@ -175,8 +175,8 @@
 
                             <ui class="chromeview" drag="move" height="wrap_content"
                                 id="editor" scroll="disabled" visible="1" width="fill_parent" />
-                        </ui>  
-                    </ui>  
+                        </ui>   
+                    </ui>   
 
                     <ui  class="vlinearlayout" height="0" weight="1" width="fill_parent"/>
 
@@ -189,10 +189,10 @@
                             id="attachment_panel" itemsize="100,100"  margin="0,0,0,0"
                             scrolldirection="horizontal" width="fill_parent" />
 
-                    </ui>  
+                    </ui>   
 
-                </ui>  
-        </ui>  <!-- end scroll -->
+                </ui>   
+        </ui>   <!-- end scroll -->
             <!-- attachment_toolbar -->
             <ui class="framelayout" width="wrap_content" height="44" layout_gravity="right|bottom">
                 <ui class="linearlayout" id="bg_edit_attach" width="wrap_content" height="fill_parent" layout_gravity="center|vcenter" background="bg_edit_attach">
@@ -201,12 +201,12 @@
                     <button class="imagebutton" id="tb_image" width="40" height="40" icon="email_tb_pic" layout_gravity="left|vcenter" background="empty" margin="0,0,8,0" tooltip="Insert Photo" />
                     <commoncheckbox background="na" box="40,40" class="commoncheckbox" height="26" icon="email_tb_tracking" id="btn_email_track" layout_gravity="left|vcenter" margin="0,0,8,0" tooltip="Email Track" visible="0"
                                     width="40" />
-                </ui>  
-            </ui>  
+                </ui>   
+            </ui>   
 
                         <!-- dun delete  -->
                 <ui bgcolor="white" class="tableview" height="fill_parent" id="auto_hint_tableview" visible="0" width="fill_parent" />
-        </ui>  
+        </ui>   
 
 
 
@@ -214,7 +214,7 @@
 
 
         <ui class="keyboard" height="0" margin="0,0,0,0" width="0" />
-    </ui>  
+    </ui>   
 
     <!-- unless -->
     <ui class="framelayout" height="0" layout_gravity="right|bottom" visible="0" width="0">
@@ -222,7 +222,7 @@
         <!--
         !-_-<ui class="linearlayout" id="tip_msg" width="fill_parent" height="60" background="toolbar" visible="0">
         <textview class="textview" width="wrap_content" height="fill_parent" padding="2,0,10,0" color="white" font="12n" gravity="right|vcenter"/>
-        </ui>  
+        </ui>   
         -->
         <ui background="captionbar_bg" class="framelayout" height="0" id="email_editor" visible="0"
             width="0">
@@ -239,8 +239,8 @@
                     <textview class="textview" color="black" font="12n" height="0"
                         id="edit_save_msg" isview="0" layout_gravity="left|vcenter"
                         margin="5,0,0,0" text="(13:06:50 has saved)" visible="0" width="0" />
-                </ui>  
-            </ui>  
+                </ui>   
+            </ui>   
             <!-- save_appointment -->
             <!-- Save And Close -->
             <ui class="framelayout" gravity="center|vcenter" height="fill_parent"
@@ -256,8 +256,8 @@
                 <!--
                 <imageview class="imageview" width="fill_parent" height="1" src="line_0" layout_gravity="center|bottom" isview="0" />
                 -->
-            </ui>  
-        </ui>  
+            </ui>   
+        </ui>   
         <ui class="linearlayout" height="24" id="pager_host_lab" layout_gravity="left|bottom" margin="10,0,10,15"
             visible="0" width="100">
             <imageview class="imageview" height="20" isview="0" layout_gravity="center|vcenter"
@@ -265,12 +265,12 @@
             <textview class="textview" color="red" font="12n" height="wrap_content"
                 id="delet_all" layout_gravity="center|vcenter" margin="10,0,4,0" singleline="1"
                 text="Delet All Attachment" visible="0" width="wrap_content" />
-        </ui>  
+        </ui>   
         <!-- undo -->
         <button background="email_tb_bg" class="button" height="0" icon="editor_undo" id="tb_editor_undo"
             layout_gravity="center|vcenter" margin="0,0,2,0" width="0" />
         <button background="email_tb_bg" class="button" height="0" icon="editor_redo" id="tb_editor_redo"
             layout_gravity="center|vcenter" margin="0,0,5,0" width="0" />
-    </ui>  
+    </ui>   
     
 </root>

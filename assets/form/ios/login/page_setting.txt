@@ -5,13 +5,13 @@
         <ui class="framelayout" height="fill_parent" width="fill_parent" >
             <ui class="linearlayout" height="fill_parent" width="fill_parent">
                 <ui class="navigateitem" id="tab_back" image="icon_navigatebar_arrow_left" text="" layout_gravity="left|vcenter" type="left" width="40" height="40" action="close"/>
-            </ui>
+            </ui>   
              <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
 				<textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="Setting"/>
-			</ui>
+			</ui>   
             <ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
-        </ui>
-    </ui>
+        </ui>   
+    </ui>   
 	<!--Option-->
 	<simplelistbox class="simplelistbox" id="system_setting_list" width="fill_parent" height="0" weight="1" item_height="44"  background="na" separator="" bgcolor="gray10">
 		<!-- -->
@@ -19,24 +19,24 @@
 			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
 			<imageview class="imageview" width="29" height="29" src="setting_account" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
 			<textview class="textview" text="Account_Setting" font="16n" color="black" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
-		</ui>
+		</ui>   
 
 		<ui class="framelayout" width="fill_parent" height="60"  id="common_page" background="na" visible="0">
 			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
 			<imageview class="imageview" width="29" height="29" src="setting_general" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
 			<textview class="textview" text="Software" font="16n" color="black" id="btn_important_list" width="fill_parent" height="fill_parent" margin="60,0,0,0"/>
-		</ui>
+		</ui>   
 
 
 		<ui class="framelayout" id="adv_page" width="fill_parent" height="60" background="na" visible="0">
 			<imageview class="imageview" width="14" height="14" src="icon_tablecell_disclosure_indicator" layout_gravity="right|vcenter" margin="20,0,20,0" isview="0"/>
 			<imageview class="imageview" width="29" height="29" src="setting_advanced" layout_gravity="left|vcenter" margin="20,0,20,0" isview="0"/>
 			<textview class="textview" text="Advanced" font="16n" color="black" width="wrap_content" height="wrap_content" margin="60,0,0,0" layout_gravity="left|vcenter"/>
-		</ui>
+		</ui>   
 
 		<!-- Software -->
 			<ui class="framelayout" width="fill_parent" height="20" bgcolor="gray10" margin="0,0,0,0">
-			</ui>
+			</ui>   
 
 		<!-- langages -->
 		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0">
@@ -45,37 +45,37 @@
 				<combobox class="combobox" id="lang_cbx" text="Button" width="wrap_content" height="fill_parent" margin="0,0,10,0" color="blue1" bgcolor="white" windowbg="bg_white">
 					<ui class="framelayout" width="fill_parent" height="44" background="bg_emenu_cell" >
 						<textview class="textview" id="title" text="English" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-					</ui>
+					</ui>   
 					<ui class="framelayout" width="fill_parent" height="44" background="bg_emenu_cell" >
 						<textview class="textview" id="title" text="中文" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-					</ui>
+					</ui>   
 				</combobox>
-			</ui>
+			</ui>   
 			<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" layout_gravity="right|bottom"/>
-		</ui>
+		</ui>   
 
 		<!-- Gmail Customize  -->
 		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0">
 			<ui class="linearlayout" width="fill_parent" height="44" id="gmail_panel2" background="empty" bgcolor="white">
 				<textview class="textview" width="0" weight="1" height="wrap_content" text="Gmail Boost" font="16n" color="black"  margin="20,0,0,0" layout_gravity="left|vcenter"/>
 				<commoncheckbox class="commoncheckbox" id="gmail_boost" width="38" height="23" layout_gravity="right|vcenter" margin="20,0,20,0" icon="switch" background="na"/>
-			</ui>
+			</ui>   
 			<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" layout_gravity="right|bottom"/>
-		</ui>
+		</ui>   
 
 		<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0">
 			<ui class="linearlayout" width="fill_parent" height="44" id="clean_cache" background="empty" bgcolor="white">
 				<textview class="textview" width="0" weight="1" height="wrap_content" text="Clean local cache" font="16n" color="black"  margin="20,0,0,0" layout_gravity="left|vcenter" />
-			</ui>
-		</ui>
+			</ui>   
+		</ui>   
 
 		<ui class="linearlayout" width="fill_parent" height="44" id="lock" background="empty" bgcolor="white" visible="0">
 			<textview class="textview" width="0" weight="1" height="wrap_content" text="Gesture password and fingerprint" font="16n" color="black"  margin="20,0,0,0" layout_gravity="left|vcenter" />
-		</ui>
+		</ui>   
 
 		<!-- Advanced -->
 			<ui class="framelayout" width="fill_parent" height="20" bgcolor="gray10" margin="0,0,0,0">
-			</ui>
+			</ui>   
  
 		
 
@@ -84,56 +84,56 @@
 			<combobox class="combobox" id="use_name" text="Button" font="16n" color="blue1" width="wrap_content" height="fill_parent" layout_gravity="left|vcenter" bgcolor="white" margin="0,0,10,0">
 				<ui class="framelayout" width="fill_parent" height="44" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="Use email name" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="44" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="Use contact name" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 			</combobox>
-		</ui>
+		</ui>   
 
 		<ui id="gmail_panel" class="vlinearlayout" width="fill_parent" height="wrap_content" margin="0,0,0,0">
 			<ui class="framelayout" width="fill_parent" height="1" bgcolor="gray8" margin="0,0,0,0" layout_gravity="right|top"/>
 			<ui  class="framelayout" width="fill_parent" height="44" background="empty" bgcolor="white">
 				<commoncheckbox class="commoncheckbox" id="use_cont_name_reply" width="38" height="23" layout_gravity="right|vcenter" margin="20,0,20,0" icon="switch" background="na"/>			
 				<textview class="textview" text="Reply using contact name" font="16n" color="black" width="fill_parent" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter" />
-			</ui>
-		</ui>
+			</ui>   
+		</ui>   
 
 		<ui class="linearlayout" width="fill_parent" height="44" background="empty" bgcolor="white" visible="0">
 			<textview class="textview" text="Sync in specific period" font="16n" color="black" width="0" weight="1" height="wrap_content" margin="20,0,0,0" layout_gravity="left|vcenter" />
 			<combobox id="sync_intvl_cbx" class="combobox" text="3 min" font="16n" color="blue1" width="wrap_content" height="fill_parent" layout_gravity="left|vcenter" bgcolor="gray10">
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="manual sync" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="3 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="4 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="5 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="6 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="7 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="8 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="9 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 				<ui class="framelayout" width="fill_parent" height="48" background="bg_emenu_cell" >
 					<textview class="textview" id="title" text="10 min" font="16n" color="blue1" width="wrap_content" height="wrap_content" margin="0,0,0,0" layout_gravity="center|vcenter"/>
-				</ui>
+				</ui>   
 			</combobox>
-		</ui>
+		</ui>   
 	</simplelistbox>
 	<!-- end-->
-</ui>
+</ui>   
 </root>
 	
 	
