@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ui class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" background="login_bg" visible="0">root_2
+<ui  class="vlinearlayout" width="fill_parent" height="fill_parent" padding="0,0,0,0" background="login_bg" visible="0">root_2
 	<textview class="textview" width="fill_parent" height="20" text="Setting your email login" color="blue1" font="14n" gravity="center|vcenter" margin="0,25,0,15" isview="0" id="title2"/>
-	<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="18,0,18,0" padding="0,0,0,0">
-		<ui class="linearlayout" width="fill_parent" height="26" margin="0,0,0,0" layout_gravity="left|vcenter">
+	<ui  class="vlinearlayout" width="fill_parent" height="wrap_content" margin="18,0,18,0" padding="0,0,0,0">
+		<ui  class="linearlayout" width="fill_parent" height="26" margin="0,0,0,0" layout_gravity="left|vcenter">
 			<textview class="textview" width="70" height="26" text="IMAP" color="gray2" font="12n" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 			<checkbox class="checkbox" width="fill_parent" height="26" icon="checkbox" box="14,14" text="SSL" color="gray2" font="12n" id="chk_imap" padding="0,0,0,0" checked="1"/>
 		</ui>   
-		<ui class="vlinearlayout" width="fill_parent" height="75" padding="0,0,0,0">
-			<ui class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,5,0,5">
+		<ui  class="vlinearlayout" width="fill_parent" height="75" padding="0,0,0,0">
+			<ui  class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,5,0,5">
 				<textview class="textview" width="70" height="26" text="IMAP Address :" color="gray2" font="12n" id="lab_imap" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 				<edit class="edit" width="fill_parent" height="28" layout_gravity="center|vcenter" gravity="left|vcenter" padding="3,2,0,2" margin="0,0,0,2" hint="Service address" hintcolor="gray5" hintfont="12n" color="black" font="12n" id="txt_imap" />
 			</ui>   
-			<ui class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,0,0,5">
+			<ui  class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,0,0,5">
 				<textview class="textview" width="70" height="26" text="Port :" color="gray2" font="12n" id="port_imap" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 				<edit class="edit" width="50" height="28" layout_gravity="center|vcenter" gravity="left|vcenter" padding="3,2,0,2" margin="0,2,0,0" hint="" hintcolor="gray5" hintfont="12n" color="black" font="12n" text="993" id="txt_imap_port" />
 			</ui>   
 		</ui>   
 	</ui>   
-	<ui class="vlinearlayout" width="fill_parent" height="wrap_content" margin="18,5,18,0" padding="0,0,0,0">
-		<ui class="linearlayout" width="fill_parent" height="26" margin="0,0,0,0" layout_gravity="left|vcenter">
+	<ui  class="vlinearlayout" width="fill_parent" height="wrap_content" margin="18,5,18,0" padding="0,0,0,0">
+		<ui  class="linearlayout" width="fill_parent" height="26" margin="0,0,0,0" layout_gravity="left|vcenter">
 			<textview class="textview" width="70" height="26" text="SMTP" color="gray2" font="12n" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 			<checkbox class="checkbox" width="fill_parent" height="26" icon="checkbox" box="14,14" text="SSL" color="gray2" font="12n" id="chk_smtp" padding="0,0,0,0" checked="1"/>
 		</ui>   
-		<ui class="vlinearlayout" width="fill_parent" height="75" padding="0,0,0,0">
-			<ui class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,5,0,5">
+		<ui  class="vlinearlayout" width="fill_parent" height="75" padding="0,0,0,0">
+			<ui  class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,5,0,5">
 				<textview class="textview" width="70" height="26" text="SMTP Address :" color="gray2" font="12n" id="lab_smtp" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 				<edit class="edit" width="fill_parent" height="26" layout_gravity="center|vcenter" gravity="left|vcenter" padding="3,2,0,2" margin="0,0,0,2" hint="Service address" hintcolor="gray5" hintfont="12n" id="txt_smtp" />
 			</ui>   
-			<ui class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,0,0,5">
+			<ui  class="linearlayout" width="fill_parent" height="30" padding="0,0,0,0" margin="0,0,0,5">
 				<textview class="textview" width="70" height="26" text="Port :" color="gray2" font="12n" id="port_smtp" layout_gravity="center|vcenter" gravity="left|vcenter"/>
 				<edit class="edit" width="50" height="26" layout_gravity="center|vcenter" gravity="left|vcenter" padding="3,2,0,2" margin="0,2,0,0" hint="" hintcolor="gray5" hintfont="12n" id="txt_smtp_port" text="465"/>
 			</ui>   
 		</ui>   
 	</ui>   
 	<textview id="txt_custom_error" class="textview" width="fill_parent" margin="0,10,0,0" height="20" text="" color="red" font="12n" layout_gravity="center|vcenter" gravity="center|vcenter"/>
-	<ui class="linearlayout" width="fill_parent" height="30" margin="0,45,0,0" layout_gravity="center|vcenter">
-		<ui class="framelayout" width="0" weight="1" height="fill_parent" margin="0,0,0,0" padding="0,0,20,0">
+	<ui  class="linearlayout" width="fill_parent" height="30" margin="0,45,0,0" layout_gravity="center|vcenter">
+		<ui  class="framelayout" width="0" weight="1" height="fill_parent" margin="0,0,0,0" padding="0,0,20,0">
 			<button class="button" id="btn_custom_back" height="fill_parent" width="60" text="Back" color="white" font="12n" layout_gravity="right|vbottom" gravity="center|vcenter" background="btn_login" cursor="hand"/>
 		</ui>   
-		<ui class="framelayout" width="0" weight="1" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0">
+		<ui  class="framelayout" width="0" weight="1" height="fill_parent" margin="0,0,0,0" padding="0,0,0,0">
 			<button class="button" id="btn_custom_ok" height="fill_parent" width="60" text="OK" color="white" font="12n" layout_gravity="left|vbottom" gravity="center|vcenter" background="btn_login" cursor="hand"/>
 		</ui>   
 	</ui>   
-</ui>   
+</ui>   <mi256>

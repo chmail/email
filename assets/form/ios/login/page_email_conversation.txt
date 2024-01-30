@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root style="navigate" bgcolor="white" height="screen" id="page_email_list" width="screen">
-    <ui class="navigatebar" height="56" id="navigatebar" width="fill_parent">
-    	<ui class="framelayout" height="fill_parent" width="fill_parent" >
-    		<ui class="linearlayout" height="fill_parent" width="fill_parent">
-        		<ui class="navigateitem" id="btn_expand" image="icon_nav_all_btn" text="" width="40" height="40" layout_gravity="left|vcenter"/>
+    <ui  class="navigatebar" height="56" id="navigatebar" width="fill_parent">
+    	<ui  class="framelayout" height="fill_parent" width="fill_parent" >
+    		<ui  class="linearlayout" height="fill_parent" width="fill_parent">
+        		<ui  class="navigateitem" id="btn_expand" image="icon_nav_all_btn" text="" width="40" height="40" layout_gravity="left|vcenter"/>
         	</ui>   
-             <ui class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
+             <ui  class="navigateheader" width="160" height="40" id="title" layout_gravity="center|vcenter" > 
                 <textview class="textview" width="wrap_content" height="wrap_content" layout_gravity="center|vcenter" gravity="center|vcenter" id="title_bar" color="black" font="17n" text="conversation_tab"/>
             </ui>   
-        	<ui class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
+        	<ui  class="view" width="fill_parent" height="1" weight="1" view="0" showrect="1" bgcolor="gray9" layout_gravity="bottom|vcenter"/>
         </ui>   
     </ui>   
     <tableview class="tableview" edit="yes" height="fill_parent" id="contact_listview"
         itembg="hlinearlayout" margin="0,56,0,0"  width="fill_parent" separator="line"/>
-    <ui class="framelayout" height="fill_parent" isview="0" width="fill_parent">
+    <ui  class="framelayout" height="fill_parent" isview="0" width="fill_parent">
         <imageview class="imageview" height="185" id="backgruond_empty" layout_gravity="center|vcenter" src="chat_empty"
             visible="0" width="266" />
     </ui>   
