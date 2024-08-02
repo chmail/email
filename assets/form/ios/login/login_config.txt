@@ -1,6 +1,7 @@
 最佳频道,#genre#
 #列表——快乐垂钓
 快乐垂钓,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2
+快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8
 快乐垂钓,https://epg.pw/stream/7cb0483c83dc3ae526125c8357bb3ae38e32b2e3bf6a1b1649a841da9542489f.m3u8
 快乐垂钓,http://111.175.60.226:4022/udp/239.69.1.142:10488
 快乐垂钓,http://0bd115.netsite.cc/proxy/316113716/316113716.m3u8
@@ -103,10 +104,16 @@ CCTV-15 音乐,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN600005
 CCTV-15 音乐,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010094/index.m3u8
 CCTV-15 音乐,http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225601/index.m3u8
 #列表——CCTV 风云音乐
-CCTV 风云音乐,http://nas.hssvm.com:8888/rtp/225.1.2.176:5002
+CCTV 风云音乐,http://180.213.174.231:9901/tsfile/live/1055_1.m3u8
 CCTV 风云音乐,http://110.179.80.171:8082/udp/239.1.1.96:8096
-#列表——南京音乐台
-南京音乐台,http://ef4b21.netsite.cc/proxy/171515367/171515367.m3u8
+#列表——CMUSIC音乐台
+CMUSIC音乐台,http://37.27.111.214:8080/live/72/hls.m3u8
+阿七点歌台,http://allinone.netsite.cc/douyu/3186217
+阿七点歌台,http://live.iill.top/douyu.php?id=3186217
+阿七点歌台,http://lxajh.top/tv/douyu.php?id=3186217
+音悦点歌台,http://allinone.netsite.cc/douyu/3870925
+音悦点歌台,http://live.iill.top/douyu.php?id=3870925
+音悦点歌台,http://lxajh.top/tv/douyu.php?id=3870925
 #列表——CCTV 世界地理
 CCTV 世界地理,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226947/index.m3u8
 CCTV 世界地理,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002485/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
@@ -592,9 +599,9 @@ CGTN 阿拉伯语,http://livear.cgtn.com/1000a/prog_index.m3u8
 #列表——海峡卫视
 海峡卫视,https://itv.lat/tv/live.php?&line=1&id=hxws
 港台卫视,#genre#
-凤凰中文,http://www.91dos.cn:4022/udp/239.61.2.184:9092
+凤凰中文,http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3u8
 凤凰中文,http://www.91dos.cn:4022/udp/239.61.5.48:1025
-凤凰资讯,http://www.91dos.cn:4022/udp/239.61.2.183:9086
+凤凰资讯,http://116.162.6.192/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
 凤凰资讯,http://www.91dos.cn:4022/udp/239.61.5.47:1025
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq.flv
 ATV WORLD,https://epg.pw/stream/08f572e03fb04a0e394febb2e2d08082cedc4ecba339019008f471731e6a8f88.m3u8
